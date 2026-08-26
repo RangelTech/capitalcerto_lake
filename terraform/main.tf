@@ -95,10 +95,12 @@ resource "null_resource" "deploy" {
   }
 
   provisioner "local-exec" {
+    # Sem barra final nas pastas de origem: rsync cria a subpasta (compose/, configs/, ...)
+    # no destino em vez de espalhar o conteudo direto em remote_base_dir.
     command = <<-EOT
       rsync -az --delete \
         -e "ssh -i ${var.ssh_private_key_path} -o StrictHostKeyChecking=accept-new" \
-        ${path.module}/../compose/ ${path.module}/../configs/ ${path.module}/../apps/ ${path.module}/../scripts/ \
+        ${path.module}/../compose ${path.module}/../configs ${path.module}/../apps ${path.module}/../scripts \
         ${var.deploy_user}@${var.server_ip}:${local.remote_base_dir}/ \
         --exclude ".env"
       rsync -az \

@@ -13,7 +13,7 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 rsync -az --delete \
   -e "ssh -i $SSH_KEY" \
-  "$REPO_ROOT/compose/" "$REPO_ROOT/configs/" "$REPO_ROOT/apps/" "$REPO_ROOT/scripts/" \
+  "$REPO_ROOT/compose" "$REPO_ROOT/configs" "$REPO_ROOT/apps" "$REPO_ROOT/scripts" \
   "$VPS_DEPLOY_USER@$VPS_HOST:/opt/capitalcerto/" \
   --exclude ".env"
 

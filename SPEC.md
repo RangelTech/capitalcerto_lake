@@ -353,20 +353,24 @@ Pontos que apareceram revisando a spec inteira de novo, com a decisão do Lucas 
    repo por enquanto (entram quando o cliente definir onde o backup vai, respeitando o isolamento
    da seção 1, nunca na mesma conta do `vps_rt_infra`). Até lá, a stack sobe sem rotina de backup.
 
-## 10. Pendências antes de criar o repo de verdade
+## 10. Pendências
 
-- [ ] Escrever `.gitignore` completo (mesmo escopo do `vps_rt_infra`: `.env`, `*.tfstate*`,
-      `*.tfvars` reais, `*.pem`/`*.key`) já no commit inicial, antes de qualquer coisa — é o que
-      sustenta o repo ser público com segurança
+Scaffold completo escrito e commitado localmente em 2026-08-26 (`Desktop\Repos\capitalcerto_lake`,
+commit inicial). Terraform validado (`terraform validate`), Docker Compose validado
+(`docker compose config`). Ainda não existe no GitHub, ainda não rodou contra a VPS de verdade.
+
+- [x] Escrever `.gitignore` completo, feito antes do primeiro commit
+- [x] Escrever todos os READMEs (raiz e por serviço, seção 8), feito junto com o scaffold
+- [x] Implementar a interface do modelo (`app/model/interface.py`) e o dummy (`dummy_model.py`)
+      da Risk API (seção 3.3)
+- [ ] Criar o repositório de verdade no GitHub (org `RangelTech`, público) e dar `git push`
 - [ ] Cadastrar todos os secrets da seção 6 no GitHub Actions antes do primeiro `terraform apply`
-- [ ] Confirmar se cria usuário de deploy já no primeiro bootstrap (recomendado) ou mantém root
-- [ ] Confirmar bancos do ERP e da plataforma de contratos do cliente (define os DAGs do Airflow)
-- [ ] Definir nomes finais de bucket MinIO (`raw`, `trusted`, `analytics` ou nomenclatura própria)
-- [ ] Definir data/gatilho pra privatizar o repo (ex.: assim que a org tiver plano pago de Actions,
-      ou antes de subir o primeiro dado real do cliente pro código — o que vier primeiro)
-- [ ] Escrever todos os READMEs (raiz e por serviço, seção 8) junto com o scaffold inicial, não
-      depois, pra não virar débito de documentação
-- [ ] Implementar a interface do modelo (`app/model/interface.py`) e o dummy (`dummy_model.py`)
-      da Risk API já no primeiro commit, mesmo sem o modelo real (seção 3.3)
 - [ ] Definir username/e-mail e senha do `SHARED_ADMIN_USER`/`SHARED_ADMIN_PASSWORD` (seção 6.1),
       incluindo qual e-mail usar no Metabase sem domínio próprio ainda
+- [ ] Confirmar se cria usuário de deploy já no primeiro bootstrap (a spec já implementa criando,
+      falta só a confirmação final antes do primeiro `terraform apply` de verdade)
+- [ ] Confirmar bancos do ERP e da plataforma de contratos do cliente (define os DAGs reais do
+      Airflow, hoje só existe um DAG de exemplo/healthcheck)
+- [ ] Definir nomes finais de bucket MinIO (hoje o default é `raw,trusted,analytics`)
+- [ ] Definir data/gatilho pra privatizar o repo (ex.: assim que a org tiver plano pago de Actions,
+      ou antes de subir o primeiro dado real do cliente pro código, o que vier primeiro)

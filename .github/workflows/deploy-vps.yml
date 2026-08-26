@@ -26,7 +26,7 @@ jobs:
         run: |
           rsync -az --delete \
             -e "ssh -i ~/.ssh/capital_certo_ed25519" \
-            compose/ configs/ apps/ scripts/ \
+            compose configs apps scripts \
             "${{ secrets.VPS_DEPLOY_USER }}@${{ secrets.VPS_HOST }}:/opt/capitalcerto/" \
             --exclude ".env"
 
