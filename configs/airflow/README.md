@@ -9,11 +9,24 @@ resolver as conexoes com MinIO e ClickHouse. Os DAGs reais de ingestao (ERP, Cha
 credito, fotos de estabelecimento) entram aqui quando o acesso a cada fonte estiver confirmado
 com o cliente.
 
+## Imagem propria
+
+A imagem oficial `apache/airflow` sozinha nao consegue falar com MinIO nem com ClickHouse, faltam
+os pacotes. Este projeto usa uma imagem propria (`apps/airflow-image/Dockerfile`) que instala
+`apache-airflow-providers-amazon` (S3, MinIO fala o mesmo protocolo) e `clickhouse-connect`.
+Testado ao vivo em 2026-08-26 antes dessa correcao: sem a imagem propria, `AIRFLOW_CONN_*`
+sozinho nao faz nada, e a tentativa de usar o driver de ClickHouse falhava por falta de pacote.
+
 ## Conexoes esperadas
 
-`minio_s3` e `clickhouse_default` sao criadas automaticamente no boot via variavel de ambiente
-(`AIRFLOW_CONN_MINIO_S3` e `AIRFLOW_CONN_CLICKHOUSE_DEFAULT`, ver `compose/docker-compose.yml`),
-nao precisam ser cadastradas manualmente na interface do Airflow.
+`minio_s3` e criada automaticamente no boot via variavel de ambiente (`AIRFLOW_CONN_MINIO_S3`,
+ver `compose/docker-compose.yml`), usa o provider da Amazon instalado na imagem propria, nao
+precisa ser cadastrada manualmente na interface do Airflow.
+
+ClickHouse nao usa o mecanismo de Connection do Airflow, nao existe provider oficial mantido pra
+isso. Os DAGs leem `CLICKHOUSE_HOST` e `CLICKHOUSE_PASSWORD` como variavel de ambiente comum e
+usam a biblioteca `clickhouse-connect` direto no codigo Python da task, mesmo padrao usado na
+Risk API.
 
 ## Variaveis de ambiente
 

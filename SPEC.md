@@ -55,7 +55,8 @@ capitalcerto_lake/
 │   └── .env.example
 ├── apps/
 │   ├── risk-api/           # FastAPI, model dummy por enquanto (ver 3.3), README próprio
-│   └── ninerouter/         # placeholder minimo ate o pacote real do 9Router entrar, README próprio
+│   ├── ninerouter/         # placeholder minimo ate o pacote real do 9Router entrar, README próprio
+│   └── airflow-image/      # Dockerfile proprio: apache/airflow + provider S3 + clickhouse-connect (ver 3.2)
 ├── configs/
 │   ├── traefik/            # README próprio
 │   ├── airflow/            # README próprio
@@ -121,8 +122,8 @@ ferramenta — nem tudo aceita ficar pronto só com env var:
 
 | Conexão                              | Como fica pronta                                                        |
 |---------------------------------------|--------------------------------------------------------------------------|
-| Airflow → MinIO                       | Env var `AIRFLOW_CONN_MINIO_S3` no `.env`, nativo do Airflow             |
-| Airflow → ClickHouse                  | Env var `AIRFLOW_CONN_CLICKHOUSE_DEFAULT` no `.env`, nativo do Airflow   |
+| Airflow → MinIO                       | Env var `AIRFLOW_CONN_MINIO_S3` no `.env`. Só funciona porque a imagem do Airflow deste projeto (`apps/airflow-image`) instala `apache-airflow-providers-amazon`, a imagem oficial `apache/airflow` sozinha não vem com isso |
+| Airflow → ClickHouse                  | **Não existe conexão nativa do Airflow pra isso.** Testado ao vivo (2026-08-26): a imagem oficial não traz driver de ClickHouse nem provider mantido oficialmente pro Airflow. Solução adotada: `CLICKHOUSE_HOST`/`CLICKHOUSE_PASSWORD` como env var simples, DAG usa `clickhouse-connect` direto (mesma lib e mesmo padrão da Risk API), sem passar pelo mecanismo de Connection do Airflow |
 | Metabase → Postgres (config própria)  | Env vars nativas do Metabase (`MB_DB_TYPE`, `MB_DB_CONNECTION_URI`)      |
 | Metabase → ClickHouse (fonte dos dash)| **Sem env var própria** — precisa script batendo na API do Metabase após o primeiro boot (mesma receita já usada nos scripts do case MindLab, seção 8 da skill) |
 | Postgres com 2 bancos (`airflow`, `metabase`) na mesma instância | Init script em `docker-entrypoint-initdb.d/`, criado no primeiro boot do container |

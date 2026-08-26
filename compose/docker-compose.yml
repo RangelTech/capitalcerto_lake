@@ -69,13 +69,18 @@ services:
       - ../configs/clickhouse/init:/docker-entrypoint-initdb.d:ro
 
   airflow-init:
-    image: apache/airflow:${AIRFLOW_VERSION}
+    build:
+      context: ../apps/airflow-image
+      args:
+        AIRFLOW_VERSION: ${AIRFLOW_VERSION}
     depends_on: [postgres]
     networks: [internal]
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:${POSTGRES_ADMIN_PASSWORD}@postgres/airflow
       AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+      AIRFLOW_ADMIN_USER: ${SHARED_ADMIN_USER}
+      AIRFLOW_ADMIN_PASSWORD: ${SHARED_ADMIN_PASSWORD}
     entrypoint: /bin/bash
     command:
       - -c
@@ -85,7 +90,10 @@ services:
           --firstname Capital --lastname Certo --role Admin --email "$$AIRFLOW_ADMIN_USER"
 
   airflow-webserver:
-    image: apache/airflow:${AIRFLOW_VERSION}
+    build:
+      context: ../apps/airflow-image
+      args:
+        AIRFLOW_VERSION: ${AIRFLOW_VERSION}
     restart: unless-stopped
     depends_on: [airflow-init]
     networks: [internal, public]
@@ -96,14 +104,18 @@ services:
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:${POSTGRES_ADMIN_PASSWORD}@postgres/airflow
       AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
       AIRFLOW_CONN_MINIO_S3: "aws://${MINIO_ROOT_USER}:${MINIO_ROOT_PASSWORD}@?endpoint_url=http%3A%2F%2Fminio%3A9000"
-      AIRFLOW_CONN_CLICKHOUSE_DEFAULT: "clickhouse://default:${CLICKHOUSE_PASSWORD}@clickhouse:8123"
+      CLICKHOUSE_HOST: clickhouse
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD}
     volumes:
       - ../configs/airflow/dags:/opt/airflow/dags
       - airflow_logs:/opt/airflow/logs
     command: webserver
 
   airflow-scheduler:
-    image: apache/airflow:${AIRFLOW_VERSION}
+    build:
+      context: ../apps/airflow-image
+      args:
+        AIRFLOW_VERSION: ${AIRFLOW_VERSION}
     restart: unless-stopped
     depends_on: [airflow-init]
     networks: [internal]
@@ -112,7 +124,8 @@ services:
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:${POSTGRES_ADMIN_PASSWORD}@postgres/airflow
       AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
       AIRFLOW_CONN_MINIO_S3: "aws://${MINIO_ROOT_USER}:${MINIO_ROOT_PASSWORD}@?endpoint_url=http%3A%2F%2Fminio%3A9000"
-      AIRFLOW_CONN_CLICKHOUSE_DEFAULT: "clickhouse://default:${CLICKHOUSE_PASSWORD}@clickhouse:8123"
+      CLICKHOUSE_HOST: clickhouse
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD}
     volumes:
       - ../configs/airflow/dags:/opt/airflow/dags
       - airflow_logs:/opt/airflow/logs
