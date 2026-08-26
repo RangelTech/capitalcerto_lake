@@ -13,8 +13,23 @@ if [ -z "$PUBLIC_KEY" ]; then
   exit 1
 fi
 
+wait_for_apt_lock() {
+  local tries=0
+  while fuser /var/lib/dpkg/lock-frontend >/dev/null 2>&1; do
+    tries=$((tries + 1))
+    if [ "$tries" -gt 30 ]; then
+      echo "apt/dpkg lock nao liberou a tempo, abortando" >&2
+      exit 1
+    fi
+    echo "==> Aguardando lock do apt/dpkg liberar (tentativa $tries)"
+    sleep 10
+  done
+}
+
 echo "==> Atualizando pacotes"
+wait_for_apt_lock
 apt-get update -y
+wait_for_apt_lock
 apt-get upgrade -y
 
 echo "==> Instalando Docker"
@@ -25,6 +40,7 @@ systemctl enable docker
 systemctl start docker
 
 echo "==> Instalando firewall (ufw) e fail2ban"
+wait_for_apt_lock
 apt-get install -y ufw fail2ban
 ufw allow OpenSSH
 ufw allow 80/tcp
