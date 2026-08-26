@@ -145,6 +145,9 @@ services:
       MB_DB_USER: metabase
       MB_DB_PASS: ${METABASE_DB_PASSWORD}
       MB_DB_HOST: postgres
+      # "weak" so o login administrativo unico do projeto (ver SPEC.md secao 6.1) nao esbarra
+      # no checador de senha comum do Metabase (zxcvbn), sem precisar trocar a senha em si.
+      MB_PASSWORD_COMPLEXITY: weak
 
   ninerouter:
     build: ../apps/ninerouter
