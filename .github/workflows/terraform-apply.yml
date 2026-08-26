@@ -1,0 +1,68 @@
+name: Terraform Apply
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "terraform/**"
+      - "compose/**"
+      - "configs/**"
+      - "apps/**"
+      - "cloud-init/**"
+      - "scripts/**"
+  workflow_dispatch: {}
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.9.5"
+
+      - name: Configure SSH private key
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.VPS_SSH_PRIVATE_KEY }}" > ~/.ssh/capital_certo_ed25519
+          chmod 600 ~/.ssh/capital_certo_ed25519
+          ssh-keyscan -H "${{ secrets.VPS_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Terraform Init
+        working-directory: terraform
+        run: terraform init -upgrade
+
+      - name: Terraform Apply
+        working-directory: terraform
+        env:
+          TF_VAR_server_ip: ${{ secrets.VPS_HOST }}
+          TF_VAR_initial_ssh_password: ${{ secrets.VPS_INITIAL_ROOT_PASSWORD }}
+          TF_VAR_public_ssh_key: ${{ secrets.VPS_PUBLIC_SSH_KEY }}
+          TF_VAR_ssh_private_key_path: /home/runner/.ssh/capital_certo_ed25519
+          TF_VAR_shared_admin_user: ${{ secrets.SHARED_ADMIN_USER }}
+          TF_VAR_shared_admin_password: ${{ secrets.SHARED_ADMIN_PASSWORD }}
+          TF_VAR_postgres_admin_password: ${{ secrets.POSTGRES_ADMIN_PASSWORD }}
+          TF_VAR_minio_root_password: ${{ secrets.SHARED_ADMIN_PASSWORD }}
+          TF_VAR_clickhouse_password: ${{ secrets.CLICKHOUSE_PASSWORD }}
+          TF_VAR_airflow_fernet_key: ${{ secrets.AIRFLOW_FERNET_KEY }}
+          TF_VAR_metabase_db_password: ${{ secrets.METABASE_DB_PASSWORD }}
+          TF_VAR_risk_api_secret_key: ${{ secrets.RISK_API_SECRET_KEY }}
+          TF_VAR_ninerouter_api_keys: ${{ secrets.NINEROUTER_API_KEYS }}
+        run: terraform apply -auto-approve
+
+      - name: Bootstrap Metabase data source
+        env:
+          METABASE_URL: "http://${{ secrets.VPS_HOST }}:3000"
+          SHARED_ADMIN_USER: ${{ secrets.SHARED_ADMIN_USER }}
+          SHARED_ADMIN_PASSWORD: ${{ secrets.SHARED_ADMIN_PASSWORD }}
+          CLICKHOUSE_HOST: ${{ secrets.VPS_HOST }}
+          CLICKHOUSE_PASSWORD: ${{ secrets.CLICKHOUSE_PASSWORD }}
+        run: bash scripts/bootstrap-metabase.sh
+
+      - name: Terraform outputs
+        working-directory: terraform
+        run: terraform output

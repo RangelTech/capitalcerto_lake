@@ -1,0 +1,43 @@
+name: Deploy Stack Only
+
+# Atalho mais rapido que o Terraform Apply completo: so re-sincroniza compose/configs/apps/scripts
+# e reinicia a stack, sem tocar em bootstrap do SO nem regerar compose/.env. Util quando so mudou
+# codigo (Risk API, ninerouter) ou um config estatico. Se mudou uma variavel de versao ou
+# credencial, roda o Terraform Apply tambem (ou no lugar deste).
+on:
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.VPS_SSH_PRIVATE_KEY }}" > ~/.ssh/capital_certo_ed25519
+          chmod 600 ~/.ssh/capital_certo_ed25519
+          ssh-keyscan -H "${{ secrets.VPS_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Rsync stack to VPS
+        run: |
+          rsync -az --delete \
+            -e "ssh -i ~/.ssh/capital_certo_ed25519" \
+            compose/ configs/ apps/ scripts/ \
+            "${{ secrets.VPS_DEPLOY_USER }}@${{ secrets.VPS_HOST }}:/opt/capitalcerto/" \
+            --exclude ".env"
+
+      - name: Restart stack
+        run: |
+          ssh -i ~/.ssh/capital_certo_ed25519 \
+            "${{ secrets.VPS_DEPLOY_USER }}@${{ secrets.VPS_HOST }}" \
+            "chmod +x /opt/capitalcerto/scripts/*.sh && cd /opt/capitalcerto/compose && docker compose up -d --remove-orphans"
+
+      - name: Healthcheck
+        run: |
+          ssh -i ~/.ssh/capital_certo_ed25519 \
+            "${{ secrets.VPS_DEPLOY_USER }}@${{ secrets.VPS_HOST }}" \
+            "/opt/capitalcerto/scripts/healthcheck.sh"

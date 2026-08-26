@@ -1,0 +1,27 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+crash.*.log
+.terraform.lock.hcl
+
+# Secrets / env
+.env
+compose/.env
+*.pem
+*.key
+secrets-bootstrap-summary.txt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

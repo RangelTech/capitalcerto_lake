@@ -1,0 +1,7 @@
+# Configuracao dinamica do Traefik. Vazia por enquanto porque cada servico e acessado
+# diretamente por IP:porta enquanto nao existe dominio (ver SPEC.md secao 7). Quando o
+# dominio entrar, os roteadores por subdominio (airflow.dominio, metabase.dominio etc.)
+# e o resolver ACME do Let's Encrypt entram aqui.
+http:
+  routers: {}
+  services: {}

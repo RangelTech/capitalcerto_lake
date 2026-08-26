@@ -1,0 +1,166 @@
+networks:
+  internal:
+    internal: true
+  public:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  minio_data:
+  clickhouse_data:
+  airflow_logs:
+  uptime_kuma_data:
+  traefik_letsencrypt:
+
+services:
+
+  traefik:
+    image: traefik:${TRAEFIK_VERSION}
+    restart: unless-stopped
+    networks: [public]
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8080:8080"   # dashboard, so IP direto por enquanto (sem dominio, ver SPEC.md secao 7)
+    volumes:
+      - ../configs/traefik/traefik.yml:/etc/traefik/traefik.yml:ro
+      - ../configs/traefik/dynamic.yml:/etc/traefik/dynamic.yml:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - traefik_letsencrypt:/letsencrypt
+
+  postgres:
+    image: postgres:${POSTGRES_VERSION}
+    restart: unless-stopped
+    networks: [internal]
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_ADMIN_PASSWORD}
+      POSTGRES_ADMIN_PASSWORD: ${POSTGRES_ADMIN_PASSWORD}
+      METABASE_DB_PASSWORD: ${METABASE_DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ../configs/postgres/init-multi-db.sh:/docker-entrypoint-initdb.d/init-multi-db.sh:ro
+
+  minio:
+    image: minio/minio:${MINIO_VERSION}
+    restart: unless-stopped
+    networks: [internal, public]
+    ports:
+      - "9000:9000"
+      - "9001:9001"   # console, IP direto por enquanto
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio_data:/data
+
+  clickhouse:
+    image: clickhouse/clickhouse-server:${CLICKHOUSE_VERSION}
+    restart: unless-stopped
+    networks: [internal, public]
+    ports:
+      - "8123:8123"   # HTTP interface, IP direto por enquanto
+      - "9002:9000"   # native protocol (9000 do host ja usado pelo MinIO, remapeado)
+    environment:
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD}
+    volumes:
+      - clickhouse_data:/var/lib/clickhouse
+      - ../configs/clickhouse/init:/docker-entrypoint-initdb.d:ro
+
+  airflow-init:
+    image: apache/airflow:${AIRFLOW_VERSION}
+    depends_on: [postgres]
+    networks: [internal]
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:${POSTGRES_ADMIN_PASSWORD}@postgres/airflow
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db migrate
+        airflow users create --username "$$AIRFLOW_ADMIN_USER" --password "$$AIRFLOW_ADMIN_PASSWORD" \
+          --firstname Capital --lastname Certo --role Admin --email "$$AIRFLOW_ADMIN_USER"
+
+  airflow-webserver:
+    image: apache/airflow:${AIRFLOW_VERSION}
+    restart: unless-stopped
+    depends_on: [airflow-init]
+    networks: [internal, public]
+    ports:
+      - "8081:8080"   # IP direto por enquanto
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:${POSTGRES_ADMIN_PASSWORD}@postgres/airflow
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+      AIRFLOW_CONN_MINIO_S3: "aws://${MINIO_ROOT_USER}:${MINIO_ROOT_PASSWORD}@?endpoint_url=http%3A%2F%2Fminio%3A9000"
+      AIRFLOW_CONN_CLICKHOUSE_DEFAULT: "clickhouse://default:${CLICKHOUSE_PASSWORD}@clickhouse:8123"
+    volumes:
+      - ../configs/airflow/dags:/opt/airflow/dags
+      - airflow_logs:/opt/airflow/logs
+    command: webserver
+
+  airflow-scheduler:
+    image: apache/airflow:${AIRFLOW_VERSION}
+    restart: unless-stopped
+    depends_on: [airflow-init]
+    networks: [internal]
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:${POSTGRES_ADMIN_PASSWORD}@postgres/airflow
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+      AIRFLOW_CONN_MINIO_S3: "aws://${MINIO_ROOT_USER}:${MINIO_ROOT_PASSWORD}@?endpoint_url=http%3A%2F%2Fminio%3A9000"
+      AIRFLOW_CONN_CLICKHOUSE_DEFAULT: "clickhouse://default:${CLICKHOUSE_PASSWORD}@clickhouse:8123"
+    volumes:
+      - ../configs/airflow/dags:/opt/airflow/dags
+      - airflow_logs:/opt/airflow/logs
+    command: scheduler
+
+  metabase:
+    image: metabase/metabase:${METABASE_VERSION}
+    restart: unless-stopped
+    depends_on: [postgres]
+    networks: [internal, public]
+    ports:
+      - "3000:3000"   # IP direto por enquanto
+    environment:
+      MB_DB_TYPE: postgres
+      MB_DB_DBNAME: metabase
+      MB_DB_PORT: 5432
+      MB_DB_USER: metabase
+      MB_DB_PASS: ${METABASE_DB_PASSWORD}
+      MB_DB_HOST: postgres
+
+  ninerouter:
+    build: ../apps/ninerouter
+    restart: unless-stopped
+    networks: [internal, public]
+    ports:
+      - "4000:4000"   # IP direto por enquanto
+    environment:
+      NINEROUTER_API_KEYS: ${NINEROUTER_API_KEYS}
+    # Instancia propria e isolada deste projeto, sem relacao com nenhuma outra infra
+    # da Rangel Tech (ver SPEC.md secao 1).
+
+  risk-api:
+    build: ../apps/risk-api
+    restart: unless-stopped
+    depends_on: [clickhouse]
+    networks: [internal, public]
+    ports:
+      - "8000:8000"   # IP direto por enquanto
+    environment:
+      RISK_API_SECRET_KEY: ${RISK_API_SECRET_KEY}
+      CLICKHOUSE_HOST: clickhouse
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD}
+
+  uptime-kuma:
+    image: louislam/uptime-kuma:${UPTIME_KUMA_VERSION}
+    restart: unless-stopped
+    networks: [internal, public]
+    ports:
+      - "3001:3001"   # IP direto por enquanto
+    volumes:
+      - uptime_kuma_data:/app/data

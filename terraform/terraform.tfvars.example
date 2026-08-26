@@ -1,0 +1,19 @@
+# Copie para terraform.tfvars e preencha com valores reais.
+# terraform.tfvars nunca vai para o Git (ver .gitignore). Em CI, cada variavel vem de um
+# GitHub Actions Secret injetado como TF_VAR_<nome> (ver SPEC.md secao 6).
+
+server_ip             = "0.0.0.0"
+initial_ssh_password  = "CHANGE_ME"
+public_ssh_key        = "ssh-ed25519 AAAA..."
+ssh_private_key_path  = "/home/runner/.ssh/capital_certo_ed25519"
+
+shared_admin_user     = "CHANGE_ME"
+shared_admin_password = "CHANGE_ME"
+
+postgres_admin_password = "CHANGE_ME"
+minio_root_password     = "CHANGE_ME"
+clickhouse_password     = "CHANGE_ME"
+airflow_fernet_key      = "CHANGE_ME"
+metabase_db_password    = "CHANGE_ME"
+risk_api_secret_key     = "CHANGE_ME"
+ninerouter_api_keys     = "CHANGE_ME"

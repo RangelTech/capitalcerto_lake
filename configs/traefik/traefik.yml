@@ -1,0 +1,18 @@
+api:
+  dashboard: true
+  insecure: true   # dashboard exposto por IP direto, sem dominio ainda (ver SPEC.md secao 7)
+
+entryPoints:
+  web:
+    address: ":80"
+  websecure:
+    address: ":443"
+
+providers:
+  docker:
+    exposedByDefault: false
+  file:
+    filename: /etc/traefik/dynamic.yml
+
+log:
+  level: INFO

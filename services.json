@@ -1,0 +1,11 @@
+{
+  "traefik": true,
+  "postgres": true,
+  "minio": true,
+  "clickhouse": true,
+  "airflow": true,
+  "metabase": true,
+  "ninerouter": true,
+  "risk_api": true,
+  "uptime_kuma": true
+}
