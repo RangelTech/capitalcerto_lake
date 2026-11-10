@@ -1,6 +1,6 @@
 # Teste noturno das variaveis PEDIDAS pelo chat do Data IA Hub (hub_sandbox.motor_parametros, estado 'pedido').
-# Para cada pedido cuja coluna ja existe em analytics_ml.motor_features_contrato: mede a relacao com calote/inadimplencia e o GANHO de acerto fora do tempo no dia 0 e no dia 1
-# (com intervalo de bootstrap) e grava o resultado em portugues claro; estado vira 'testado' e a variavel fica DESLIGADA ate o administrador ligar na aba.
+# Para cada pedido cuja coluna ja existe em analytics_ml.motor_features_contrato: mede a relacao com calote/inadimplencia (o teste de ganho de acerto foi retirado: o que importa ao cliente e o peso geral da variavel no motor)
+# e grava o resultado em portugues claro; estado vira 'testado' e a variavel fica DESLIGADA ate o administrador ligar na aba.
 # Se a coluna ainda nao existe, o pedido continua pendente com a explicacao do que falta implementar. Uso: python credit_pedidos.py
 import numpy as np
 import pandas as pd
@@ -51,16 +51,10 @@ def main():
                 a, p, n = cv.assoc(df[v] if cat else x, pd.to_numeric(df[col], errors="coerce"), cat)
                 corr[nome] = (a, p, n)
             partes = [f"{k}: {('V de Cramér' if cat else 'correlação')} {a:+.2f} (p={p:.3f}, n={n})" for k, (a, p, n) in corr.items() if not np.isnan(a)]
-            g0 = ganho(df, "ye_0", ["provedor_pagamento"], base0, v) if not cat else None
-            g1 = ganho(df, "ye_1", ["provedor_pagamento"], base0, v) if not cat else None
             linhas = [f"Relação com o resultado: {'; '.join(partes) or 'poucos dados'}."]
-            for rot, g in (("dia 0", g0), ("dia 1", g1)):
-                if g:
-                    linhas.append(f"Ganho no {rot}: acerto {g[0]:.3f} → {g[1]:.3f} (IC95 do ganho {g[2]:+.3f} a {g[3]:+.3f}, {g[4]} contratos): {'GANHO REAL' if g[2] > 0 else 'sem ganho comprovado'}.")
             if cat:
-                linhas.append("Variável categórica: teste de ganho no modelo não executado automaticamente.")
-            ganho_real = any(g and g[2] > 0 for g in (g0, g1))
-            linhas.append("Conclusão: " + ("vale ligar no motor (ganho real fora do tempo)." if ganho_real else "não vale ligar ainda; fica desligada. Pode ser ligada na aba Motor de crédito."))
+                linhas.append("Variável por grupos: a força da associação vai de 0 a 1, sem sentido de alta ou baixa.")
+            linhas.append("Teste de relação concluído. Para usar no motor, ligue a chave na aba Variáveis: o efeito aparece na aba Acerto do motor depois do próximo treino.")
             texto = " ".join(linhas)
             print(v, "->", texto[:200])
         ch.command(f"INSERT INTO hub_sandbox.motor_parametros (variavel, ativa, estado, pedido_por, descricao, definicao, resultado, atualizado_por) VALUES ('{v.replace(chr(39), '')}', {1 if v in base0 else 0}, "
