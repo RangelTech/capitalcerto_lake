@@ -47,7 +47,7 @@ def prompt_acerto(ch):
     if not len(a):
         return None
     tab = "\n".join(f"{NOMES_ALVO.get(r.alvo, r.alvo)} D+{r.etapa}: AUC {r.auc} (IC95 {r.lo} a {r.hi}), modelo {r.modelo}, conjunto {r.features}, {r.n} contratos de teste, confianca {r.confianca}" for r in a.itertuples())
-    des = ch.query_df("SELECT variavel FROM hub_sandbox.motor_parametros FINAL WHERE ativa = 0 AND estado = 'desligado'")["variavel"].tolist()
+    des = [x[0] for x in ch.query("SELECT variavel FROM hub_sandbox.motor_parametros FINAL WHERE ativa = 0 AND estado = 'desligado'").result_rows]
     return (f"Resultados do ultimo treino do motor ({a['ref'].iloc[0]}). AUC 0,5 = chute, 1 = perfeito.\n{tab}\n\nVariaveis desligadas pelo administrador: {', '.join(des) or 'nenhuma'}.\n\n"
             "Escreva um resumo de 2 a 3 paragrafos curtos: em que idades e para qual resultado o motor e confiavel, onde ele ainda e fraco, e o que as variaveis desligadas significam para esse acerto.")
 
