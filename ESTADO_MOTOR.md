@@ -122,3 +122,7 @@ Aprendizados: ver "Achados" no fim.
 - Latência da API de consulta com a VPS ociosa: 1,5 a 2 s (do PC, pela internet). Sob retreino chegou a 29 s.
 - Metabase dashboard 5: 41 cartões das 5 abas rodam sem erro; cada gráfico tem o texto de ajuda ao lado.
 - Orquestradora: o run manual de teste ficou esperando o backup do CredHub do dia (o portal gera às 03:00 BRT); o run agendado das 03:30 BRT é o teste ponta a ponta real.
+
+### Run agendado de 10/11 (03:30 BRT) e achados
+- Orquestradora inteira verde depois de um ajuste: `ingestao_chatwoot` falhou por permissão de leitura da chave SSH `secrets/chatwoot_ed25519` (dono uid 1001, modo 640; o Airflow roda com uid 50000, grupo 0). Corrigido com `chgrp 0` no arquivo (a chave e o modo continuam os mesmos, nada foi rotacionado) e `tasks clear -d` da tarefa. Se o arquivo for recriado, repetir o `chgrp 0`.
+- Hub: um `docker cp` como root deixou o `SKILL.md` do motor com dono root dentro do volume `hub_hub-hermes`, o entrypoint não conseguia sobrescrever e o contêiner reiniciava em loop (87 reinícios). Corrigido com chown 1001 no volume; entrypoint agora tolera falha de cópia das skills. Atualizar skills só pela imagem ou com `docker exec -u hub`.
