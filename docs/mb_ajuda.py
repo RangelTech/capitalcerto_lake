@@ -36,10 +36,6 @@ def larg_ajuda(w):
 
 AJUDA.update({
     "Variáveis que mais se relacionam com o calote": "**O que é**\nAs 15 variáveis mais ligadas ao calote.\n\n**Como ler**\nCorrelação perto de +1 = mais da variável, mais calote; perto de -1 = o contrário. A lista completa e o liga/desliga estão na aba Motor de crédito do Data IA Hub.",
-    "Contratos ativos avaliados hoje": "**Quantos contratos** receberam avaliação de risco no último cálculo.",
-    "Contratos ativos em risco Alto ou Muito alto": "**Quantos contratos** estão com chance de calote acima de 30%.",
-    "Valor dos contratos ativos em risco Alto ou Muito alto": "**Soma do valor** desses contratos: o dinheiro mais exposto.",
-    "Chance média de calote dos contratos ativos": "**Média** da chance de calote de todos os contratos avaliados.",
     "Contratos por nível de risco e confiança do modelo": "**O que é**\nQuantos contratos há em cada nível de risco, separados pela confiança do modelo.\n\nBarras com confiança Nenhuma ou Baixa: use com cuidado.",
     "Contratos por idade e nível de risco": "**O que é**\nOs contratos agrupados pela idade e pelo nível de risco.\n\nQuanto mais velho o contrato, mais confiável o risco.",
     "Contratos ativos de maior risco com confiança Média ou Alta": "**O que é**\nOs 40 contratos de maior risco em que o modelo tem confiança média ou alta.\n\nÉ a lista para a cobrança agir primeiro.",

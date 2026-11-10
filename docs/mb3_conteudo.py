@@ -35,7 +35,7 @@ A previsão só vale para contratos **ativos**; nos contratos antigos use o resu
 
 ABAS3 = {
     "Motor de crédito": [
-        [({"text": T_MOTOR}, 24, 5)],
+        [({"text": T_MOTOR}, 24, 7)],
         [(sc("Contratos ativos avaliados hoje", "SELECT count() AS `Contratos` FROM analytics.score_contrato_atual WHERE fase = 'ativo'"), 6, 3),
          (sc("Contratos ativos em risco Alto ou Muito alto", "SELECT countIf(faixa_risco IN ('alto', 'muito_alto')) AS `Contratos` FROM analytics.score_contrato_atual WHERE fase = 'ativo'"), 6, 3),
          (sc("Valor dos contratos ativos em risco Alto ou Muito alto", "SELECT sum(valor_principal) AS `Valor (R$)` FROM analytics.score_contrato_atual WHERE fase = 'ativo' AND faixa_risco IN ('alto', 'muito_alto')"), 6, 3),
