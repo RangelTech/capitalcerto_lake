@@ -1,4 +1,4 @@
-# DAG do resumo por cliente com LLM pequeno em CPU (credit_resumo.py): so quem teve atividade nos ultimos 3 dias. Roda por ultimo na noite (e a mais pesada).
+# DAG do resumo por cliente com LLM pequeno em CPU (credit_resumo.py): todos os clientes (resumo estruturado, sem LLM, e barato). Roda por ultimo na noite (e a mais pesada).
 # Sem schedule proprio: a orquestradora_diaria_capital_certo dispara depois da midia e do motor. Teto de 90 min; o que nao couber fica para a proxima noite.
 import pendulum
 from airflow import DAG
@@ -15,6 +15,6 @@ with DAG(
 ) as dag:
     BashOperator(
         task_id="gerar_resumos_recentes",
-        bash_command="cd /opt/airflow/dags && timeout 1500 python -u credit_resumo.py 800 1 recentes",
+        bash_command="cd /opt/airflow/dags && timeout 1500 python -u credit_resumo.py 5000 1 todos",
         execution_timeout=pendulum.duration(minutes=30),
     )

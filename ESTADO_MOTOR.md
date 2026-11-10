@@ -112,3 +112,13 @@ Aprendizados: ver "Achados" no fim.
 - INSIGHT OPERACIONAL: das falhas de Pix agendado (EFI_PAYMENT_FAILED, 104 mil eventos, 112 contratos), 82% sao "Saldo insuficiente" (85 mil), repetidas todo dia; 7% falha de infraestrutura do banco, 5% "cancelado pelo usuario no banco". Pluggy: UNKNOWN_ERROR 2.128, rejeitado pelo titular 353. O debito e agendado quando a conta nao tem saldo: a alavanca e o dia/horario do debito e o canal, nao so o score. Pix Automatico: o BC avisa que o risco passa ao consumidor, que pode cancelar a qualquer momento.
 - Tom por LLM (654 contratos): efeito ajustado (agressivo OR 0,69, recusa 0,72) mas nao melhora o modelo fora do tempo; DAG tom_llm_diario (delta em CPU) criada e despausada; falta validar o 1,7B contra o 27B (credit_tom_delta.py validar).
 - ClickHouse: motor_testes_realizados (27,7 mil testes) e motor_testes_resumo; motor_dia0_modelos/agendamento/auditoria; catalogo_tabelas e catalogo_colunas; 599 colunas documentadas; feature_mart e raw_rfb apagados.
+
+## Fechamento 10/11/2026 (madrugada)
+- `credit_motor_diario` rodou inteiro verde: retreinar_e_pontuar, clusters_etapas_e_gold, dicionario_nomes_claros, catalogo_de_variaveis, testar_pedidos_do_chat (12 min no total).
+- Bug achado e corrigido nos testes de pedidos: variável que já fazia parte da base duplicava coluna. Agora o ganho é medido tirando a variável da base e recolocando.
+- Bug achado no tom por LLM (`credit_tom_hub.py`): tabela vazia na 1a rodada dava KeyError, escondido pelo `|| true`. Corrigido; o tom via 9Router do Hub grava `analytics.tom_conversa_contrato` (40 conversas novas por noite); sem conta ou Hub fora, pula.
+- Resumo por cliente: estruturado, sem LLM, agora para todos os clientes (796), não só os recentes.
+- Variável pedida pelo chat (`idade_na_contratacao`) virou "testada" com a correlação e o ganho gravados em `hub_sandbox.motor_parametros`.
+- Latência da API de consulta com a VPS ociosa: 1,5 a 2 s (do PC, pela internet). Sob retreino chegou a 29 s.
+- Metabase dashboard 5: 41 cartões das 5 abas rodam sem erro; cada gráfico tem o texto de ajuda ao lado.
+- Orquestradora: o run manual de teste ficou esperando o backup do CredHub do dia (o portal gera às 03:00 BRT); o run agendado das 03:30 BRT é o teste ponta a ponta real.

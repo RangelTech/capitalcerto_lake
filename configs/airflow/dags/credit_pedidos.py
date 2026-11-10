@@ -13,8 +13,9 @@ import credit_variaveis as cv
 
 def ganho(df, alvo, cats, nums_base, nova, modelo="rf"):
     d = df[df[alvo].notna()]
-    ob = ex.avalia_temporal(df, alvo, cf.HORIZONTE_ALVO, cats, [c for c in nums_base if c in df.columns], modelo, ultimos_meses=5)
-    on = ex.avalia_temporal(df, alvo, cf.HORIZONTE_ALVO, cats, [c for c in nums_base + [nova] if c in df.columns], modelo, ultimos_meses=5)
+    sem = [c for c in nums_base if c != nova and c in df.columns]   # base SEM a variavel testada (se ela ja estiver na base, o ganho e medido tirando-a)
+    ob = ex.avalia_temporal(df, alvo, cf.HORIZONTE_ALVO, cats, sem, modelo, ultimos_meses=5)
+    on = ex.avalia_temporal(df, alvo, cf.HORIZONTE_ALVO, cats, sem + ([nova] if nova in df.columns else []), modelo, ultimos_meses=5)
     if not len(ob) or not len(on) or len(ob) != len(on):
         return None
     yb, pb, pn = ob["y"].values, ob["p"].values, on["p"].values

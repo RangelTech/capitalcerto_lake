@@ -53,7 +53,7 @@ def main():
     base, tm = trechos(ch)
     feitos = ch.query_df("select contrato_id, hash_texto from analytics.tom_conversa_contrato final where versao = {v:String}", parameters={"v": VERSAO})
     feitos.columns = [c.split(".")[-1] for c in feitos.columns]
-    ja = dict(zip(feitos["contrato_id"], feitos["hash_texto"]))
+    ja = dict(zip(feitos["contrato_id"], feitos["hash_texto"])) if len(feitos) and "contrato_id" in feitos.columns else {}   # tabela vazia na 1a rodada
     h = tm.map(lambda s: hashlib.md5(s.encode("utf-8")).hexdigest())
     pend = [c for c in h.index if ja.get(c) != h[c]]
     ordem = base.set_index("contrato_id")["data_inicio"].reindex(pend).sort_values(ascending=False).index.tolist()[:maximo]
