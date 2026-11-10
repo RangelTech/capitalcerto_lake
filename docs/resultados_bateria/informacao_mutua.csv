@@ -1,0 +1,361 @@
+alvo,variavel,informacao_mutua
+calote D+1..45 (ye_0),qtd_parcelas_contratadas,0.011052460964697364
+calote D+1..45 (ye_0),prev_n_parcelas,0.0
+calote D+1..45 (ye_0),prev_contratos,0.00434447253633552
+calote D+1..45 (ye_0),idade_na_contratacao,0.012290672068503206
+calote D+1..45 (ye_0),tempo_de_casa_dias,0.0
+calote D+1..45 (ye_0),razao_parcela_principal,0.010091759459609495
+calote D+1..45 (ye_0),dow_inicio,0.0
+calote D+1..45 (ye_0),f_dora_score_pf,0.01710549677048867
+calote D+1..45 (ye_0),f_dora_faixa_pf_ord,0.0
+calote D+1..45 (ye_0),f_dora_taxa_inad_pf,0.0023235643564833985
+calote D+1..45 (ye_0),f_dora_score_pj,0.02189458067475103
+calote D+1..45 (ye_0),f_dora_pefin_pf_qtd,0.0
+calote D+1..45 (ye_0),f_dora_pefin_pf_valor,0.030803496479067327
+calote D+1..45 (ye_0),f_dora_refin_pf_qtd,0.0
+calote D+1..45 (ye_0),f_dora_refin_pf_valor,0.003272018059552906
+calote D+1..45 (ye_0),f_dora_protesto_pf_qtd,0.00208746130414994
+calote D+1..45 (ye_0),f_dora_protesto_pf_valor,0.0
+calote D+1..45 (ye_0),f_dora_cobranca_pf_qtd,0.017609446512042215
+calote D+1..45 (ye_0),f_dora_cobranca_pf_valor,0.030739779150811053
+calote D+1..45 (ye_0),f_dora_divida_total_pf,0.00557118016894087
+calote D+1..45 (ye_0),f_dora_pefin_pj_qtd,0.022580641270036228
+calote D+1..45 (ye_0),f_dora_pefin_pj_valor,0.0
+calote D+1..45 (ye_0),f_dora_refin_pj_qtd,0.030882275318029784
+calote D+1..45 (ye_0),f_dora_refin_pj_valor,0.004570175452067726
+calote D+1..45 (ye_0),f_dora_protesto_pj_qtd,0.009564763366637141
+calote D+1..45 (ye_0),f_dora_protesto_pj_valor,0.00931305824641937
+calote D+1..45 (ye_0),f_dora_cobranca_pj_qtd,0.007477244145676298
+calote D+1..45 (ye_0),f_dora_cobranca_pj_valor,0.03830184197038067
+calote D+1..45 (ye_0),f_dora_divida_total_pj,0.0005657555072002829
+calote D+1..45 (ye_0),f_dora_dias_nota_ate_contrato,0.0
+calote D+1..45 (ye_0),f_dora_idade_cnpj_meses,0.0
+calote D+1..45 (ye_0),f_dora_idade_nota,0.02137460253574508
+calote D+1..45 (ye_0),f_int_vendas_mensais,0.0
+calote D+1..45 (ye_0),f_int_processos_total,0.01754831096272147
+calote D+1..45 (ye_0),f_int_processos_ativos,0.0
+calote D+1..45 (ye_0),f_int_processos_passivo,0.0
+calote D+1..45 (ye_0),f_int_idade,0.0
+calote D+1..45 (ye_0),f_chat_msgs_cliente,0.0
+calote D+1..45 (ye_0),f_chat_msgs_empresa,0.0
+calote D+1..45 (ye_0),f_chat_tam_medio_cliente,0.00861263632494813
+calote D+1..45 (ye_0),f_chat_dias_lead_ate_contrato,0.004531911606281636
+calote D+1..45 (ye_0),x_nome_tokens,0.0
+calote D+1..45 (ye_0),x_nome_tamanho,0.042174452617166125
+calote D+1..45 (ye_0),x_chat_msgs,0.005560950648352492
+calote D+1..45 (ye_0),x_chat_tam_medio,0.010898107624427666
+calote D+1..45 (ye_0),x_chat_tam_max,0.0
+calote D+1..45 (ye_0),x_chat_hora_primeira,0.018735997757207024
+calote D+1..45 (ye_0),x_chat_dow_primeira,0.014212395808602896
+calote D+1..45 (ye_0),x_chat_resp_mediana_s,0.028552558708022424
+calote D+1..45 (ye_0),x_chat_resp_rapida_60s,0.01048970406818528
+calote D+1..45 (ye_0),x_chat_emojis,0.0
+calote D+1..45 (ye_0),x_chat_perguntas,0.0
+calote D+1..45 (ye_0),x_chat_maiusculas_pct,0.020088802619039114
+calote D+1..45 (ye_0),x_chat_exclamacoes,0.024023014372408724
+calote D+1..45 (ye_0),x_chat_numeros_pct,0.006732520749313853
+calote D+1..45 (ye_0),x_chat_dias_conversa,0.006979341070656897
+calote D+1..45 (ye_0),rfb_capital_log,0.0
+calote D+1..45 (ye_0),rfb_idade_empresa_meses,0.0
+calote D+1..45 (ye_0),m_n_imagens,0.0
+calote D+1..45 (ye_0),m_n_videos,0.025660698938783977
+calote D+1..45 (ye_0),m_n_arquivos,0.0
+calote D+1..45 (ye_0),m_n_anexos,0.021076086425904084
+calote D+1..45 (ye_0),m_img_med_p_fachada_comercio,0.00301941069116074
+calote D+1..45 (ye_0),m_img_med_p_casa_residencial,0.0
+calote D+1..45 (ye_0),m_img_med_p_interior_loja,0.0048833191502417606
+calote D+1..45 (ye_0),m_img_med_p_documento,0.0
+calote D+1..45 (ye_0),m_img_med_p_maquininha,0.0
+calote D+1..45 (ye_0),m_img_med_p_rua,0.0
+calote D+1..45 (ye_0),m_img_med_p_captura_tela,0.01821151082309269
+calote D+1..45 (ye_0),m_img_med_p_pessoa,0.0
+calote D+1..45 (ye_0),m_img_max_fachada,0.009470850670745712
+calote D+1..45 (ye_0),m_img_max_captura,0.02280583273966119
+calote D+1..45 (ye_0),m_img_nitidez,0.0
+calote D+1..45 (ye_0),m_img_brilho,0.005168890174724883
+calote D+1..45 (ye_0),m_img_n_proc,0.0
+calote D+1..45 (ye_0),m_img_reuso_outros_clientes,0.0
+calote D+1..45 (ye_0),m_img_pc1,0.0
+calote D+1..45 (ye_0),m_img_pc2,0.0037159616010988827
+calote D+1..45 (ye_0),m_img_pc3,0.003569169546419282
+calote D+1..45 (ye_0),m_img_pc4,0.0
+calote D+1..45 (ye_0),m_img_pc5,0.0
+calote D+1..45 (ye_0),m_img_pc6,0.0
+calote D+1..45 (ye_0),m_img_pc7,0.004205596499717856
+calote D+1..45 (ye_0),m_img_pc8,0.033804386783165
+calote D+1..45 (ye_0),m_pdf_n,0.0016218979153723723
+calote D+1..45 (ye_0),m_pdf_n_extrato,0.0
+calote D+1..45 (ye_0),m_pdf_n_vendas,0.0
+calote D+1..45 (ye_0),m_pdf_sem_texto,0.015629884462324384
+calote D+1..45 (ye_0),m_pdf_paginas_med,0.0012298840288296198
+calote D+1..45 (ye_0),m_vid_n,0.015098197095578136
+calote ate D+30,qtd_parcelas_contratadas,0.024806514279902547
+calote ate D+30,prev_n_parcelas,0.005970526550702626
+calote ate D+30,prev_contratos,0.007995832660972813
+calote ate D+30,idade_na_contratacao,0.019890589977322737
+calote ate D+30,tempo_de_casa_dias,0.0
+calote ate D+30,razao_parcela_principal,0.024187020784105062
+calote ate D+30,dow_inicio,0.011253475082830366
+calote ate D+30,f_dora_score_pf,0.004183435368321664
+calote ate D+30,f_dora_faixa_pf_ord,0.0
+calote ate D+30,f_dora_taxa_inad_pf,0.0
+calote ate D+30,f_dora_score_pj,0.022431115287434356
+calote ate D+30,f_dora_pefin_pf_qtd,0.0013757331062502764
+calote ate D+30,f_dora_pefin_pf_valor,0.01329652180791685
+calote ate D+30,f_dora_refin_pf_qtd,0.0
+calote ate D+30,f_dora_refin_pf_valor,0.016613401532461047
+calote ate D+30,f_dora_protesto_pf_qtd,0.0
+calote ate D+30,f_dora_protesto_pf_valor,0.0
+calote ate D+30,f_dora_cobranca_pf_qtd,0.0
+calote ate D+30,f_dora_cobranca_pf_valor,0.0
+calote ate D+30,f_dora_divida_total_pf,0.01865227635909994
+calote ate D+30,f_dora_pefin_pj_qtd,0.0009446199272113986
+calote ate D+30,f_dora_pefin_pj_valor,0.006892330809166403
+calote ate D+30,f_dora_refin_pj_qtd,0.0
+calote ate D+30,f_dora_refin_pj_valor,0.012118013369794678
+calote ate D+30,f_dora_protesto_pj_qtd,0.0
+calote ate D+30,f_dora_protesto_pj_valor,0.008205279482191408
+calote ate D+30,f_dora_cobranca_pj_qtd,0.009411276178337147
+calote ate D+30,f_dora_cobranca_pj_valor,0.0
+calote ate D+30,f_dora_divida_total_pj,0.010930632524141615
+calote ate D+30,f_dora_dias_nota_ate_contrato,0.0018229821448541017
+calote ate D+30,f_dora_idade_cnpj_meses,0.0
+calote ate D+30,f_dora_idade_nota,0.01911560882588681
+calote ate D+30,f_int_vendas_mensais,0.0
+calote ate D+30,f_int_processos_total,0.0031244925026059356
+calote ate D+30,f_int_processos_ativos,0.0
+calote ate D+30,f_int_processos_passivo,0.02570946314795375
+calote ate D+30,f_int_idade,0.00022754696447213618
+calote ate D+30,f_chat_msgs_cliente,0.0008927828554563533
+calote ate D+30,f_chat_msgs_empresa,0.00851429157276673
+calote ate D+30,f_chat_tam_medio_cliente,0.02547558644518233
+calote ate D+30,f_chat_dias_lead_ate_contrato,0.0
+calote ate D+30,x_nome_tokens,0.01743998763872856
+calote ate D+30,x_nome_tamanho,0.0023568397848996447
+calote ate D+30,x_chat_msgs,0.0
+calote ate D+30,x_chat_tam_medio,0.0
+calote ate D+30,x_chat_tam_max,0.0
+calote ate D+30,x_chat_hora_primeira,0.019315115342794176
+calote ate D+30,x_chat_dow_primeira,0.007792327437514235
+calote ate D+30,x_chat_resp_mediana_s,0.0014122707316217564
+calote ate D+30,x_chat_resp_rapida_60s,0.010327343705611725
+calote ate D+30,x_chat_emojis,0.0
+calote ate D+30,x_chat_perguntas,0.0
+calote ate D+30,x_chat_maiusculas_pct,0.0003910459549398837
+calote ate D+30,x_chat_exclamacoes,0.020297047893236275
+calote ate D+30,x_chat_numeros_pct,0.02061135499393396
+calote ate D+30,x_chat_dias_conversa,0.0
+calote ate D+30,rfb_capital_log,0.0
+calote ate D+30,rfb_idade_empresa_meses,0.0
+calote ate D+30,m_n_imagens,0.009424864936764532
+calote ate D+30,m_n_videos,0.0
+calote ate D+30,m_n_arquivos,0.0
+calote ate D+30,m_n_anexos,0.0
+calote ate D+30,m_img_med_p_fachada_comercio,0.009323725237820657
+calote ate D+30,m_img_med_p_casa_residencial,0.025325425822733116
+calote ate D+30,m_img_med_p_interior_loja,0.017096879272907373
+calote ate D+30,m_img_med_p_documento,0.0
+calote ate D+30,m_img_med_p_maquininha,0.015689639952693568
+calote ate D+30,m_img_med_p_rua,0.02556901893314123
+calote ate D+30,m_img_med_p_captura_tela,0.009876749021659581
+calote ate D+30,m_img_med_p_pessoa,0.0
+calote ate D+30,m_img_max_fachada,0.01337293209819368
+calote ate D+30,m_img_max_captura,0.02226069035655609
+calote ate D+30,m_img_nitidez,0.006972600335776846
+calote ate D+30,m_img_brilho,0.010402236061664905
+calote ate D+30,m_img_n_proc,0.0
+calote ate D+30,m_img_reuso_outros_clientes,0.0
+calote ate D+30,m_img_pc1,0.011737035641889992
+calote ate D+30,m_img_pc2,0.0
+calote ate D+30,m_img_pc3,0.03765720856317323
+calote ate D+30,m_img_pc4,0.004911717354273648
+calote ate D+30,m_img_pc5,0.0
+calote ate D+30,m_img_pc6,0.0
+calote ate D+30,m_img_pc7,0.0
+calote ate D+30,m_img_pc8,0.008006750265325824
+calote ate D+30,m_pdf_n,0.007473396237482888
+calote ate D+30,m_pdf_n_extrato,0.0045141747934209775
+calote ate D+30,m_pdf_n_vendas,0.0
+calote ate D+30,m_pdf_sem_texto,0.0
+calote ate D+30,m_pdf_paginas_med,0.0
+calote ate D+30,m_vid_n,0.0005408660312355984
+inadimplencia 30d (atraso),qtd_parcelas_contratadas,0.030539353604932984
+inadimplencia 30d (atraso),prev_n_parcelas,0.0
+inadimplencia 30d (atraso),prev_contratos,0.0
+inadimplencia 30d (atraso),idade_na_contratacao,0.027295210320370522
+inadimplencia 30d (atraso),tempo_de_casa_dias,0.02608837878910819
+inadimplencia 30d (atraso),razao_parcela_principal,0.010085562167658768
+inadimplencia 30d (atraso),dow_inicio,0.0
+inadimplencia 30d (atraso),f_dora_score_pf,0.0024341427771830126
+inadimplencia 30d (atraso),f_dora_faixa_pf_ord,0.0045092616189896795
+inadimplencia 30d (atraso),f_dora_taxa_inad_pf,0.0
+inadimplencia 30d (atraso),f_dora_score_pj,0.00270904764447355
+inadimplencia 30d (atraso),f_dora_pefin_pf_qtd,0.01141965084405383
+inadimplencia 30d (atraso),f_dora_pefin_pf_valor,0.0
+inadimplencia 30d (atraso),f_dora_refin_pf_qtd,0.06887966824600955
+inadimplencia 30d (atraso),f_dora_refin_pf_valor,0.006175337043200724
+inadimplencia 30d (atraso),f_dora_protesto_pf_qtd,0.0
+inadimplencia 30d (atraso),f_dora_protesto_pf_valor,0.0
+inadimplencia 30d (atraso),f_dora_cobranca_pf_qtd,0.0
+inadimplencia 30d (atraso),f_dora_cobranca_pf_valor,0.017178949461031934
+inadimplencia 30d (atraso),f_dora_divida_total_pf,0.016707299997183345
+inadimplencia 30d (atraso),f_dora_pefin_pj_qtd,0.0153568557314534
+inadimplencia 30d (atraso),f_dora_pefin_pj_valor,0.016682482261342724
+inadimplencia 30d (atraso),f_dora_refin_pj_qtd,0.00619613543413422
+inadimplencia 30d (atraso),f_dora_refin_pj_valor,0.0
+inadimplencia 30d (atraso),f_dora_protesto_pj_qtd,0.0
+inadimplencia 30d (atraso),f_dora_protesto_pj_valor,0.0008118967606254301
+inadimplencia 30d (atraso),f_dora_cobranca_pj_qtd,0.0
+inadimplencia 30d (atraso),f_dora_cobranca_pj_valor,0.013234191738980883
+inadimplencia 30d (atraso),f_dora_divida_total_pj,0.04024613056059456
+inadimplencia 30d (atraso),f_dora_dias_nota_ate_contrato,0.0
+inadimplencia 30d (atraso),f_dora_idade_cnpj_meses,0.0036848738107519985
+inadimplencia 30d (atraso),f_dora_idade_nota,0.0
+inadimplencia 30d (atraso),f_int_vendas_mensais,0.006061699838212586
+inadimplencia 30d (atraso),f_int_processos_total,0.0
+inadimplencia 30d (atraso),f_int_processos_ativos,0.0
+inadimplencia 30d (atraso),f_int_processos_passivo,0.006554928747220856
+inadimplencia 30d (atraso),f_int_idade,0.004597370413109925
+inadimplencia 30d (atraso),f_chat_msgs_cliente,0.0
+inadimplencia 30d (atraso),f_chat_msgs_empresa,0.014042743853056816
+inadimplencia 30d (atraso),f_chat_tam_medio_cliente,0.01564612699044199
+inadimplencia 30d (atraso),f_chat_dias_lead_ate_contrato,0.018609673946337058
+inadimplencia 30d (atraso),x_nome_tokens,0.0
+inadimplencia 30d (atraso),x_nome_tamanho,0.017528518615530064
+inadimplencia 30d (atraso),x_chat_msgs,0.001552031887058547
+inadimplencia 30d (atraso),x_chat_tam_medio,0.018564259726929322
+inadimplencia 30d (atraso),x_chat_tam_max,0.013459051075503492
+inadimplencia 30d (atraso),x_chat_hora_primeira,0.006689676767723807
+inadimplencia 30d (atraso),x_chat_dow_primeira,0.0
+inadimplencia 30d (atraso),x_chat_resp_mediana_s,0.0
+inadimplencia 30d (atraso),x_chat_resp_rapida_60s,0.0025190665238716825
+inadimplencia 30d (atraso),x_chat_emojis,0.0
+inadimplencia 30d (atraso),x_chat_perguntas,0.011738832776269525
+inadimplencia 30d (atraso),x_chat_maiusculas_pct,0.008712923149970742
+inadimplencia 30d (atraso),x_chat_exclamacoes,0.01795688605130774
+inadimplencia 30d (atraso),x_chat_numeros_pct,0.0075436707317764196
+inadimplencia 30d (atraso),x_chat_dias_conversa,0.030435082888428777
+inadimplencia 30d (atraso),rfb_capital_log,0.0
+inadimplencia 30d (atraso),rfb_idade_empresa_meses,0.0
+inadimplencia 30d (atraso),m_n_imagens,0.0
+inadimplencia 30d (atraso),m_n_videos,0.0
+inadimplencia 30d (atraso),m_n_arquivos,0.020130426572590565
+inadimplencia 30d (atraso),m_n_anexos,0.010195026230061188
+inadimplencia 30d (atraso),m_img_med_p_fachada_comercio,0.03505008589086511
+inadimplencia 30d (atraso),m_img_med_p_casa_residencial,0.010340196533812573
+inadimplencia 30d (atraso),m_img_med_p_interior_loja,0.0
+inadimplencia 30d (atraso),m_img_med_p_documento,0.0
+inadimplencia 30d (atraso),m_img_med_p_maquininha,0.015445723329250871
+inadimplencia 30d (atraso),m_img_med_p_rua,0.018849249043022098
+inadimplencia 30d (atraso),m_img_med_p_captura_tela,0.00942641956529
+inadimplencia 30d (atraso),m_img_med_p_pessoa,0.014627255221768998
+inadimplencia 30d (atraso),m_img_max_fachada,0.012908864094702821
+inadimplencia 30d (atraso),m_img_max_captura,0.0034197972165288526
+inadimplencia 30d (atraso),m_img_nitidez,0.034755221028148764
+inadimplencia 30d (atraso),m_img_brilho,0.018818509152897622
+inadimplencia 30d (atraso),m_img_n_proc,0.0
+inadimplencia 30d (atraso),m_img_reuso_outros_clientes,0.014652258367517046
+inadimplencia 30d (atraso),m_img_pc1,0.02048518067691596
+inadimplencia 30d (atraso),m_img_pc2,0.0040871114123963714
+inadimplencia 30d (atraso),m_img_pc3,0.0
+inadimplencia 30d (atraso),m_img_pc4,0.0
+inadimplencia 30d (atraso),m_img_pc5,0.005037493835751139
+inadimplencia 30d (atraso),m_img_pc6,0.014665329025111973
+inadimplencia 30d (atraso),m_img_pc7,0.021452575200557877
+inadimplencia 30d (atraso),m_img_pc8,0.010094932909553211
+inadimplencia 30d (atraso),m_pdf_n,0.006935677798291184
+inadimplencia 30d (atraso),m_pdf_n_extrato,0.004809094630874977
+inadimplencia 30d (atraso),m_pdf_n_vendas,0.0
+inadimplencia 30d (atraso),m_pdf_sem_texto,0.0
+inadimplencia 30d (atraso),m_pdf_paginas_med,0.0
+inadimplencia 30d (atraso),m_vid_n,0.0
+cluster 'paga e para',qtd_parcelas_contratadas,0.014981220924282557
+cluster 'paga e para',prev_n_parcelas,0.0
+cluster 'paga e para',prev_contratos,0.007553329501787331
+cluster 'paga e para',idade_na_contratacao,0.02683713399528731
+cluster 'paga e para',tempo_de_casa_dias,0.0
+cluster 'paga e para',razao_parcela_principal,0.03421013429395048
+cluster 'paga e para',dow_inicio,0.009483408457104492
+cluster 'paga e para',f_dora_score_pf,0.0
+cluster 'paga e para',f_dora_faixa_pf_ord,0.004597440840013789
+cluster 'paga e para',f_dora_taxa_inad_pf,0.0
+cluster 'paga e para',f_dora_score_pj,0.016613081258886275
+cluster 'paga e para',f_dora_pefin_pf_qtd,0.0
+cluster 'paga e para',f_dora_pefin_pf_valor,0.00970613703957035
+cluster 'paga e para',f_dora_refin_pf_qtd,0.0
+cluster 'paga e para',f_dora_refin_pf_valor,0.005923736596034068
+cluster 'paga e para',f_dora_protesto_pf_qtd,0.0
+cluster 'paga e para',f_dora_protesto_pf_valor,0.0
+cluster 'paga e para',f_dora_cobranca_pf_qtd,0.008248101739613212
+cluster 'paga e para',f_dora_cobranca_pf_valor,0.0
+cluster 'paga e para',f_dora_divida_total_pf,0.0
+cluster 'paga e para',f_dora_pefin_pj_qtd,0.0
+cluster 'paga e para',f_dora_pefin_pj_valor,0.0
+cluster 'paga e para',f_dora_refin_pj_qtd,0.0
+cluster 'paga e para',f_dora_refin_pj_valor,0.0
+cluster 'paga e para',f_dora_protesto_pj_qtd,0.0
+cluster 'paga e para',f_dora_protesto_pj_valor,0.0013373656340114337
+cluster 'paga e para',f_dora_cobranca_pj_qtd,0.0
+cluster 'paga e para',f_dora_cobranca_pj_valor,0.01331777877933904
+cluster 'paga e para',f_dora_divida_total_pj,0.0
+cluster 'paga e para',f_dora_dias_nota_ate_contrato,0.0
+cluster 'paga e para',f_dora_idade_cnpj_meses,0.0
+cluster 'paga e para',f_dora_idade_nota,0.02741563409432901
+cluster 'paga e para',f_int_vendas_mensais,0.014990483851396341
+cluster 'paga e para',f_int_processos_total,0.001826277258774489
+cluster 'paga e para',f_int_processos_ativos,0.006347530448437055
+cluster 'paga e para',f_int_processos_passivo,0.0
+cluster 'paga e para',f_int_idade,0.012549590398873267
+cluster 'paga e para',f_chat_msgs_cliente,0.0
+cluster 'paga e para',f_chat_msgs_empresa,0.0
+cluster 'paga e para',f_chat_tam_medio_cliente,0.00864275435755646
+cluster 'paga e para',f_chat_dias_lead_ate_contrato,0.0090524870283053
+cluster 'paga e para',x_nome_tokens,0.0005737449674971806
+cluster 'paga e para',x_nome_tamanho,0.040614789329439294
+cluster 'paga e para',x_chat_msgs,0.0
+cluster 'paga e para',x_chat_tam_medio,0.0
+cluster 'paga e para',x_chat_tam_max,0.0
+cluster 'paga e para',x_chat_hora_primeira,0.01989046079633372
+cluster 'paga e para',x_chat_dow_primeira,0.01715558128546757
+cluster 'paga e para',x_chat_resp_mediana_s,0.019958825515868917
+cluster 'paga e para',x_chat_resp_rapida_60s,0.01044165770638461
+cluster 'paga e para',x_chat_emojis,0.0
+cluster 'paga e para',x_chat_perguntas,0.0
+cluster 'paga e para',x_chat_maiusculas_pct,0.0
+cluster 'paga e para',x_chat_exclamacoes,0.009667998046306803
+cluster 'paga e para',x_chat_numeros_pct,0.015741430080924435
+cluster 'paga e para',x_chat_dias_conversa,0.005825583853050986
+cluster 'paga e para',rfb_capital_log,0.0
+cluster 'paga e para',rfb_idade_empresa_meses,0.000654253006195038
+cluster 'paga e para',m_n_imagens,0.004942456818578744
+cluster 'paga e para',m_n_videos,0.00022251163136077778
+cluster 'paga e para',m_n_arquivos,0.00022621544934375848
+cluster 'paga e para',m_n_anexos,0.0
+cluster 'paga e para',m_img_med_p_fachada_comercio,0.014625407487300457
+cluster 'paga e para',m_img_med_p_casa_residencial,0.010398146462846203
+cluster 'paga e para',m_img_med_p_interior_loja,0.01707573796791584
+cluster 'paga e para',m_img_med_p_documento,0.00027848497384930226
+cluster 'paga e para',m_img_med_p_maquininha,0.0
+cluster 'paga e para',m_img_med_p_rua,0.0246945967172012
+cluster 'paga e para',m_img_med_p_captura_tela,0.016664973850595732
+cluster 'paga e para',m_img_med_p_pessoa,0.0
+cluster 'paga e para',m_img_max_fachada,0.0049757193616351
+cluster 'paga e para',m_img_max_captura,0.022337685224394832
+cluster 'paga e para',m_img_nitidez,0.0
+cluster 'paga e para',m_img_brilho,0.0
+cluster 'paga e para',m_img_n_proc,0.016747237528463632
+cluster 'paga e para',m_img_reuso_outros_clientes,0.009497873818849367
+cluster 'paga e para',m_img_pc1,0.010899874124298936
+cluster 'paga e para',m_img_pc2,0.007482357318240318
+cluster 'paga e para',m_img_pc3,0.021976105931253986
+cluster 'paga e para',m_img_pc4,0.013027405121396551
+cluster 'paga e para',m_img_pc5,0.021387305024027192
+cluster 'paga e para',m_img_pc6,0.02186250521910038
+cluster 'paga e para',m_img_pc7,0.0
+cluster 'paga e para',m_img_pc8,0.015671228338978604
+cluster 'paga e para',m_pdf_n,0.0072955334325821575
+cluster 'paga e para',m_pdf_n_extrato,0.005243243739693426
+cluster 'paga e para',m_pdf_n_vendas,0.008896854219129668
+cluster 'paga e para',m_pdf_sem_texto,0.0
+cluster 'paga e para',m_pdf_paginas_med,0.0
+cluster 'paga e para',m_vid_n,0.0

@@ -1,0 +1,25 @@
+estrato,alvo,efeito,n,p_lr
+sem Pix,calote D+1..45,dia da semana,474,0.3116439533862607
+sem Pix,calote D+1..45,semana do mes,474,0.1437437800475233
+sem Pix,calote D+1..45,mes de inicio (safra),474,0.06951192040113396
+sem Pix,calote ate D+30,dia da semana,510,0.10364180546101714
+sem Pix,calote ate D+30,semana do mes,510,0.03192782334153673
+sem Pix,calote ate D+30,mes de inicio (safra),510,0.022134038407039362
+sem Pix,inadimplencia D+1..45,dia da semana,527,0.6262094195564202
+sem Pix,inadimplencia D+1..45,semana do mes,527,0.009410360739603076
+sem Pix,inadimplencia D+1..45,mes de inicio (safra),527,8.194357046096668e-09
+sem Pix,cluster paga e para,dia da semana,475,0.11936931170281004
+sem Pix,cluster paga e para,semana do mes,475,0.09927996296767923
+sem Pix,cluster paga e para,mes de inicio (safra),475,0.3992308756813521
+todos (controla Pix),calote D+1..45,dia da semana,569,0.23389965999948034
+todos (controla Pix),calote D+1..45,semana do mes,569,0.09724941115346898
+todos (controla Pix),calote D+1..45,mes de inicio (safra),569,0.011528208904843575
+todos (controla Pix),calote ate D+30,dia da semana,625,0.0720114530849551
+todos (controla Pix),calote ate D+30,semana do mes,625,0.0418705660061345
+todos (controla Pix),calote ate D+30,mes de inicio (safra),625,0.008450476422121133
+todos (controla Pix),inadimplencia D+1..45,dia da semana,671,0.7042583652183518
+todos (controla Pix),inadimplencia D+1..45,semana do mes,671,0.017348953382186325
+todos (controla Pix),inadimplencia D+1..45,mes de inicio (safra),671,1.4489975190055107e-09
+todos (controla Pix),cluster paga e para,dia da semana,572,0.04874184989928479
+todos (controla Pix),cluster paga e para,semana do mes,572,0.05144165286565392
+todos (controla Pix),cluster paga e para,mes de inicio (safra),572,0.2449863369267478

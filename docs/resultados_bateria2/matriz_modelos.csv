@@ -1,0 +1,961 @@
+estrato,alvo,conjunto,algoritmo,auc,n
+todos,calote D+1..45,A enxuto (6 + provedor),l1,0.520611439842209,259
+todos,calote D+1..45,A enxuto (6 + provedor),l2,0.3023997370151217,259
+todos,calote D+1..45,A enxuto (6 + provedor),arvore,0.6183431952662722,259
+todos,calote D+1..45,A enxuto (6 + provedor),rf,0.6338593030900723,259
+todos,calote D+1..45,A enxuto (6 + provedor),extratrees,0.6,259
+todos,calote D+1..45,A enxuto (6 + provedor),hgb,0.6213675213675214,259
+todos,calote D+1..45,A enxuto (6 + provedor),lgbm,0.6213675213675214,259
+todos,calote D+1..45,A enxuto (6 + provedor),nb,0.5051282051282052,259
+todos,calote D+1..45,A enxuto (6 + provedor),knn,0.49697567389875086,259
+todos,calote D+1..45,A enxuto (6 + provedor),svm,0.5071992110453649,259
+todos,calote D+1..45,A enxuto (6 + provedor),mlp,0.24342537804076264,259
+todos,calote D+1..45,A enxuto (6 + provedor),comite,0.5237015121630505,259
+todos,calote D+1..45,B enxuto + termos do contrato,l1,0.5042077580539118,259
+todos,calote D+1..45,B enxuto + termos do contrato,l2,0.29664694280078896,259
+todos,calote D+1..45,B enxuto + termos do contrato,arvore,0.5701183431952662,259
+todos,calote D+1..45,B enxuto + termos do contrato,rf,0.6159434582511505,259
+todos,calote D+1..45,B enxuto + termos do contrato,extratrees,0.5889217619986851,259
+todos,calote D+1..45,B enxuto + termos do contrato,hgb,0.603155818540434,259
+todos,calote D+1..45,B enxuto + termos do contrato,lgbm,0.603155818540434,259
+todos,calote D+1..45,B enxuto + termos do contrato,nb,0.5047994740302434,259
+todos,calote D+1..45,B enxuto + termos do contrato,knn,0.4594345825115056,259
+todos,calote D+1..45,B enxuto + termos do contrato,svm,0.4958579881656805,259
+todos,calote D+1..45,B enxuto + termos do contrato,mlp,0.3414858645627876,259
+todos,calote D+1..45,B enxuto + termos do contrato,comite,0.506508875739645,259
+todos,calote D+1..45,C enxuto + endereco dividido + inconsistencias,l1,0.520611439842209,259
+todos,calote D+1..45,C enxuto + endereco dividido + inconsistencias,l2,0.2948717948717949,259
+todos,calote D+1..45,C enxuto + endereco dividido + inconsistencias,arvore,0.6223865877712031,259
+todos,calote D+1..45,C enxuto + endereco dividido + inconsistencias,rf,0.6151873767258382,259
+todos,calote D+1..45,C enxuto + endereco dividido + inconsistencias,extratrees,0.5879684418145957,259
+todos,calote D+1..45,C enxuto + endereco dividido + inconsistencias,hgb,0.6260683760683762,259
+todos,calote D+1..45,C enxuto + endereco dividido + inconsistencias,lgbm,0.6260683760683762,259
+todos,calote D+1..45,C enxuto + endereco dividido + inconsistencias,nb,0.5051282051282052,259
+todos,calote D+1..45,C enxuto + endereco dividido + inconsistencias,knn,0.5109796186719264,259
+todos,calote D+1..45,C enxuto + endereco dividido + inconsistencias,svm,0.44352399737015125,259
+todos,calote D+1..45,C enxuto + endereco dividido + inconsistencias,mlp,0.2597633136094674,259
+todos,calote D+1..45,C enxuto + endereco dividido + inconsistencias,comite,0.5171268902038132,259
+todos,calote D+1..45,D enxuto + cluster do contrato anterior,l1,0.520611439842209,259
+todos,calote D+1..45,D enxuto + cluster do contrato anterior,l2,0.3023997370151217,259
+todos,calote D+1..45,D enxuto + cluster do contrato anterior,arvore,0.6183431952662722,259
+todos,calote D+1..45,D enxuto + cluster do contrato anterior,rf,0.6338593030900723,259
+todos,calote D+1..45,D enxuto + cluster do contrato anterior,extratrees,0.6,259
+todos,calote D+1..45,D enxuto + cluster do contrato anterior,hgb,0.6213675213675214,259
+todos,calote D+1..45,D enxuto + cluster do contrato anterior,lgbm,0.6213675213675214,259
+todos,calote D+1..45,D enxuto + cluster do contrato anterior,nb,0.5051282051282052,259
+todos,calote D+1..45,D enxuto + cluster do contrato anterior,knn,0.49697567389875086,259
+todos,calote D+1..45,D enxuto + cluster do contrato anterior,svm,0.5071992110453649,259
+todos,calote D+1..45,D enxuto + cluster do contrato anterior,mlp,0.24342537804076264,259
+todos,calote D+1..45,D enxuto + cluster do contrato anterior,comite,0.5237015121630505,259
+todos,calote D+1..45,E enxuto + tom engajamento,l1,0.5250164365548982,259
+todos,calote D+1..45,E enxuto + tom engajamento,l2,0.3193951347797502,259
+todos,calote D+1..45,E enxuto + tom engajamento,arvore,0.6420118343195266,259
+todos,calote D+1..45,E enxuto + tom engajamento,rf,0.6384615384615383,259
+todos,calote D+1..45,E enxuto + tom engajamento,extratrees,0.6088428665351743,259
+todos,calote D+1..45,E enxuto + tom engajamento,hgb,0.6268902038132806,259
+todos,calote D+1..45,E enxuto + tom engajamento,lgbm,0.6268902038132806,259
+todos,calote D+1..45,E enxuto + tom engajamento,nb,0.5051282051282052,259
+todos,calote D+1..45,E enxuto + tom engajamento,knn,0.4516107823800132,259
+todos,calote D+1..45,E enxuto + tom engajamento,svm,0.4391847468770546,259
+todos,calote D+1..45,E enxuto + tom engajamento,mlp,0.2717948717948718,259
+todos,calote D+1..45,E enxuto + tom engajamento,comite,0.5173570019723867,259
+todos,calote D+1..45,F enxuto + 12 tons,l1,0.495956607495069,259
+todos,calote D+1..45,F enxuto + 12 tons,l2,0.3548980933596318,259
+todos,calote D+1..45,F enxuto + 12 tons,arvore,0.5307692307692308,259
+todos,calote D+1..45,F enxuto + 12 tons,rf,0.6415516107823801,259
+todos,calote D+1..45,F enxuto + 12 tons,extratrees,0.6160420775805391,259
+todos,calote D+1..45,F enxuto + 12 tons,hgb,0.5941485864562788,259
+todos,calote D+1..45,F enxuto + 12 tons,lgbm,0.5941485864562788,259
+todos,calote D+1..45,F enxuto + 12 tons,nb,0.5052268244575938,259
+todos,calote D+1..45,F enxuto + 12 tons,knn,0.43142669296515446,259
+todos,calote D+1..45,F enxuto + 12 tons,svm,0.4683760683760684,259
+todos,calote D+1..45,F enxuto + 12 tons,mlp,0.39631821170282705,259
+todos,calote D+1..45,F enxuto + 12 tons,comite,0.5230111768573307,259
+todos,calote D+1..45,G enxuto + pib/porte,l1,0.520611439842209,259
+todos,calote D+1..45,G enxuto + pib/porte,l2,0.3031229454306378,259
+todos,calote D+1..45,G enxuto + pib/porte,arvore,0.6183431952662722,259
+todos,calote D+1..45,G enxuto + pib/porte,rf,0.6205128205128205,259
+todos,calote D+1..45,G enxuto + pib/porte,extratrees,0.5984549638395792,259
+todos,calote D+1..45,G enxuto + pib/porte,hgb,0.6009204470742933,259
+todos,calote D+1..45,G enxuto + pib/porte,lgbm,0.6009204470742933,259
+todos,calote D+1..45,G enxuto + pib/porte,nb,0.5051282051282052,259
+todos,calote D+1..45,G enxuto + pib/porte,knn,0.49608809993425373,259
+todos,calote D+1..45,G enxuto + pib/porte,svm,0.5085141354372124,259
+todos,calote D+1..45,G enxuto + pib/porte,mlp,0.26761998685075605,259
+todos,calote D+1..45,G enxuto + pib/porte,comite,0.5185404339250493,259
+todos,calote D+1..45,H enxuto + dias lead + pagou bem,l1,0.520611439842209,259
+todos,calote D+1..45,H enxuto + dias lead + pagou bem,l2,0.2957264957264957,259
+todos,calote D+1..45,H enxuto + dias lead + pagou bem,arvore,0.6474687705456936,259
+todos,calote D+1..45,H enxuto + dias lead + pagou bem,rf,0.6327744904667981,259
+todos,calote D+1..45,H enxuto + dias lead + pagou bem,extratrees,0.5838264299802761,259
+todos,calote D+1..45,H enxuto + dias lead + pagou bem,hgb,0.62853385930309,259
+todos,calote D+1..45,H enxuto + dias lead + pagou bem,lgbm,0.62853385930309,259
+todos,calote D+1..45,H enxuto + dias lead + pagou bem,nb,0.5050295857988166,259
+todos,calote D+1..45,H enxuto + dias lead + pagou bem,knn,0.511801446416831,259
+todos,calote D+1..45,H enxuto + dias lead + pagou bem,svm,0.4559500328731098,259
+todos,calote D+1..45,H enxuto + dias lead + pagou bem,mlp,0.27001972386587775,259
+todos,calote D+1..45,H enxuto + dias lead + pagou bem,comite,0.5282380013149244,259
+todos,calote D+1..45,I enxuto + compart + anterior + tom engaj,l1,0.5250164365548982,259
+todos,calote D+1..45,I enxuto + compart + anterior + tom engaj,l2,0.31886916502301116,259
+todos,calote D+1..45,I enxuto + compart + anterior + tom engaj,arvore,0.6420118343195266,259
+todos,calote D+1..45,I enxuto + compart + anterior + tom engaj,rf,0.625871137409599,259
+todos,calote D+1..45,I enxuto + compart + anterior + tom engaj,extratrees,0.5938856015779093,259
+todos,calote D+1..45,I enxuto + compart + anterior + tom engaj,hgb,0.6265614727153189,259
+todos,calote D+1..45,I enxuto + compart + anterior + tom engaj,lgbm,0.6265614727153189,259
+todos,calote D+1..45,I enxuto + compart + anterior + tom engaj,nb,0.5051282051282052,259
+todos,calote D+1..45,I enxuto + compart + anterior + tom engaj,knn,0.45042735042735044,259
+todos,calote D+1..45,I enxuto + compart + anterior + tom engaj,svm,0.43399079552925707,259
+todos,calote D+1..45,I enxuto + compart + anterior + tom engaj,mlp,0.29927679158448384,259
+todos,calote D+1..45,I enxuto + compart + anterior + tom engaj,comite,0.5198553583168968,259
+todos,calote D+1..45,J tudo acima,l1,0.49286653517422746,259
+todos,calote D+1..45,J tudo acima,l2,0.3520052596975674,259
+todos,calote D+1..45,J tudo acima,arvore,0.5307692307692308,259
+todos,calote D+1..45,J tudo acima,rf,0.6064431295200526,259
+todos,calote D+1..45,J tudo acima,extratrees,0.6113740959894807,259
+todos,calote D+1..45,J tudo acima,hgb,0.5891518737672584,259
+todos,calote D+1..45,J tudo acima,lgbm,0.5891518737672584,259
+todos,calote D+1..45,J tudo acima,nb,0.5051282051282052,259
+todos,calote D+1..45,J tudo acima,knn,0.42958579881656805,259
+todos,calote D+1..45,J tudo acima,svm,0.5066403681788297,259
+todos,calote D+1..45,J tudo acima,mlp,0.4444444444444444,259
+todos,calote D+1..45,J tudo acima,comite,0.5227810650887573,259
+todos,calote ate D+30,A enxuto (6 + provedor),l1,0.6168090665160288,389
+todos,calote ate D+30,A enxuto (6 + provedor),l2,0.4231923457138822,389
+todos,calote ate D+30,A enxuto (6 + provedor),arvore,0.5672221437650049,389
+todos,calote ate D+30,A enxuto (6 + provedor),rf,0.6006390340347408,389
+todos,calote ate D+30,A enxuto (6 + provedor),extratrees,0.5511050699053807,389
+todos,calote ate D+30,A enxuto (6 + provedor),hgb,0.5702407851998305,389
+todos,calote ate D+30,A enxuto (6 + provedor),lgbm,0.5702407851998305,389
+todos,calote ate D+30,A enxuto (6 + provedor),nb,0.5042366897330887,389
+todos,calote ate D+30,A enxuto (6 + provedor),knn,0.4770159581979946,389
+todos,calote ate D+30,A enxuto (6 + provedor),svm,0.47548015816975,389
+todos,calote ate D+30,A enxuto (6 + provedor),mlp,0.38661559101821774,389
+todos,calote ate D+30,A enxuto (6 + provedor),comite,0.5323577178364638,389
+todos,calote ate D+30,B enxuto + termos do contrato,l1,0.6168090665160288,389
+todos,calote ate D+30,B enxuto + termos do contrato,l2,0.42824106764581277,389
+todos,calote ate D+30,B enxuto + termos do contrato,arvore,0.5502577319587629,389
+todos,calote ate D+30,B enxuto + termos do contrato,rf,0.5820329049569269,389
+todos,calote ate D+30,B enxuto + termos do contrato,extratrees,0.5336110718825025,389
+todos,calote ate D+30,B enxuto + termos do contrato,hgb,0.5767193899166785,389
+todos,calote ate D+30,B enxuto + termos do contrato,lgbm,0.5767193899166785,389
+todos,calote ate D+30,B enxuto + termos do contrato,nb,0.504466177093631,389
+todos,calote ate D+30,B enxuto + termos do contrato,knn,0.5062667702301935,389
+todos,calote ate D+30,B enxuto + termos do contrato,svm,0.5113507979098997,389
+todos,calote ate D+30,B enxuto + termos do contrato,mlp,0.4498128795367886,389
+todos,calote ate D+30,B enxuto + termos do contrato,comite,0.5486689733088547,389
+todos,calote ate D+30,C enxuto + endereco dividido + inconsistencias,l1,0.6168090665160288,389
+todos,calote ate D+30,C enxuto + endereco dividido + inconsistencias,l2,0.415407428329332,389
+todos,calote ate D+30,C enxuto + endereco dividido + inconsistencias,arvore,0.5956256178505861,389
+todos,calote ate D+30,C enxuto + endereco dividido + inconsistencias,rf,0.5846808360401073,389
+todos,calote ate D+30,C enxuto + endereco dividido + inconsistencias,extratrees,0.5394012145177234,389
+todos,calote ate D+30,C enxuto + endereco dividido + inconsistencias,hgb,0.5942486936873322,389
+todos,calote ate D+30,C enxuto + endereco dividido + inconsistencias,lgbm,0.5942486936873322,389
+todos,calote ate D+30,C enxuto + endereco dividido + inconsistencias,nb,0.504183731111425,389
+todos,calote ate D+30,C enxuto + endereco dividido + inconsistencias,knn,0.4800522525067081,389
+todos,calote ate D+30,C enxuto + endereco dividido + inconsistencias,svm,0.38384408981782236,389
+todos,calote ate D+30,C enxuto + endereco dividido + inconsistencias,mlp,0.3576472249682248,389
+todos,calote ate D+30,C enxuto + endereco dividido + inconsistencias,comite,0.5305747775737889,389
+todos,calote ate D+30,D enxuto + cluster do contrato anterior,l1,0.6168090665160288,389
+todos,calote ate D+30,D enxuto + cluster do contrato anterior,l2,0.4231923457138822,389
+todos,calote ate D+30,D enxuto + cluster do contrato anterior,arvore,0.5672221437650049,389
+todos,calote ate D+30,D enxuto + cluster do contrato anterior,rf,0.6006390340347408,389
+todos,calote ate D+30,D enxuto + cluster do contrato anterior,extratrees,0.5511050699053807,389
+todos,calote ate D+30,D enxuto + cluster do contrato anterior,hgb,0.5702407851998305,389
+todos,calote ate D+30,D enxuto + cluster do contrato anterior,lgbm,0.5702407851998305,389
+todos,calote ate D+30,D enxuto + cluster do contrato anterior,nb,0.5042366897330887,389
+todos,calote ate D+30,D enxuto + cluster do contrato anterior,knn,0.4770159581979946,389
+todos,calote ate D+30,D enxuto + cluster do contrato anterior,svm,0.47548015816975,389
+todos,calote ate D+30,D enxuto + cluster do contrato anterior,mlp,0.38661559101821774,389
+todos,calote ate D+30,D enxuto + cluster do contrato anterior,comite,0.5323577178364638,389
+todos,calote ate D+30,E enxuto + tom engajamento,l1,0.6074706962293461,389
+todos,calote ate D+30,E enxuto + tom engajamento,l2,0.4329896907216495,389
+todos,calote ate D+30,E enxuto + tom engajamento,arvore,0.5686696794238102,389
+todos,calote ate D+30,E enxuto + tom engajamento,rf,0.6141787883067363,389
+todos,calote ate D+30,E enxuto + tom engajamento,extratrees,0.5490396836604999,389
+todos,calote ate D+30,E enxuto + tom engajamento,hgb,0.6108070893941534,389
+todos,calote ate D+30,E enxuto + tom engajamento,lgbm,0.6108070893941534,389
+todos,calote ate D+30,E enxuto + tom engajamento,nb,0.504324954102528,389
+todos,calote ate D+30,E enxuto + tom engajamento,knn,0.544061573224121,389
+todos,calote ate D+30,E enxuto + tom engajamento,svm,0.454596808360401,389
+todos,calote ate D+30,E enxuto + tom engajamento,mlp,0.4217271571811891,389
+todos,calote ate D+30,E enxuto + tom engajamento,comite,0.5590135574071458,389
+todos,calote ate D+30,F enxuto + 12 tons,l1,0.5910711763875159,389
+todos,calote ate D+30,F enxuto + 12 tons,l2,0.46148142917667,389
+todos,calote ate D+30,F enxuto + 12 tons,arvore,0.5186767405733653,389
+todos,calote ate D+30,F enxuto + 12 tons,rf,0.5648566586640305,389
+todos,calote ate D+30,F enxuto + 12 tons,extratrees,0.5781669255754838,389
+todos,calote ate D+30,F enxuto + 12 tons,hgb,0.5659158310973026,389
+todos,calote ate D+30,F enxuto + 12 tons,lgbm,0.5659158310973026,389
+todos,calote ate D+30,F enxuto + 12 tons,nb,0.5073612484112413,389
+todos,calote ate D+30,F enxuto + 12 tons,knn,0.5337876006213812,389
+todos,calote ate D+30,F enxuto + 12 tons,svm,0.4524784634938568,389
+todos,calote ate D+30,F enxuto + 12 tons,mlp,0.459045332580144,389
+todos,calote ate D+30,F enxuto + 12 tons,comite,0.5451737042790566,389
+todos,calote ate D+30,G enxuto + pib/porte,l1,0.6117073859624348,389
+todos,calote ate D+30,G enxuto + pib/porte,l2,0.42022666290072025,389
+todos,calote ate D+30,G enxuto + pib/porte,arvore,0.5590665160288094,389
+todos,calote ate D+30,G enxuto + pib/porte,rf,0.5867638751588758,389
+todos,calote ate D+30,G enxuto + pib/porte,extratrees,0.5453325801440474,389
+todos,calote ate D+30,G enxuto + pib/porte,hgb,0.5968083604010733,389
+todos,calote ate D+30,G enxuto + pib/porte,lgbm,0.5968083604010733,389
+todos,calote ate D+30,G enxuto + pib/porte,nb,0.5042013839853129,389
+todos,calote ate D+30,G enxuto + pib/porte,knn,0.4637056912865414,389
+todos,calote ate D+30,G enxuto + pib/porte,svm,0.39939627171303493,389
+todos,calote ate D+30,G enxuto + pib/porte,mlp,0.3895106623358283,389
+todos,calote ate D+30,G enxuto + pib/porte,comite,0.5228251659370146,389
+todos,calote ate D+30,H enxuto + dias lead + pagou bem,l1,0.6172680412371134,389
+todos,calote ate D+30,H enxuto + dias lead + pagou bem,l2,0.41157675469566446,389
+todos,calote ate D+30,H enxuto + dias lead + pagou bem,arvore,0.5601256884620817,389
+todos,calote ate D+30,H enxuto + dias lead + pagou bem,rf,0.5922539189380032,389
+todos,calote ate D+30,H enxuto + dias lead + pagou bem,extratrees,0.533805253495269,389
+todos,calote ate D+30,H enxuto + dias lead + pagou bem,hgb,0.5628089252930377,389
+todos,calote ate D+30,H enxuto + dias lead + pagou bem,lgbm,0.5628089252930377,389
+todos,calote ate D+30,H enxuto + dias lead + pagou bem,nb,0.5080673633667561,389
+todos,calote ate D+30,H enxuto + dias lead + pagou bem,knn,0.5163112554723909,389
+todos,calote ate D+30,H enxuto + dias lead + pagou bem,svm,0.4643235418726168,389
+todos,calote ate D+30,H enxuto + dias lead + pagou bem,mlp,0.3679741561926282,389
+todos,calote ate D+30,H enxuto + dias lead + pagou bem,comite,0.5338052534952691,389
+todos,calote ate D+30,I enxuto + compart + anterior + tom engaj,l1,0.6074706962293461,389
+todos,calote ate D+30,I enxuto + compart + anterior + tom engaj,l2,0.431436237819517,389
+todos,calote ate D+30,I enxuto + compart + anterior + tom engaj,arvore,0.5686696794238102,389
+todos,calote ate D+30,I enxuto + compart + anterior + tom engaj,rf,0.6090064962575906,389
+todos,calote ate D+30,I enxuto + compart + anterior + tom engaj,extratrees,0.5376006213811608,389
+todos,calote ate D+30,I enxuto + compart + anterior + tom engaj,hgb,0.6096773054653297,389
+todos,calote ate D+30,I enxuto + compart + anterior + tom engaj,lgbm,0.6096773054653297,389
+todos,calote ate D+30,I enxuto + compart + anterior + tom engaj,nb,0.504324954102528,389
+todos,calote ate D+30,I enxuto + compart + anterior + tom engaj,knn,0.5394012145177235,389
+todos,calote ate D+30,I enxuto + compart + anterior + tom engaj,svm,0.4555147578025703,389
+todos,calote ate D+30,I enxuto + compart + anterior + tom engaj,mlp,0.38151391046462363,389
+todos,calote ate D+30,I enxuto + compart + anterior + tom engaj,comite,0.5502577319587629,389
+todos,calote ate D+30,J tudo acima,l1,0.5904533258014405,389
+todos,calote ate D+30,J tudo acima,l2,0.45869227510238664,389
+todos,calote ate D+30,J tudo acima,arvore,0.5112448806665725,389
+todos,calote ate D+30,J tudo acima,rf,0.5459327778562351,389
+todos,calote ate D+30,J tudo acima,extratrees,0.5562067504589747,389
+todos,calote ate D+30,J tudo acima,hgb,0.5431789295297275,389
+todos,calote ate D+30,J tudo acima,lgbm,0.5431789295297275,389
+todos,calote ate D+30,J tudo acima,nb,0.5105564185849457,389
+todos,calote ate D+30,J tudo acima,knn,0.505790142635221,389
+todos,calote ate D+30,J tudo acima,svm,0.537847761615591,389
+todos,calote ate D+30,J tudo acima,mlp,0.49180906651602885,389
+todos,calote ate D+30,J tudo acima,comite,0.5416078237537072,389
+todos,inadimplencia D+1..45,A enxuto (6 + provedor),l1,0.4528236914600551,361
+todos,inadimplencia D+1..45,A enxuto (6 + provedor),l2,0.6141012396694217,361
+todos,inadimplencia D+1..45,A enxuto (6 + provedor),arvore,0.43145661157024795,361
+todos,inadimplencia D+1..45,A enxuto (6 + provedor),rf,0.4648243801652893,361
+todos,inadimplencia D+1..45,A enxuto (6 + provedor),extratrees,0.497055785123967,361
+todos,inadimplencia D+1..45,A enxuto (6 + provedor),hgb,0.46002066115702483,361
+todos,inadimplencia D+1..45,A enxuto (6 + provedor),lgbm,0.46002066115702483,361
+todos,inadimplencia D+1..45,A enxuto (6 + provedor),nb,0.6161673553719009,361
+todos,inadimplencia D+1..45,A enxuto (6 + provedor),knn,0.6116563360881543,361
+todos,inadimplencia D+1..45,A enxuto (6 + provedor),svm,0.4981577134986226,361
+todos,inadimplencia D+1..45,A enxuto (6 + provedor),mlp,0.5398243801652892,361
+todos,inadimplencia D+1..45,A enxuto (6 + provedor),comite,0.5228650137741047,361
+todos,inadimplencia D+1..45,B enxuto + termos do contrato,l1,0.4528236914600551,361
+todos,inadimplencia D+1..45,B enxuto + termos do contrato,l2,0.5580406336088154,361
+todos,inadimplencia D+1..45,B enxuto + termos do contrato,arvore,0.44889807162534434,361
+todos,inadimplencia D+1..45,B enxuto + termos do contrato,rf,0.4800792011019284,361
+todos,inadimplencia D+1..45,B enxuto + termos do contrato,extratrees,0.47551652892561985,361
+todos,inadimplencia D+1..45,B enxuto + termos do contrato,hgb,0.4822486225895317,361
+todos,inadimplencia D+1..45,B enxuto + termos do contrato,lgbm,0.4822486225895317,361
+todos,inadimplencia D+1..45,B enxuto + termos do contrato,nb,0.549793388429752,361
+todos,inadimplencia D+1..45,B enxuto + termos do contrato,knn,0.5528064738292011,361
+todos,inadimplencia D+1..45,B enxuto + termos do contrato,svm,0.4830750688705234,361
+todos,inadimplencia D+1..45,B enxuto + termos do contrato,mlp,0.5303202479338842,361
+todos,inadimplencia D+1..45,B enxuto + termos do contrato,comite,0.4984159779614325,361
+todos,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,l1,0.4528236914600551,361
+todos,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,l2,0.6143939393939394,361
+todos,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,arvore,0.43145661157024795,361
+todos,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,rf,0.4638429752066116,361
+todos,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,extratrees,0.49151170798898075,361
+todos,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,hgb,0.45750688705234166,361
+todos,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,lgbm,0.45750688705234166,361
+todos,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,nb,0.6160812672176308,361
+todos,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,knn,0.6228133608815426,361
+todos,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,svm,0.5190771349862259,361
+todos,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,mlp,0.6384297520661157,361
+todos,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,comite,0.5416494490358126,361
+todos,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,l1,0.4528236914600551,361
+todos,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,l2,0.6141012396694217,361
+todos,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,arvore,0.43145661157024795,361
+todos,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,rf,0.4648243801652893,361
+todos,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,extratrees,0.497055785123967,361
+todos,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,hgb,0.46002066115702483,361
+todos,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,lgbm,0.46002066115702483,361
+todos,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,nb,0.6161673553719009,361
+todos,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,knn,0.6116563360881543,361
+todos,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,svm,0.4981577134986226,361
+todos,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,mlp,0.5398243801652892,361
+todos,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,comite,0.5228650137741047,361
+todos,inadimplencia D+1..45,E enxuto + tom engajamento,l1,0.4528236914600551,361
+todos,inadimplencia D+1..45,E enxuto + tom engajamento,l2,0.624965564738292,361
+todos,inadimplencia D+1..45,E enxuto + tom engajamento,arvore,0.4391184573002755,361
+todos,inadimplencia D+1..45,E enxuto + tom engajamento,rf,0.45836776859504136,361
+todos,inadimplencia D+1..45,E enxuto + tom engajamento,extratrees,0.4713326446280992,361
+todos,inadimplencia D+1..45,E enxuto + tom engajamento,hgb,0.4409779614325069,361
+todos,inadimplencia D+1..45,E enxuto + tom engajamento,lgbm,0.4409779614325069,361
+todos,inadimplencia D+1..45,E enxuto + tom engajamento,nb,0.6174070247933884,361
+todos,inadimplencia D+1..45,E enxuto + tom engajamento,knn,0.56849173553719,361
+todos,inadimplencia D+1..45,E enxuto + tom engajamento,svm,0.46766528925619844,361
+todos,inadimplencia D+1..45,E enxuto + tom engajamento,mlp,0.6195936639118458,361
+todos,inadimplencia D+1..45,E enxuto + tom engajamento,comite,0.5169077134986226,361
+todos,inadimplencia D+1..45,F enxuto + 12 tons,l1,0.4563705234159779,361
+todos,inadimplencia D+1..45,F enxuto + 12 tons,l2,0.5793732782369146,361
+todos,inadimplencia D+1..45,F enxuto + 12 tons,arvore,0.5547348484848486,361
+todos,inadimplencia D+1..45,F enxuto + 12 tons,rf,0.518870523415978,361
+todos,inadimplencia D+1..45,F enxuto + 12 tons,extratrees,0.4727617079889807,361
+todos,inadimplencia D+1..45,F enxuto + 12 tons,hgb,0.48729338842975206,361
+todos,inadimplencia D+1..45,F enxuto + 12 tons,lgbm,0.48729338842975206,361
+todos,inadimplencia D+1..45,F enxuto + 12 tons,nb,0.6152031680440772,361
+todos,inadimplencia D+1..45,F enxuto + 12 tons,knn,0.5447658402203857,361
+todos,inadimplencia D+1..45,F enxuto + 12 tons,svm,0.42324380165289255,361
+todos,inadimplencia D+1..45,F enxuto + 12 tons,mlp,0.6078856749311295,361
+todos,inadimplencia D+1..45,F enxuto + 12 tons,comite,0.5302685950413223,361
+todos,inadimplencia D+1..45,G enxuto + pib/porte,l1,0.4528236914600551,361
+todos,inadimplencia D+1..45,G enxuto + pib/porte,l2,0.6196797520661158,361
+todos,inadimplencia D+1..45,G enxuto + pib/porte,arvore,0.4223140495867768,361
+todos,inadimplencia D+1..45,G enxuto + pib/porte,rf,0.47085055096418726,361
+todos,inadimplencia D+1..45,G enxuto + pib/porte,extratrees,0.4899793388429753,361
+todos,inadimplencia D+1..45,G enxuto + pib/porte,hgb,0.4609676308539945,361
+todos,inadimplencia D+1..45,G enxuto + pib/porte,lgbm,0.4609676308539945,361
+todos,inadimplencia D+1..45,G enxuto + pib/porte,nb,0.6163395316804409,361
+todos,inadimplencia D+1..45,G enxuto + pib/porte,knn,0.6185433884297521,361
+todos,inadimplencia D+1..45,G enxuto + pib/porte,svm,0.5179924242424242,361
+todos,inadimplencia D+1..45,G enxuto + pib/porte,mlp,0.587276170798898,361
+todos,inadimplencia D+1..45,G enxuto + pib/porte,comite,0.5326446280991736,361
+todos,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,l1,0.44280303030303025,361
+todos,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,l2,0.6015668044077135,361
+todos,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,arvore,0.42665289256198347,361
+todos,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,rf,0.4372589531680441,361
+todos,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,extratrees,0.456232782369146,361
+todos,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,hgb,0.4401170798898072,361
+todos,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,lgbm,0.4401170798898072,361
+todos,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,nb,0.615650826446281,361
+todos,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,knn,0.5945247933884297,361
+todos,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,svm,0.4517389807162534,361
+todos,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,mlp,0.6082472451790634,361
+todos,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,comite,0.4983126721763086,361
+todos,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,l1,0.4528236914600551,361
+todos,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,l2,0.6244146005509642,361
+todos,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,arvore,0.4391184573002755,361
+todos,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,rf,0.4629304407713498,361
+todos,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,extratrees,0.48500344352617075,361
+todos,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,hgb,0.4403581267217631,361
+todos,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,lgbm,0.4403581267217631,361
+todos,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,nb,0.6174414600550964,361
+todos,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,knn,0.565564738292011,361
+todos,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,svm,0.48464187327823693,361
+todos,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,mlp,0.6192837465564738,361
+todos,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,comite,0.5182506887052342,361
+todos,inadimplencia D+1..45,J tudo acima,l1,0.44263085399449037,361
+todos,inadimplencia D+1..45,J tudo acima,l2,0.5819214876033058,361
+todos,inadimplencia D+1..45,J tudo acima,arvore,0.5582988980716252,361
+todos,inadimplencia D+1..45,J tudo acima,rf,0.515392561983471,361
+todos,inadimplencia D+1..45,J tudo acima,extratrees,0.4847107438016529,361
+todos,inadimplencia D+1..45,J tudo acima,hgb,0.5008608815426997,361
+todos,inadimplencia D+1..45,J tudo acima,lgbm,0.5008608815426997,361
+todos,inadimplencia D+1..45,J tudo acima,nb,0.5378099173553719,361
+todos,inadimplencia D+1..45,J tudo acima,knn,0.5448002754820936,361
+todos,inadimplencia D+1..45,J tudo acima,svm,0.4163911845730027,361
+todos,inadimplencia D+1..45,J tudo acima,mlp,0.5708333333333333,361
+todos,inadimplencia D+1..45,J tudo acima,comite,0.521866391184573,361
+todos,cluster paga e para,A enxuto (6 + provedor),l1,0.5094221105527639,271
+todos,cluster paga e para,A enxuto (6 + provedor),l2,0.31602456728084866,271
+todos,cluster paga e para,A enxuto (6 + provedor),arvore,0.5619067560022334,271
+todos,cluster paga e para,A enxuto (6 + provedor),rf,0.6138330541596874,271
+todos,cluster paga e para,A enxuto (6 + provedor),extratrees,0.5880443886097153,271
+todos,cluster paga e para,A enxuto (6 + provedor),hgb,0.5945700725851479,271
+todos,cluster paga e para,A enxuto (6 + provedor),lgbm,0.5945700725851479,271
+todos,cluster paga e para,A enxuto (6 + provedor),nb,0.501395868230039,271
+todos,cluster paga e para,A enxuto (6 + provedor),knn,0.5328029034059185,271
+todos,cluster paga e para,A enxuto (6 + provedor),svm,0.5556951423785594,271
+todos,cluster paga e para,A enxuto (6 + provedor),mlp,0.27107761027359023,271
+todos,cluster paga e para,A enxuto (6 + provedor),comite,0.5420505304299275,271
+todos,cluster paga e para,B enxuto + termos do contrato,l1,0.5094221105527639,271
+todos,cluster paga e para,B enxuto + termos do contrato,l2,0.35130513679508657,271
+todos,cluster paga e para,B enxuto + termos do contrato,arvore,0.5464824120603016,271
+todos,cluster paga e para,B enxuto + termos do contrato,rf,0.5767029592406477,271
+todos,cluster paga e para,B enxuto + termos do contrato,extratrees,0.5644891122278056,271
+todos,cluster paga e para,B enxuto + termos do contrato,hgb,0.5776800670016751,271
+todos,cluster paga e para,B enxuto + termos do contrato,lgbm,0.5776800670016751,271
+todos,cluster paga e para,B enxuto + termos do contrato,nb,0.5011166945840312,271
+todos,cluster paga e para,B enxuto + termos do contrato,knn,0.5013958682300391,271
+todos,cluster paga e para,B enxuto + termos do contrato,svm,0.5708752093802345,271
+todos,cluster paga e para,B enxuto + termos do contrato,mlp,0.3900404801786711,271
+todos,cluster paga e para,B enxuto + termos do contrato,comite,0.5297668900055835,271
+todos,cluster paga e para,C enxuto + endereco dividido + inconsistencias,l1,0.5094221105527639,271
+todos,cluster paga e para,C enxuto + endereco dividido + inconsistencias,l2,0.3141052484645449,271
+todos,cluster paga e para,C enxuto + endereco dividido + inconsistencias,arvore,0.5997347850362926,271
+todos,cluster paga e para,C enxuto + endereco dividido + inconsistencias,rf,0.6090522054718035,271
+todos,cluster paga e para,C enxuto + endereco dividido + inconsistencias,extratrees,0.5833333333333334,271
+todos,cluster paga e para,C enxuto + endereco dividido + inconsistencias,hgb,0.6134491903964265,271
+todos,cluster paga e para,C enxuto + endereco dividido + inconsistencias,lgbm,0.6134491903964265,271
+todos,cluster paga e para,C enxuto + endereco dividido + inconsistencias,nb,0.501395868230039,271
+todos,cluster paga e para,C enxuto + endereco dividido + inconsistencias,knn,0.5622208263539922,271
+todos,cluster paga e para,C enxuto + endereco dividido + inconsistencias,svm,0.5242532104969291,271
+todos,cluster paga e para,C enxuto + endereco dividido + inconsistencias,mlp,0.40267308766052484,271
+todos,cluster paga e para,C enxuto + endereco dividido + inconsistencias,comite,0.561034338358459,271
+todos,cluster paga e para,D enxuto + cluster do contrato anterior,l1,0.5094221105527639,271
+todos,cluster paga e para,D enxuto + cluster do contrato anterior,l2,0.31602456728084866,271
+todos,cluster paga e para,D enxuto + cluster do contrato anterior,arvore,0.5619067560022334,271
+todos,cluster paga e para,D enxuto + cluster do contrato anterior,rf,0.6138330541596874,271
+todos,cluster paga e para,D enxuto + cluster do contrato anterior,extratrees,0.5880443886097153,271
+todos,cluster paga e para,D enxuto + cluster do contrato anterior,hgb,0.5945700725851479,271
+todos,cluster paga e para,D enxuto + cluster do contrato anterior,lgbm,0.5945700725851479,271
+todos,cluster paga e para,D enxuto + cluster do contrato anterior,nb,0.501395868230039,271
+todos,cluster paga e para,D enxuto + cluster do contrato anterior,knn,0.5328029034059185,271
+todos,cluster paga e para,D enxuto + cluster do contrato anterior,svm,0.5556951423785594,271
+todos,cluster paga e para,D enxuto + cluster do contrato anterior,mlp,0.27107761027359023,271
+todos,cluster paga e para,D enxuto + cluster do contrato anterior,comite,0.5420505304299275,271
+todos,cluster paga e para,E enxuto + tom engajamento,l1,0.51535455053043,271
+todos,cluster paga e para,E enxuto + tom engajamento,l2,0.34554718034617526,271
+todos,cluster paga e para,E enxuto + tom engajamento,arvore,0.5339195979899498,271
+todos,cluster paga e para,E enxuto + tom engajamento,rf,0.6057719151312115,271
+todos,cluster paga e para,E enxuto + tom engajamento,extratrees,0.5874860413176995,271
+todos,cluster paga e para,E enxuto + tom engajamento,hgb,0.5932788944723619,271
+todos,cluster paga e para,E enxuto + tom engajamento,lgbm,0.5932788944723619,271
+todos,cluster paga e para,E enxuto + tom engajamento,nb,0.501395868230039,271
+todos,cluster paga e para,E enxuto + tom engajamento,knn,0.538176996091569,271
+todos,cluster paga e para,E enxuto + tom engajamento,svm,0.6988414293690677,271
+todos,cluster paga e para,E enxuto + tom engajamento,mlp,0.367392518146287,271
+todos,cluster paga e para,E enxuto + tom engajamento,comite,0.5634422110552764,271
+todos,cluster paga e para,F enxuto + 12 tons,l1,0.4925321049692909,271
+todos,cluster paga e para,F enxuto + 12 tons,l2,0.39635678391959805,271
+todos,cluster paga e para,F enxuto + 12 tons,arvore,0.4996161362367393,271
+todos,cluster paga e para,F enxuto + 12 tons,rf,0.5404103852596315,271
+todos,cluster paga e para,F enxuto + 12 tons,extratrees,0.5725153545505305,271
+todos,cluster paga e para,F enxuto + 12 tons,hgb,0.518285873813512,271
+todos,cluster paga e para,F enxuto + 12 tons,lgbm,0.518285873813512,271
+todos,cluster paga e para,F enxuto + 12 tons,nb,0.501535455053043,271
+todos,cluster paga e para,F enxuto + 12 tons,knn,0.44856225572305974,271
+todos,cluster paga e para,F enxuto + 12 tons,svm,0.3600642099385818,271
+todos,cluster paga e para,F enxuto + 12 tons,mlp,0.4498883305415969,271
+todos,cluster paga e para,F enxuto + 12 tons,comite,0.4745603015075377,271
+todos,cluster paga e para,G enxuto + pib/porte,l1,0.5094221105527639,271
+todos,cluster paga e para,G enxuto + pib/porte,l2,0.31881630374092684,271
+todos,cluster paga e para,G enxuto + pib/porte,arvore,0.5787618648799554,271
+todos,cluster paga e para,G enxuto + pib/porte,rf,0.5833682300390843,271
+todos,cluster paga e para,G enxuto + pib/porte,extratrees,0.5878350083752094,271
+todos,cluster paga e para,G enxuto + pib/porte,hgb,0.5574748743718594,271
+todos,cluster paga e para,G enxuto + pib/porte,lgbm,0.5574748743718594,271
+todos,cluster paga e para,G enxuto + pib/porte,nb,0.501395868230039,271
+todos,cluster paga e para,G enxuto + pib/porte,knn,0.5184952540480179,271
+todos,cluster paga e para,G enxuto + pib/porte,svm,0.4881351200446678,271
+todos,cluster paga e para,G enxuto + pib/porte,mlp,0.3639726409826913,271
+todos,cluster paga e para,G enxuto + pib/porte,comite,0.5226130653266331,271
+todos,cluster paga e para,H enxuto + dias lead + pagou bem,l1,0.5094221105527639,271
+todos,cluster paga e para,H enxuto + dias lead + pagou bem,l2,0.30960357342266887,271
+todos,cluster paga e para,H enxuto + dias lead + pagou bem,arvore,0.6262562814070352,271
+todos,cluster paga e para,H enxuto + dias lead + pagou bem,rf,0.6001884422110553,271
+todos,cluster paga e para,H enxuto + dias lead + pagou bem,extratrees,0.5836125069793412,271
+todos,cluster paga e para,H enxuto + dias lead + pagou bem,hgb,0.5960357342266889,271
+todos,cluster paga e para,H enxuto + dias lead + pagou bem,lgbm,0.5960357342266889,271
+todos,cluster paga e para,H enxuto + dias lead + pagou bem,nb,0.501535455053043,271
+todos,cluster paga e para,H enxuto + dias lead + pagou bem,knn,0.5409338358458962,271
+todos,cluster paga e para,H enxuto + dias lead + pagou bem,svm,0.6880932439977666,271
+todos,cluster paga e para,H enxuto + dias lead + pagou bem,mlp,0.42685650474595194,271
+todos,cluster paga e para,H enxuto + dias lead + pagou bem,comite,0.5866136236739252,271
+todos,cluster paga e para,I enxuto + compart + anterior + tom engaj,l1,0.51535455053043,271
+todos,cluster paga e para,I enxuto + compart + anterior + tom engaj,l2,0.3452680067001675,271
+todos,cluster paga e para,I enxuto + compart + anterior + tom engaj,arvore,0.5339195979899498,271
+todos,cluster paga e para,I enxuto + compart + anterior + tom engaj,rf,0.6051437744276941,271
+todos,cluster paga e para,I enxuto + compart + anterior + tom engaj,extratrees,0.5828098827470687,271
+todos,cluster paga e para,I enxuto + compart + anterior + tom engaj,hgb,0.5985831937465104,271
+todos,cluster paga e para,I enxuto + compart + anterior + tom engaj,lgbm,0.5985831937465104,271
+todos,cluster paga e para,I enxuto + compart + anterior + tom engaj,nb,0.501395868230039,271
+todos,cluster paga e para,I enxuto + compart + anterior + tom engaj,knn,0.5392238972640984,271
+todos,cluster paga e para,I enxuto + compart + anterior + tom engaj,svm,0.6749022892238973,271
+todos,cluster paga e para,I enxuto + compart + anterior + tom engaj,mlp,0.44060580681183686,271
+todos,cluster paga e para,I enxuto + compart + anterior + tom engaj,comite,0.5717476270240089,271
+todos,cluster paga e para,J tudo acima,l1,0.4925321049692909,271
+todos,cluster paga e para,J tudo acima,l2,0.4424902289223897,271
+todos,cluster paga e para,J tudo acima,arvore,0.48789084310441094,271
+todos,cluster paga e para,J tudo acima,rf,0.5297319932998324,271
+todos,cluster paga e para,J tudo acima,extratrees,0.5757258514796203,271
+todos,cluster paga e para,J tudo acima,hgb,0.5233109994416527,271
+todos,cluster paga e para,J tudo acima,lgbm,0.5233109994416527,271
+todos,cluster paga e para,J tudo acima,nb,0.5012562814070352,271
+todos,cluster paga e para,J tudo acima,knn,0.46684812953657173,271
+todos,cluster paga e para,J tudo acima,svm,0.39014517029592405,271
+todos,cluster paga e para,J tudo acima,mlp,0.510608598548297,271
+todos,cluster paga e para,J tudo acima,comite,0.4936836962590732,271
+sem Pix,calote D+1..45,A enxuto (6 + provedor),l1,0.5225929054054054,180
+sem Pix,calote D+1..45,A enxuto (6 + provedor),l2,0.6164484797297297,180
+sem Pix,calote D+1..45,A enxuto (6 + provedor),arvore,0.6381967905405406,180
+sem Pix,calote D+1..45,A enxuto (6 + provedor),rf,0.6143369932432433,180
+sem Pix,calote D+1..45,A enxuto (6 + provedor),extratrees,0.6086359797297297,180
+sem Pix,calote D+1..45,A enxuto (6 + provedor),hgb,0.6440033783783784,180
+sem Pix,calote D+1..45,A enxuto (6 + provedor),lgbm,0.6440033783783784,180
+sem Pix,calote D+1..45,A enxuto (6 + provedor),nb,0.5342060810810811,180
+sem Pix,calote D+1..45,A enxuto (6 + provedor),knn,0.4949324324324324,180
+sem Pix,calote D+1..45,A enxuto (6 + provedor),svm,0.4580869932432432,180
+sem Pix,calote D+1..45,A enxuto (6 + provedor),mlp,0.5947001689189189,180
+sem Pix,calote D+1..45,A enxuto (6 + provedor),comite,0.6305954391891893,180
+sem Pix,calote D+1..45,B enxuto + termos do contrato,l1,0.49862753378378377,180
+sem Pix,calote D+1..45,B enxuto + termos do contrato,l2,0.5405405405405406,180
+sem Pix,calote D+1..45,B enxuto + termos do contrato,arvore,0.6223606418918919,180
+sem Pix,calote D+1..45,B enxuto + termos do contrato,rf,0.6030405405405405,180
+sem Pix,calote D+1..45,B enxuto + termos do contrato,extratrees,0.5505701013513513,180
+sem Pix,calote D+1..45,B enxuto + termos do contrato,hgb,0.6309121621621622,180
+sem Pix,calote D+1..45,B enxuto + termos do contrato,lgbm,0.6309121621621622,180
+sem Pix,calote D+1..45,B enxuto + termos do contrato,nb,0.5331503378378378,180
+sem Pix,calote D+1..45,B enxuto + termos do contrato,knn,0.4947212837837838,180
+sem Pix,calote D+1..45,B enxuto + termos do contrato,svm,0.5004222972972973,180
+sem Pix,calote D+1..45,B enxuto + termos do contrato,mlp,0.4890202702702703,180
+sem Pix,calote D+1..45,B enxuto + termos do contrato,comite,0.588893581081081,180
+sem Pix,calote D+1..45,C enxuto + endereco dividido + inconsistencias,l1,0.5225929054054054,180
+sem Pix,calote D+1..45,C enxuto + endereco dividido + inconsistencias,l2,0.6029349662162161,180
+sem Pix,calote D+1..45,C enxuto + endereco dividido + inconsistencias,arvore,0.6381967905405406,180
+sem Pix,calote D+1..45,C enxuto + endereco dividido + inconsistencias,rf,0.5981841216216216,180
+sem Pix,calote D+1..45,C enxuto + endereco dividido + inconsistencias,extratrees,0.5906883445945947,180
+sem Pix,calote D+1..45,C enxuto + endereco dividido + inconsistencias,hgb,0.6380912162162162,180
+sem Pix,calote D+1..45,C enxuto + endereco dividido + inconsistencias,lgbm,0.6380912162162162,180
+sem Pix,calote D+1..45,C enxuto + endereco dividido + inconsistencias,nb,0.5342060810810811,180
+sem Pix,calote D+1..45,C enxuto + endereco dividido + inconsistencias,knn,0.5193201013513513,180
+sem Pix,calote D+1..45,C enxuto + endereco dividido + inconsistencias,svm,0.45154138513513514,180
+sem Pix,calote D+1..45,C enxuto + endereco dividido + inconsistencias,mlp,0.5131967905405406,180
+sem Pix,calote D+1..45,C enxuto + endereco dividido + inconsistencias,comite,0.610325168918919,180
+sem Pix,calote D+1..45,D enxuto + cluster do contrato anterior,l1,0.5225929054054054,180
+sem Pix,calote D+1..45,D enxuto + cluster do contrato anterior,l2,0.6164484797297297,180
+sem Pix,calote D+1..45,D enxuto + cluster do contrato anterior,arvore,0.6381967905405406,180
+sem Pix,calote D+1..45,D enxuto + cluster do contrato anterior,rf,0.6143369932432433,180
+sem Pix,calote D+1..45,D enxuto + cluster do contrato anterior,extratrees,0.6086359797297297,180
+sem Pix,calote D+1..45,D enxuto + cluster do contrato anterior,hgb,0.6440033783783784,180
+sem Pix,calote D+1..45,D enxuto + cluster do contrato anterior,lgbm,0.6440033783783784,180
+sem Pix,calote D+1..45,D enxuto + cluster do contrato anterior,nb,0.5342060810810811,180
+sem Pix,calote D+1..45,D enxuto + cluster do contrato anterior,knn,0.4949324324324324,180
+sem Pix,calote D+1..45,D enxuto + cluster do contrato anterior,svm,0.4580869932432432,180
+sem Pix,calote D+1..45,D enxuto + cluster do contrato anterior,mlp,0.5947001689189189,180
+sem Pix,calote D+1..45,D enxuto + cluster do contrato anterior,comite,0.6305954391891893,180
+sem Pix,calote D+1..45,E enxuto + tom engajamento,l1,0.5183699324324325,180
+sem Pix,calote D+1..45,E enxuto + tom engajamento,l2,0.6484375,180
+sem Pix,calote D+1..45,E enxuto + tom engajamento,arvore,0.632495777027027,180
+sem Pix,calote D+1..45,E enxuto + tom engajamento,rf,0.6478040540540541,180
+sem Pix,calote D+1..45,E enxuto + tom engajamento,extratrees,0.6314400337837838,180
+sem Pix,calote D+1..45,E enxuto + tom engajamento,hgb,0.6497043918918919,180
+sem Pix,calote D+1..45,E enxuto + tom engajamento,lgbm,0.6497043918918919,180
+sem Pix,calote D+1..45,E enxuto + tom engajamento,nb,0.5342060810810811,180
+sem Pix,calote D+1..45,E enxuto + tom engajamento,knn,0.559543918918919,180
+sem Pix,calote D+1..45,E enxuto + tom engajamento,svm,0.45903716216216217,180
+sem Pix,calote D+1..45,E enxuto + tom engajamento,mlp,0.5230152027027027,180
+sem Pix,calote D+1..45,E enxuto + tom engajamento,comite,0.6318623310810811,180
+sem Pix,calote D+1..45,F enxuto + 12 tons,l1,0.5723184121621622,180
+sem Pix,calote D+1..45,F enxuto + 12 tons,l2,0.6583614864864865,180
+sem Pix,calote D+1..45,F enxuto + 12 tons,arvore,0.6242609797297297,180
+sem Pix,calote D+1..45,F enxuto + 12 tons,rf,0.6581503378378378,180
+sem Pix,calote D+1..45,F enxuto + 12 tons,extratrees,0.6471706081081081,180
+sem Pix,calote D+1..45,F enxuto + 12 tons,hgb,0.6110641891891891,180
+sem Pix,calote D+1..45,F enxuto + 12 tons,lgbm,0.6110641891891891,180
+sem Pix,calote D+1..45,F enxuto + 12 tons,nb,0.5346283783783784,180
+sem Pix,calote D+1..45,F enxuto + 12 tons,knn,0.5464527027027027,180
+sem Pix,calote D+1..45,F enxuto + 12 tons,svm,0.4174408783783784,180
+sem Pix,calote D+1..45,F enxuto + 12 tons,mlp,0.5489864864864865,180
+sem Pix,calote D+1..45,F enxuto + 12 tons,comite,0.6407305743243243,180
+sem Pix,calote D+1..45,G enxuto + pib/porte,l1,0.5636613175675675,180
+sem Pix,calote D+1..45,G enxuto + pib/porte,l2,0.6238386824324325,180
+sem Pix,calote D+1..45,G enxuto + pib/porte,arvore,0.6381967905405406,180
+sem Pix,calote D+1..45,G enxuto + pib/porte,rf,0.6338682432432433,180
+sem Pix,calote D+1..45,G enxuto + pib/porte,extratrees,0.6185599662162162,180
+sem Pix,calote D+1..45,G enxuto + pib/porte,hgb,0.6600506756756757,180
+sem Pix,calote D+1..45,G enxuto + pib/porte,lgbm,0.6600506756756757,180
+sem Pix,calote D+1..45,G enxuto + pib/porte,nb,0.5342060810810811,180
+sem Pix,calote D+1..45,G enxuto + pib/porte,knn,0.4896537162162162,180
+sem Pix,calote D+1..45,G enxuto + pib/porte,svm,0.4764569256756757,180
+sem Pix,calote D+1..45,G enxuto + pib/porte,mlp,0.5110853040540541,180
+sem Pix,calote D+1..45,G enxuto + pib/porte,comite,0.6243665540540541,180
+sem Pix,calote D+1..45,H enxuto + dias lead + pagou bem,l1,0.5225929054054054,180
+sem Pix,calote D+1..45,H enxuto + dias lead + pagou bem,l2,0.5677787162162161,180
+sem Pix,calote D+1..45,H enxuto + dias lead + pagou bem,arvore,0.6648015202702703,180
+sem Pix,calote D+1..45,H enxuto + dias lead + pagou bem,rf,0.6486486486486486,180
+sem Pix,calote D+1..45,H enxuto + dias lead + pagou bem,extratrees,0.6124366554054054,180
+sem Pix,calote D+1..45,H enxuto + dias lead + pagou bem,hgb,0.6688133445945946,180
+sem Pix,calote D+1..45,H enxuto + dias lead + pagou bem,lgbm,0.6688133445945946,180
+sem Pix,calote D+1..45,H enxuto + dias lead + pagou bem,nb,0.5342060810810811,180
+sem Pix,calote D+1..45,H enxuto + dias lead + pagou bem,knn,0.5293496621621622,180
+sem Pix,calote D+1..45,H enxuto + dias lead + pagou bem,svm,0.4700168918918919,180
+sem Pix,calote D+1..45,H enxuto + dias lead + pagou bem,mlp,0.5033783783783784,180
+sem Pix,calote D+1..45,H enxuto + dias lead + pagou bem,comite,0.6357685810810811,180
+sem Pix,calote D+1..45,I enxuto + compart + anterior + tom engaj,l1,0.5183699324324325,180
+sem Pix,calote D+1..45,I enxuto + compart + anterior + tom engaj,l2,0.6467483108108109,180
+sem Pix,calote D+1..45,I enxuto + compart + anterior + tom engaj,arvore,0.632495777027027,180
+sem Pix,calote D+1..45,I enxuto + compart + anterior + tom engaj,rf,0.6310177364864865,180
+sem Pix,calote D+1..45,I enxuto + compart + anterior + tom engaj,extratrees,0.6198268581081081,180
+sem Pix,calote D+1..45,I enxuto + compart + anterior + tom engaj,hgb,0.6497043918918919,180
+sem Pix,calote D+1..45,I enxuto + compart + anterior + tom engaj,lgbm,0.6497043918918919,180
+sem Pix,calote D+1..45,I enxuto + compart + anterior + tom engaj,nb,0.5342060810810811,180
+sem Pix,calote D+1..45,I enxuto + compart + anterior + tom engaj,knn,0.5584881756756757,180
+sem Pix,calote D+1..45,I enxuto + compart + anterior + tom engaj,svm,0.4556587837837838,180
+sem Pix,calote D+1..45,I enxuto + compart + anterior + tom engaj,mlp,0.5430743243243243,180
+sem Pix,calote D+1..45,I enxuto + compart + anterior + tom engaj,comite,0.6340793918918918,180
+sem Pix,calote D+1..45,J tudo acima,l1,0.5695734797297297,180
+sem Pix,calote D+1..45,J tudo acima,l2,0.5967060810810811,180
+sem Pix,calote D+1..45,J tudo acima,arvore,0.6242609797297297,180
+sem Pix,calote D+1..45,J tudo acima,rf,0.6801097972972973,180
+sem Pix,calote D+1..45,J tudo acima,extratrees,0.6554054054054054,180
+sem Pix,calote D+1..45,J tudo acima,hgb,0.6216216216216216,180
+sem Pix,calote D+1..45,J tudo acima,lgbm,0.6216216216216216,180
+sem Pix,calote D+1..45,J tudo acima,nb,0.5344172297297297,180
+sem Pix,calote D+1..45,J tudo acima,knn,0.5705236486486486,180
+sem Pix,calote D+1..45,J tudo acima,svm,0.4482685810810811,180
+sem Pix,calote D+1..45,J tudo acima,mlp,0.5848817567567568,180
+sem Pix,calote D+1..45,J tudo acima,comite,0.6495988175675675,180
+sem Pix,calote ate D+30,A enxuto (6 + provedor),l1,0.6052631578947367,278
+sem Pix,calote ate D+30,A enxuto (6 + provedor),l2,0.5641447368421052,278
+sem Pix,calote ate D+30,A enxuto (6 + provedor),arvore,0.4290570175438596,278
+sem Pix,calote ate D+30,A enxuto (6 + provedor),rf,0.5637609649122807,278
+sem Pix,calote ate D+30,A enxuto (6 + provedor),extratrees,0.5640350877192983,278
+sem Pix,calote ate D+30,A enxuto (6 + provedor),hgb,0.5205043859649123,278
+sem Pix,calote ate D+30,A enxuto (6 + provedor),lgbm,0.5205043859649123,278
+sem Pix,calote ate D+30,A enxuto (6 + provedor),nb,0.5555372807017543,278
+sem Pix,calote ate D+30,A enxuto (6 + provedor),knn,0.45964912280701753,278
+sem Pix,calote ate D+30,A enxuto (6 + provedor),svm,0.4744517543859649,278
+sem Pix,calote ate D+30,A enxuto (6 + provedor),mlp,0.5395833333333333,278
+sem Pix,calote ate D+30,A enxuto (6 + provedor),comite,0.5458881578947369,278
+sem Pix,calote ate D+30,B enxuto + termos do contrato,l1,0.6052631578947367,278
+sem Pix,calote ate D+30,B enxuto + termos do contrato,l2,0.5800438596491229,278
+sem Pix,calote ate D+30,B enxuto + termos do contrato,arvore,0.4060855263157895,278
+sem Pix,calote ate D+30,B enxuto + termos do contrato,rf,0.5599780701754385,278
+sem Pix,calote ate D+30,B enxuto + termos do contrato,extratrees,0.5294956140350877,278
+sem Pix,calote ate D+30,B enxuto + termos do contrato,hgb,0.5333333333333333,278
+sem Pix,calote ate D+30,B enxuto + termos do contrato,lgbm,0.5333333333333333,278
+sem Pix,calote ate D+30,B enxuto + termos do contrato,nb,0.55625,278
+sem Pix,calote ate D+30,B enxuto + termos do contrato,knn,0.5353070175438597,278
+sem Pix,calote ate D+30,B enxuto + termos do contrato,svm,0.5869517543859649,278
+sem Pix,calote ate D+30,B enxuto + termos do contrato,mlp,0.5253289473684211,278
+sem Pix,calote ate D+30,B enxuto + termos do contrato,comite,0.5715460526315789,278
+sem Pix,calote ate D+30,C enxuto + endereco dividido + inconsistencias,l1,0.6052631578947367,278
+sem Pix,calote ate D+30,C enxuto + endereco dividido + inconsistencias,l2,0.5512609649122807,278
+sem Pix,calote ate D+30,C enxuto + endereco dividido + inconsistencias,arvore,0.48865131578947363,278
+sem Pix,calote ate D+30,C enxuto + endereco dividido + inconsistencias,rf,0.5348135964912281,278
+sem Pix,calote ate D+30,C enxuto + endereco dividido + inconsistencias,extratrees,0.5510416666666667,278
+sem Pix,calote ate D+30,C enxuto + endereco dividido + inconsistencias,hgb,0.5577850877192982,278
+sem Pix,calote ate D+30,C enxuto + endereco dividido + inconsistencias,lgbm,0.5577850877192982,278
+sem Pix,calote ate D+30,C enxuto + endereco dividido + inconsistencias,nb,0.5551535087719298,278
+sem Pix,calote ate D+30,C enxuto + endereco dividido + inconsistencias,knn,0.4675986842105263,278
+sem Pix,calote ate D+30,C enxuto + endereco dividido + inconsistencias,svm,0.42055921052631573,278
+sem Pix,calote ate D+30,C enxuto + endereco dividido + inconsistencias,mlp,0.48580043859649125,278
+sem Pix,calote ate D+30,C enxuto + endereco dividido + inconsistencias,comite,0.5416666666666667,278
+sem Pix,calote ate D+30,D enxuto + cluster do contrato anterior,l1,0.6052631578947367,278
+sem Pix,calote ate D+30,D enxuto + cluster do contrato anterior,l2,0.5641447368421052,278
+sem Pix,calote ate D+30,D enxuto + cluster do contrato anterior,arvore,0.4290570175438596,278
+sem Pix,calote ate D+30,D enxuto + cluster do contrato anterior,rf,0.5637609649122807,278
+sem Pix,calote ate D+30,D enxuto + cluster do contrato anterior,extratrees,0.5640350877192983,278
+sem Pix,calote ate D+30,D enxuto + cluster do contrato anterior,hgb,0.5205043859649123,278
+sem Pix,calote ate D+30,D enxuto + cluster do contrato anterior,lgbm,0.5205043859649123,278
+sem Pix,calote ate D+30,D enxuto + cluster do contrato anterior,nb,0.5555372807017543,278
+sem Pix,calote ate D+30,D enxuto + cluster do contrato anterior,knn,0.45964912280701753,278
+sem Pix,calote ate D+30,D enxuto + cluster do contrato anterior,svm,0.4744517543859649,278
+sem Pix,calote ate D+30,D enxuto + cluster do contrato anterior,mlp,0.5395833333333333,278
+sem Pix,calote ate D+30,D enxuto + cluster do contrato anterior,comite,0.5458881578947369,278
+sem Pix,calote ate D+30,E enxuto + tom engajamento,l1,0.5838267543859649,278
+sem Pix,calote ate D+30,E enxuto + tom engajamento,l2,0.5776315789473685,278
+sem Pix,calote ate D+30,E enxuto + tom engajamento,arvore,0.5479714912280701,278
+sem Pix,calote ate D+30,E enxuto + tom engajamento,rf,0.5904605263157894,278
+sem Pix,calote ate D+30,E enxuto + tom engajamento,extratrees,0.5822916666666668,278
+sem Pix,calote ate D+30,E enxuto + tom engajamento,hgb,0.6110197368421052,278
+sem Pix,calote ate D+30,E enxuto + tom engajamento,lgbm,0.6110197368421052,278
+sem Pix,calote ate D+30,E enxuto + tom engajamento,nb,0.5557017543859649,278
+sem Pix,calote ate D+30,E enxuto + tom engajamento,knn,0.5571271929824562,278
+sem Pix,calote ate D+30,E enxuto + tom engajamento,svm,0.5320175438596492,278
+sem Pix,calote ate D+30,E enxuto + tom engajamento,mlp,0.562171052631579,278
+sem Pix,calote ate D+30,E enxuto + tom engajamento,comite,0.6146929824561403,278
+sem Pix,calote ate D+30,F enxuto + 12 tons,l1,0.6468201754385966,278
+sem Pix,calote ate D+30,F enxuto + 12 tons,l2,0.5834429824561405,278
+sem Pix,calote ate D+30,F enxuto + 12 tons,arvore,0.4838267543859649,278
+sem Pix,calote ate D+30,F enxuto + 12 tons,rf,0.5040570175438596,278
+sem Pix,calote ate D+30,F enxuto + 12 tons,extratrees,0.5830043859649122,278
+sem Pix,calote ate D+30,F enxuto + 12 tons,hgb,0.4951754385964912,278
+sem Pix,calote ate D+30,F enxuto + 12 tons,lgbm,0.4951754385964912,278
+sem Pix,calote ate D+30,F enxuto + 12 tons,nb,0.5583333333333333,278
+sem Pix,calote ate D+30,F enxuto + 12 tons,knn,0.5236842105263158,278
+sem Pix,calote ate D+30,F enxuto + 12 tons,svm,0.5360745614035087,278
+sem Pix,calote ate D+30,F enxuto + 12 tons,mlp,0.5402412280701755,278
+sem Pix,calote ate D+30,F enxuto + 12 tons,comite,0.5609649122807017,278
+sem Pix,calote ate D+30,G enxuto + pib/porte,l1,0.5861842105263159,278
+sem Pix,calote ate D+30,G enxuto + pib/porte,l2,0.5652412280701754,278
+sem Pix,calote ate D+30,G enxuto + pib/porte,arvore,0.4507675438596491,278
+sem Pix,calote ate D+30,G enxuto + pib/porte,rf,0.5517543859649122,278
+sem Pix,calote ate D+30,G enxuto + pib/porte,extratrees,0.5583333333333333,278
+sem Pix,calote ate D+30,G enxuto + pib/porte,hgb,0.5356359649122807,278
+sem Pix,calote ate D+30,G enxuto + pib/porte,lgbm,0.5356359649122807,278
+sem Pix,calote ate D+30,G enxuto + pib/porte,nb,0.5553179824561403,278
+sem Pix,calote ate D+30,G enxuto + pib/porte,knn,0.43157894736842106,278
+sem Pix,calote ate D+30,G enxuto + pib/porte,svm,0.4144736842105263,278
+sem Pix,calote ate D+30,G enxuto + pib/porte,mlp,0.5066885964912281,278
+sem Pix,calote ate D+30,G enxuto + pib/porte,comite,0.5382127192982457,278
+sem Pix,calote ate D+30,H enxuto + dias lead + pagou bem,l1,0.6012061403508773,278
+sem Pix,calote ate D+30,H enxuto + dias lead + pagou bem,l2,0.53125,278
+sem Pix,calote ate D+30,H enxuto + dias lead + pagou bem,arvore,0.4493421052631579,278
+sem Pix,calote ate D+30,H enxuto + dias lead + pagou bem,rf,0.5884320175438597,278
+sem Pix,calote ate D+30,H enxuto + dias lead + pagou bem,extratrees,0.5702850877192982,278
+sem Pix,calote ate D+30,H enxuto + dias lead + pagou bem,hgb,0.557839912280702,278
+sem Pix,calote ate D+30,H enxuto + dias lead + pagou bem,lgbm,0.557839912280702,278
+sem Pix,calote ate D+30,H enxuto + dias lead + pagou bem,nb,0.5592105263157895,278
+sem Pix,calote ate D+30,H enxuto + dias lead + pagou bem,knn,0.5236842105263158,278
+sem Pix,calote ate D+30,H enxuto + dias lead + pagou bem,svm,0.5046052631578948,278
+sem Pix,calote ate D+30,H enxuto + dias lead + pagou bem,mlp,0.4597587719298245,278
+sem Pix,calote ate D+30,H enxuto + dias lead + pagou bem,comite,0.5614035087719298,278
+sem Pix,calote ate D+30,I enxuto + compart + anterior + tom engaj,l1,0.5838267543859649,278
+sem Pix,calote ate D+30,I enxuto + compart + anterior + tom engaj,l2,0.5733552631578949,278
+sem Pix,calote ate D+30,I enxuto + compart + anterior + tom engaj,arvore,0.5479714912280701,278
+sem Pix,calote ate D+30,I enxuto + compart + anterior + tom engaj,rf,0.5842105263157895,278
+sem Pix,calote ate D+30,I enxuto + compart + anterior + tom engaj,extratrees,0.5640350877192983,278
+sem Pix,calote ate D+30,I enxuto + compart + anterior + tom engaj,hgb,0.6101425438596491,278
+sem Pix,calote ate D+30,I enxuto + compart + anterior + tom engaj,lgbm,0.6101425438596491,278
+sem Pix,calote ate D+30,I enxuto + compart + anterior + tom engaj,nb,0.5557017543859649,278
+sem Pix,calote ate D+30,I enxuto + compart + anterior + tom engaj,knn,0.5544956140350877,278
+sem Pix,calote ate D+30,I enxuto + compart + anterior + tom engaj,svm,0.5338815789473683,278
+sem Pix,calote ate D+30,I enxuto + compart + anterior + tom engaj,mlp,0.5327850877192983,278
+sem Pix,calote ate D+30,I enxuto + compart + anterior + tom engaj,comite,0.6049890350877193,278
+sem Pix,calote ate D+30,J tudo acima,l1,0.6406798245614036,278
+sem Pix,calote ate D+30,J tudo acima,l2,0.5551535087719299,278
+sem Pix,calote ate D+30,J tudo acima,arvore,0.47993421052631574,278
+sem Pix,calote ate D+30,J tudo acima,rf,0.4843201754385965,278
+sem Pix,calote ate D+30,J tudo acima,extratrees,0.5564692982456141,278
+sem Pix,calote ate D+30,J tudo acima,hgb,0.46557017543859647,278
+sem Pix,calote ate D+30,J tudo acima,lgbm,0.46557017543859647,278
+sem Pix,calote ate D+30,J tudo acima,nb,0.5599780701754387,278
+sem Pix,calote ate D+30,J tudo acima,knn,0.5205043859649123,278
+sem Pix,calote ate D+30,J tudo acima,svm,0.5645833333333333,278
+sem Pix,calote ate D+30,J tudo acima,mlp,0.5023026315789474,278
+sem Pix,calote ate D+30,J tudo acima,comite,0.5421600877192982,278
+sem Pix,inadimplencia D+1..45,A enxuto (6 + provedor),l1,0.44793057409879844,233
+sem Pix,inadimplencia D+1..45,A enxuto (6 + provedor),l2,0.4330959798249518,233
+sem Pix,inadimplencia D+1..45,A enxuto (6 + provedor),arvore,0.4019062453641893,233
+sem Pix,inadimplencia D+1..45,A enxuto (6 + provedor),rf,0.453678979379914,233
+sem Pix,inadimplencia D+1..45,A enxuto (6 + provedor),extratrees,0.48153093012906095,233
+sem Pix,inadimplencia D+1..45,A enxuto (6 + provedor),hgb,0.4138851802403204,233
+sem Pix,inadimplencia D+1..45,A enxuto (6 + provedor),lgbm,0.4138851802403204,233
+sem Pix,inadimplencia D+1..45,A enxuto (6 + provedor),nb,0.5445037828215398,233
+sem Pix,inadimplencia D+1..45,A enxuto (6 + provedor),knn,0.5204346536122236,233
+sem Pix,inadimplencia D+1..45,A enxuto (6 + provedor),svm,0.39126242397270433,233
+sem Pix,inadimplencia D+1..45,A enxuto (6 + provedor),mlp,0.5298917074618009,233
+sem Pix,inadimplencia D+1..45,A enxuto (6 + provedor),comite,0.43851060673490583,233
+sem Pix,inadimplencia D+1..45,B enxuto + termos do contrato,l1,0.44793057409879844,233
+sem Pix,inadimplencia D+1..45,B enxuto + termos do contrato,l2,0.3989764129951046,233
+sem Pix,inadimplencia D+1..45,B enxuto + termos do contrato,arvore,0.4084334668446818,233
+sem Pix,inadimplencia D+1..45,B enxuto + termos do contrato,rf,0.4491915146120754,233
+sem Pix,inadimplencia D+1..45,B enxuto + termos do contrato,extratrees,0.46536122237056815,233
+sem Pix,inadimplencia D+1..45,B enxuto + termos do contrato,hgb,0.421079958463136,233
+sem Pix,inadimplencia D+1..45,B enxuto + termos do contrato,lgbm,0.421079958463136,233
+sem Pix,inadimplencia D+1..45,B enxuto + termos do contrato,nb,0.5651980418335559,233
+sem Pix,inadimplencia D+1..45,B enxuto + termos do contrato,knn,0.4462987687286753,233
+sem Pix,inadimplencia D+1..45,B enxuto + termos do contrato,svm,0.39304257528556596,233
+sem Pix,inadimplencia D+1..45,B enxuto + termos do contrato,mlp,0.48872570835187656,233
+sem Pix,inadimplencia D+1..45,B enxuto + termos do contrato,comite,0.4190402017504821,233
+sem Pix,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,l1,0.44793057409879844,233
+sem Pix,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,l2,0.43587746625129803,233
+sem Pix,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,arvore,0.4019062453641893,233
+sem Pix,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,rf,0.44755970924195226,233
+sem Pix,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,extratrees,0.458796914404391,233
+sem Pix,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,hgb,0.41114078029965884,233
+sem Pix,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,lgbm,0.41114078029965884,233
+sem Pix,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,nb,0.5440216585076398,233
+sem Pix,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,knn,0.531523512831924,233
+sem Pix,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,svm,0.4086559857587895,233
+sem Pix,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,mlp,0.5139074321317312,233
+sem Pix,inadimplencia D+1..45,C enxuto + endereco dividido + inconsistencias,comite,0.4347648716807596,233
+sem Pix,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,l1,0.44793057409879844,233
+sem Pix,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,l2,0.4330959798249518,233
+sem Pix,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,arvore,0.4019062453641893,233
+sem Pix,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,rf,0.453678979379914,233
+sem Pix,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,extratrees,0.48153093012906095,233
+sem Pix,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,hgb,0.4138851802403204,233
+sem Pix,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,lgbm,0.4138851802403204,233
+sem Pix,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,nb,0.5445037828215398,233
+sem Pix,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,knn,0.5204346536122236,233
+sem Pix,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,svm,0.39126242397270433,233
+sem Pix,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,mlp,0.5298917074618009,233
+sem Pix,inadimplencia D+1..45,D enxuto + cluster do contrato anterior,comite,0.43851060673490583,233
+sem Pix,inadimplencia D+1..45,E enxuto + tom engajamento,l1,0.44793057409879844,233
+sem Pix,inadimplencia D+1..45,E enxuto + tom engajamento,l2,0.49221183800623053,233
+sem Pix,inadimplencia D+1..45,E enxuto + tom engajamento,arvore,0.41878059635068987,233
+sem Pix,inadimplencia D+1..45,E enxuto + tom engajamento,rf,0.47515205459130694,233
+sem Pix,inadimplencia D+1..45,E enxuto + tom engajamento,extratrees,0.47474410324877614,233
+sem Pix,inadimplencia D+1..45,E enxuto + tom engajamento,hgb,0.42808930425752856,233
+sem Pix,inadimplencia D+1..45,E enxuto + tom engajamento,lgbm,0.42808930425752856,233
+sem Pix,inadimplencia D+1..45,E enxuto + tom engajamento,nb,0.5413143450526627,233
+sem Pix,inadimplencia D+1..45,E enxuto + tom engajamento,knn,0.5141670375315236,233
+sem Pix,inadimplencia D+1..45,E enxuto + tom engajamento,svm,0.3689363595905652,233
+sem Pix,inadimplencia D+1..45,E enxuto + tom engajamento,mlp,0.47589378430499923,233
+sem Pix,inadimplencia D+1..45,E enxuto + tom engajamento,comite,0.43880729862038276,233
+sem Pix,inadimplencia D+1..45,F enxuto + 12 tons,l1,0.44155169856104437,233
+sem Pix,inadimplencia D+1..45,F enxuto + 12 tons,l2,0.45979824951787573,233
+sem Pix,inadimplencia D+1..45,F enxuto + 12 tons,arvore,0.575730603767987,233
+sem Pix,inadimplencia D+1..45,F enxuto + 12 tons,rf,0.5664589823468329,233
+sem Pix,inadimplencia D+1..45,F enxuto + 12 tons,extratrees,0.48153093012906095,233
+sem Pix,inadimplencia D+1..45,F enxuto + 12 tons,hgb,0.5109034267912773,233
+sem Pix,inadimplencia D+1..45,F enxuto + 12 tons,lgbm,0.5109034267912773,233
+sem Pix,inadimplencia D+1..45,F enxuto + 12 tons,nb,0.5304850912327548,233
+sem Pix,inadimplencia D+1..45,F enxuto + 12 tons,knn,0.48531375166889185,233
+sem Pix,inadimplencia D+1..45,F enxuto + 12 tons,svm,0.48590713543984576,233
+sem Pix,inadimplencia D+1..45,F enxuto + 12 tons,mlp,0.5014092864560153,233
+sem Pix,inadimplencia D+1..45,F enxuto + 12 tons,comite,0.5033006972259308,233
+sem Pix,inadimplencia D+1..45,G enxuto + pib/porte,l1,0.44793057409879844,233
+sem Pix,inadimplencia D+1..45,G enxuto + pib/porte,l2,0.44763388221332145,233
+sem Pix,inadimplencia D+1..45,G enxuto + pib/porte,arvore,0.3933763536567275,233
+sem Pix,inadimplencia D+1..45,G enxuto + pib/porte,rf,0.4471146714137368,233
+sem Pix,inadimplencia D+1..45,G enxuto + pib/porte,extratrees,0.4700712060525145,233
+sem Pix,inadimplencia D+1..45,G enxuto + pib/porte,hgb,0.42237798546209765,233
+sem Pix,inadimplencia D+1..45,G enxuto + pib/porte,lgbm,0.42237798546209765,233
+sem Pix,inadimplencia D+1..45,G enxuto + pib/porte,nb,0.5445037828215399,233
+sem Pix,inadimplencia D+1..45,G enxuto + pib/porte,knn,0.5323394155169856,233
+sem Pix,inadimplencia D+1..45,G enxuto + pib/porte,svm,0.43302180685358255,233
+sem Pix,inadimplencia D+1..45,G enxuto + pib/porte,mlp,0.47062750333778375,233
+sem Pix,inadimplencia D+1..45,G enxuto + pib/porte,comite,0.4392523364485982,233
+sem Pix,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,l1,0.4161845423527667,233
+sem Pix,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,l2,0.42349058003263607,233
+sem Pix,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,arvore,0.4167779261237205,233
+sem Pix,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,rf,0.43009197448449793,233
+sem Pix,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,extratrees,0.440624536418929,233
+sem Pix,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,hgb,0.41399643969737426,233
+sem Pix,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,lgbm,0.41399643969737426,233
+sem Pix,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,nb,0.5330440587449934,233
+sem Pix,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,knn,0.5015947188844385,233
+sem Pix,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,svm,0.4160732828957128,233
+sem Pix,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,mlp,0.4497478118973446,233
+sem Pix,inadimplencia D+1..45,H enxuto + dias lead + pagou bem,comite,0.416926272066459,233
+sem Pix,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,l1,0.44793057409879844,233
+sem Pix,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,l2,0.49280522177718444,233
+sem Pix,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,arvore,0.41878059635068987,233
+sem Pix,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,rf,0.4722222222222222,233
+sem Pix,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,extratrees,0.4757083518765761,233
+sem Pix,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,hgb,0.4279038718291055,233
+sem Pix,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,lgbm,0.4279038718291055,233
+sem Pix,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,nb,0.5407951342530781,233
+sem Pix,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,knn,0.5132769618750928,233
+sem Pix,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,svm,0.3706423379320576,233
+sem Pix,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,mlp,0.5182465509568314,233
+sem Pix,inadimplencia D+1..45,I enxuto + compart + anterior + tom engaj,comite,0.4425901201602136,233
+sem Pix,inadimplencia D+1..45,J tudo acima,l1,0.4290906393710132,233
+sem Pix,inadimplencia D+1..45,J tudo acima,l2,0.4589081738614449,233
+sem Pix,inadimplencia D+1..45,J tudo acima,arvore,0.5833333333333334,233
+sem Pix,inadimplencia D+1..45,J tudo acima,rf,0.5342679127725857,233
+sem Pix,inadimplencia D+1..45,J tudo acima,extratrees,0.4885773624091381,233
+sem Pix,inadimplencia D+1..45,J tudo acima,hgb,0.5243287346091086,233
+sem Pix,inadimplencia D+1..45,J tudo acima,lgbm,0.5243287346091086,233
+sem Pix,inadimplencia D+1..45,J tudo acima,nb,0.5379765613410473,233
+sem Pix,inadimplencia D+1..45,J tudo acima,knn,0.4988132324580923,233
+sem Pix,inadimplencia D+1..45,J tudo acima,svm,0.43710132027889037,233
+sem Pix,inadimplencia D+1..45,J tudo acima,mlp,0.4805666815012609,233
+sem Pix,inadimplencia D+1..45,J tudo acima,comite,0.49907283785788464,233
+sem Pix,cluster paga e para,A enxuto (6 + provedor),l1,0.4924390243902439,189
+sem Pix,cluster paga e para,A enxuto (6 + provedor),l2,0.5632926829268292,189
+sem Pix,cluster paga e para,A enxuto (6 + provedor),arvore,0.5367073170731707,189
+sem Pix,cluster paga e para,A enxuto (6 + provedor),rf,0.538170731707317,189
+sem Pix,cluster paga e para,A enxuto (6 + provedor),extratrees,0.5920731707317073,189
+sem Pix,cluster paga e para,A enxuto (6 + provedor),hgb,0.5758536585365854,189
+sem Pix,cluster paga e para,A enxuto (6 + provedor),lgbm,0.5758536585365854,189
+sem Pix,cluster paga e para,A enxuto (6 + provedor),nb,0.525,189
+sem Pix,cluster paga e para,A enxuto (6 + provedor),knn,0.4457317073170731,189
+sem Pix,cluster paga e para,A enxuto (6 + provedor),svm,0.5045121951219512,189
+sem Pix,cluster paga e para,A enxuto (6 + provedor),mlp,0.5476829268292683,189
+sem Pix,cluster paga e para,A enxuto (6 + provedor),comite,0.5784146341463414,189
+sem Pix,cluster paga e para,B enxuto + termos do contrato,l1,0.4924390243902439,189
+sem Pix,cluster paga e para,B enxuto + termos do contrato,l2,0.48731707317073175,189
+sem Pix,cluster paga e para,B enxuto + termos do contrato,arvore,0.4947560975609756,189
+sem Pix,cluster paga e para,B enxuto + termos do contrato,rf,0.5069512195121951,189
+sem Pix,cluster paga e para,B enxuto + termos do contrato,extratrees,0.5459756097560976,189
+sem Pix,cluster paga e para,B enxuto + termos do contrato,hgb,0.5325609756097561,189
+sem Pix,cluster paga e para,B enxuto + termos do contrato,lgbm,0.5325609756097561,189
+sem Pix,cluster paga e para,B enxuto + termos do contrato,nb,0.5240243902439025,189
+sem Pix,cluster paga e para,B enxuto + termos do contrato,knn,0.4729268292682927,189
+sem Pix,cluster paga e para,B enxuto + termos do contrato,svm,0.5278048780487805,189
+sem Pix,cluster paga e para,B enxuto + termos do contrato,mlp,0.4690243902439025,189
+sem Pix,cluster paga e para,B enxuto + termos do contrato,comite,0.5292682926829269,189
+sem Pix,cluster paga e para,C enxuto + endereco dividido + inconsistencias,l1,0.4924390243902439,189
+sem Pix,cluster paga e para,C enxuto + endereco dividido + inconsistencias,l2,0.5619512195121952,189
+sem Pix,cluster paga e para,C enxuto + endereco dividido + inconsistencias,arvore,0.5864634146341463,189
+sem Pix,cluster paga e para,C enxuto + endereco dividido + inconsistencias,rf,0.5539024390243903,189
+sem Pix,cluster paga e para,C enxuto + endereco dividido + inconsistencias,extratrees,0.5915853658536585,189
+sem Pix,cluster paga e para,C enxuto + endereco dividido + inconsistencias,hgb,0.5889024390243903,189
+sem Pix,cluster paga e para,C enxuto + endereco dividido + inconsistencias,lgbm,0.5889024390243903,189
+sem Pix,cluster paga e para,C enxuto + endereco dividido + inconsistencias,nb,0.525,189
+sem Pix,cluster paga e para,C enxuto + endereco dividido + inconsistencias,knn,0.46317073170731704,189
+sem Pix,cluster paga e para,C enxuto + endereco dividido + inconsistencias,svm,0.47707317073170735,189
+sem Pix,cluster paga e para,C enxuto + endereco dividido + inconsistencias,mlp,0.5407317073170732,189
+sem Pix,cluster paga e para,C enxuto + endereco dividido + inconsistencias,comite,0.5810975609756097,189
+sem Pix,cluster paga e para,D enxuto + cluster do contrato anterior,l1,0.4924390243902439,189
+sem Pix,cluster paga e para,D enxuto + cluster do contrato anterior,l2,0.5632926829268292,189
+sem Pix,cluster paga e para,D enxuto + cluster do contrato anterior,arvore,0.5367073170731707,189
+sem Pix,cluster paga e para,D enxuto + cluster do contrato anterior,rf,0.538170731707317,189
+sem Pix,cluster paga e para,D enxuto + cluster do contrato anterior,extratrees,0.5920731707317073,189
+sem Pix,cluster paga e para,D enxuto + cluster do contrato anterior,hgb,0.5758536585365854,189
+sem Pix,cluster paga e para,D enxuto + cluster do contrato anterior,lgbm,0.5758536585365854,189
+sem Pix,cluster paga e para,D enxuto + cluster do contrato anterior,nb,0.525,189
+sem Pix,cluster paga e para,D enxuto + cluster do contrato anterior,knn,0.4457317073170731,189
+sem Pix,cluster paga e para,D enxuto + cluster do contrato anterior,svm,0.5045121951219512,189
+sem Pix,cluster paga e para,D enxuto + cluster do contrato anterior,mlp,0.5476829268292683,189
+sem Pix,cluster paga e para,D enxuto + cluster do contrato anterior,comite,0.5784146341463414,189
+sem Pix,cluster paga e para,E enxuto + tom engajamento,l1,0.495,189
+sem Pix,cluster paga e para,E enxuto + tom engajamento,l2,0.5919512195121952,189
+sem Pix,cluster paga e para,E enxuto + tom engajamento,arvore,0.5340243902439025,189
+sem Pix,cluster paga e para,E enxuto + tom engajamento,rf,0.6171951219512195,189
+sem Pix,cluster paga e para,E enxuto + tom engajamento,extratrees,0.6121951219512195,189
+sem Pix,cluster paga e para,E enxuto + tom engajamento,hgb,0.6121951219512195,189
+sem Pix,cluster paga e para,E enxuto + tom engajamento,lgbm,0.6121951219512195,189
+sem Pix,cluster paga e para,E enxuto + tom engajamento,nb,0.525,189
+sem Pix,cluster paga e para,E enxuto + tom engajamento,knn,0.5743902439024391,189
+sem Pix,cluster paga e para,E enxuto + tom engajamento,svm,0.552439024390244,189
+sem Pix,cluster paga e para,E enxuto + tom engajamento,mlp,0.5717073170731707,189
+sem Pix,cluster paga e para,E enxuto + tom engajamento,comite,0.6186585365853658,189
+sem Pix,cluster paga e para,F enxuto + 12 tons,l1,0.5469512195121952,189
+sem Pix,cluster paga e para,F enxuto + 12 tons,l2,0.6160975609756097,189
+sem Pix,cluster paga e para,F enxuto + 12 tons,arvore,0.4818292682926829,189
+sem Pix,cluster paga e para,F enxuto + 12 tons,rf,0.5458536585365854,189
+sem Pix,cluster paga e para,F enxuto + 12 tons,extratrees,0.6131707317073171,189
+sem Pix,cluster paga e para,F enxuto + 12 tons,hgb,0.5136585365853659,189
+sem Pix,cluster paga e para,F enxuto + 12 tons,lgbm,0.5136585365853659,189
+sem Pix,cluster paga e para,F enxuto + 12 tons,nb,0.5254878048780488,189
+sem Pix,cluster paga e para,F enxuto + 12 tons,knn,0.4507317073170732,189
+sem Pix,cluster paga e para,F enxuto + 12 tons,svm,0.46512195121951216,189
+sem Pix,cluster paga e para,F enxuto + 12 tons,mlp,0.5282926829268293,189
+sem Pix,cluster paga e para,F enxuto + 12 tons,comite,0.5385365853658537,189
+sem Pix,cluster paga e para,G enxuto + pib/porte,l1,0.4924390243902439,189
+sem Pix,cluster paga e para,G enxuto + pib/porte,l2,0.5718292682926829,189
+sem Pix,cluster paga e para,G enxuto + pib/porte,arvore,0.6113414634146341,189
+sem Pix,cluster paga e para,G enxuto + pib/porte,rf,0.566219512195122,189
+sem Pix,cluster paga e para,G enxuto + pib/porte,extratrees,0.5932926829268292,189
+sem Pix,cluster paga e para,G enxuto + pib/porte,hgb,0.5390243902439024,189
+sem Pix,cluster paga e para,G enxuto + pib/porte,lgbm,0.5390243902439024,189
+sem Pix,cluster paga e para,G enxuto + pib/porte,nb,0.525,189
+sem Pix,cluster paga e para,G enxuto + pib/porte,knn,0.4589024390243902,189
+sem Pix,cluster paga e para,G enxuto + pib/porte,svm,0.48207317073170736,189
+sem Pix,cluster paga e para,G enxuto + pib/porte,mlp,0.5054878048780489,189
+sem Pix,cluster paga e para,G enxuto + pib/porte,comite,0.5613414634146341,189
+sem Pix,cluster paga e para,H enxuto + dias lead + pagou bem,l1,0.4924390243902439,189
+sem Pix,cluster paga e para,H enxuto + dias lead + pagou bem,l2,0.5082926829268293,189
+sem Pix,cluster paga e para,H enxuto + dias lead + pagou bem,arvore,0.5809756097560975,189
+sem Pix,cluster paga e para,H enxuto + dias lead + pagou bem,rf,0.5721951219512196,189
+sem Pix,cluster paga e para,H enxuto + dias lead + pagou bem,extratrees,0.5735365853658536,189
+sem Pix,cluster paga e para,H enxuto + dias lead + pagou bem,hgb,0.5692682926829268,189
+sem Pix,cluster paga e para,H enxuto + dias lead + pagou bem,lgbm,0.5692682926829268,189
+sem Pix,cluster paga e para,H enxuto + dias lead + pagou bem,nb,0.525,189
+sem Pix,cluster paga e para,H enxuto + dias lead + pagou bem,knn,0.4474390243902439,189
+sem Pix,cluster paga e para,H enxuto + dias lead + pagou bem,svm,0.5836585365853658,189
+sem Pix,cluster paga e para,H enxuto + dias lead + pagou bem,mlp,0.4817073170731707,189
+sem Pix,cluster paga e para,H enxuto + dias lead + pagou bem,comite,0.5708536585365853,189
+sem Pix,cluster paga e para,I enxuto + compart + anterior + tom engaj,l1,0.4947560975609756,189
+sem Pix,cluster paga e para,I enxuto + compart + anterior + tom engaj,l2,0.5914634146341464,189
+sem Pix,cluster paga e para,I enxuto + compart + anterior + tom engaj,arvore,0.5340243902439025,189
+sem Pix,cluster paga e para,I enxuto + compart + anterior + tom engaj,rf,0.6253658536585366,189
+sem Pix,cluster paga e para,I enxuto + compart + anterior + tom engaj,extratrees,0.6053658536585366,189
+sem Pix,cluster paga e para,I enxuto + compart + anterior + tom engaj,hgb,0.6132926829268293,189
+sem Pix,cluster paga e para,I enxuto + compart + anterior + tom engaj,lgbm,0.6132926829268293,189
+sem Pix,cluster paga e para,I enxuto + compart + anterior + tom engaj,nb,0.525,189
+sem Pix,cluster paga e para,I enxuto + compart + anterior + tom engaj,knn,0.5729268292682927,189
+sem Pix,cluster paga e para,I enxuto + compart + anterior + tom engaj,svm,0.5546341463414635,189
+sem Pix,cluster paga e para,I enxuto + compart + anterior + tom engaj,mlp,0.581219512195122,189
+sem Pix,cluster paga e para,I enxuto + compart + anterior + tom engaj,comite,0.6230487804878049,189
+sem Pix,cluster paga e para,J tudo acima,l1,0.5469512195121952,189
+sem Pix,cluster paga e para,J tudo acima,l2,0.5743902439024391,189
+sem Pix,cluster paga e para,J tudo acima,arvore,0.49353658536585365,189
+sem Pix,cluster paga e para,J tudo acima,rf,0.5575609756097561,189
+sem Pix,cluster paga e para,J tudo acima,extratrees,0.6224390243902439,189
+sem Pix,cluster paga e para,J tudo acima,hgb,0.5109756097560976,189
+sem Pix,cluster paga e para,J tudo acima,lgbm,0.5109756097560976,189
+sem Pix,cluster paga e para,J tudo acima,nb,0.5245121951219512,189
+sem Pix,cluster paga e para,J tudo acima,knn,0.5109756097560976,189
+sem Pix,cluster paga e para,J tudo acima,svm,0.4241463414634146,189
+sem Pix,cluster paga e para,J tudo acima,mlp,0.5714634146341464,189
+sem Pix,cluster paga e para,J tudo acima,comite,0.5495121951219513,189

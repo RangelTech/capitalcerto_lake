@@ -1,0 +1,240 @@
+alvo calote D+1..45 (ye_0): n=569 taxa=0.357
+alvo calote ate D+30: n=625 taxa=0.242
+alvo inadimplencia 30d (atraso): n=733 taxa=0.692
+alvo cluster 'paga e para': n=560 taxa=0.257
+
+################ 1. MATRIZ DE ASSOCIACAO E INFORMACAO MUTUA ################
+90 variaveis numericas; 44 pares redundantes (|rho|>=0,7). Maiores:
+                   var_a                    var_b   rho
+              m_n_videos                  m_vid_n  1.00
+       f_dora_idade_nota              f_int_idade  1.00
+f_chat_tam_medio_cliente         x_chat_tam_medio  1.00
+  f_dora_cobranca_pj_qtd f_dora_cobranca_pj_valor  1.00
+         prev_n_parcelas           prev_contratos  0.99
+  f_dora_cobranca_pf_qtd f_dora_cobranca_pf_valor  0.99
+     f_dora_refin_pj_qtd    f_dora_refin_pj_valor  0.99
+ f_dora_idade_cnpj_meses  rfb_idade_empresa_meses  0.99
+  f_dora_protesto_pj_qtd f_dora_protesto_pj_valor  0.98
+             m_n_imagens             m_img_n_proc  0.96
+     f_dora_pefin_pj_qtd    f_dora_pefin_pj_valor  0.96
+            m_n_arquivos                  m_pdf_n  0.94
+  f_dora_protesto_pf_qtd f_dora_protesto_pf_valor  0.94
+         f_dora_score_pf      f_dora_faixa_pf_ord -0.94
+m_img_med_p_captura_tela        m_img_max_captura  0.93
+-- maior informacao mutua com calote D+1..45 (ye_0): [('x_nome_tamanho', 0.042), ('f_dora_cobranca_pj_valor', 0.038), ('m_img_pc8', 0.034), ('f_dora_refin_pj_qtd', 0.031), ('f_dora_pefin_pf_valor', 0.031), ('f_dora_cobranca_pf_valor', 0.031), ('x_chat_resp_mediana_s', 0.029), ('m_n_videos', 0.026)]
+-- maior informacao mutua com calote ate D+30: [('m_img_pc3', 0.038), ('f_int_processos_passivo', 0.026), ('m_img_med_p_rua', 0.026), ('f_chat_tam_medio_cliente', 0.025), ('m_img_med_p_casa_residencial', 0.025), ('qtd_parcelas_contratadas', 0.025), ('razao_parcela_principal', 0.024), ('f_dora_score_pj', 0.022)]
+-- maior informacao mutua com inadimplencia 30d (atraso): [('f_dora_refin_pf_qtd', 0.069), ('f_dora_divida_total_pj', 0.04), ('m_img_med_p_fachada_comercio', 0.035), ('m_img_nitidez', 0.035), ('qtd_parcelas_contratadas', 0.031), ('x_chat_dias_conversa', 0.03), ('idade_na_contratacao', 0.027), ('tempo_de_casa_dias', 0.026)]
+-- maior informacao mutua com cluster 'paga e para': [('x_nome_tamanho', 0.041), ('razao_parcela_principal', 0.034), ('f_dora_idade_nota', 0.027), ('idade_na_contratacao', 0.027), ('m_img_med_p_rua', 0.025), ('m_img_max_captura', 0.022), ('m_img_pc3', 0.022), ('m_img_pc6', 0.022)]
+
+################ 2. COMBINACOES CONDICIONADAS A COBRANCA ################
+
+-- [Pix agendado] calote D+1..45 (ye_0): base 0.71 (n=95); 582 perfis testados; q<0,10: 0
+
+-- [Pix agendado] calote ate D+30: base 0.51 (n=115); 840 perfis testados; q<0,10: 0
+
+-- [Pix agendado] inadimplencia 30d (atraso): base 0.74 (n=194); 2040 perfis testados; q<0,10: 64
+   [regiao_ddd x linha_wpp x sexo] Sudeste | outras | MASCULINO  n=17 taxa=0.24 (base 0.74) q=0.007
+   [valor x linha_wpp x tipo_pessoa] ate500 | outras | CPF  n=22 taxa=0.32 (base 0.74) q=0.007
+   [parcelas x linha_wpp x sexo] <60 | outras | MASCULINO  n=22 taxa=0.32 (base 0.74) q=0.007
+   [cep x regiao_ddd x linha_wpp] com CEP | Sudeste | outras  n=27 taxa=0.37 (base 0.74) q=0.007
+   [linha_wpp x sexo] outras | MASCULINO  n=38 taxa=0.45 (base 0.74) q=0.007
+   [cep x linha_wpp x sexo] com CEP | outras | MASCULINO  n=38 taxa=0.45 (base 0.74) q=0.007
+   [regiao_ddd x linha_wpp x tipo_pessoa] Sudeste | outras | CPF  n=16 taxa=0.25 (base 0.74) q=0.008
+   [provedor x parcelas x linha_wpp] PLUGGY | <60 | outras  n=21 taxa=0.33 (base 0.74) q=0.011
+   [historico x linha_wpp x tipo_pessoa] 1o contrato | inbox 7 | CPF  n=38 taxa=0.97 (base 0.74) q=0.011
+   [historico x linha_wpp] 1o contrato | inbox 7  n=67 taxa=0.91 (base 0.74) q=0.011
+
+-- [Pix agendado] cluster 'paga e para': base 0.57 (n=94); 576 perfis testados; q<0,10: 0
+
+-- [sem Pix agendado] calote D+1..45 (ye_0): base 0.29 (n=474); 5869 perfis testados; q<0,10: 1076
+   [provedor x historico] MANUAL | 1o contrato  n=220 taxa=0.44 (base 0.29) q=0.000
+   [provedor x parcelas x historico] MANUAL | 60+ | 1o contrato  n=215 taxa=0.44 (base 0.29) q=0.000
+   [provedor] PLUGGY  n=157 taxa=0.11 (base 0.29) q=0.000
+   [provedor] MANUAL  n=235 taxa=0.42 (base 0.29) q=0.000
+   [parcelas x historico] 60+ | 1o contrato  n=292 taxa=0.39 (base 0.29) q=0.000
+   [provedor x cep] PLUGGY | com CEP  n=107 taxa=0.07 (base 0.29) q=0.000
+   [provedor x valor x historico] MANUAL | 1001a1500 | 1o contrato  n=207 taxa=0.43 (base 0.29) q=0.000
+   [provedor x parcelas] MANUAL | 60+  n=230 taxa=0.42 (base 0.29) q=0.000
+   [parcelas x cep] <60 | com CEP  n=113 taxa=0.08 (base 0.29) q=0.000
+   [provedor x valor x parcelas] MANUAL | 1001a1500 | 60+  n=214 taxa=0.42 (base 0.29) q=0.000
+
+-- [sem Pix agendado] calote ate D+30: base 0.18 (n=510); 6419 perfis testados; q<0,10: 25
+   [provedor x historico] MANUAL | 1o contrato  n=219 taxa=0.28 (base 0.18) q=0.002
+   [provedor x parcelas x historico] MANUAL | 60+ | 1o contrato  n=214 taxa=0.28 (base 0.18) q=0.002
+   [provedor] MANUAL  n=234 taxa=0.26 (base 0.18) q=0.012
+   [provedor x parcelas] MANUAL | 60+  n=229 taxa=0.27 (base 0.18) q=0.012
+   [provedor] PLUGGY  n=175 taxa=0.08 (base 0.18) q=0.012
+   [provedor x cep] PLUGGY | com CEP  n=124 taxa=0.06 (base 0.18) q=0.012
+   [parcelas x historico] 60+ | 1o contrato  n=298 taxa=0.24 (base 0.18) q=0.012
+   [provedor x valor x historico] MANUAL | 1001a1500 | 1o contrato  n=206 taxa=0.27 (base 0.18) q=0.015
+   [parcelas] <60  n=174 taxa=0.09 (base 0.18) q=0.032
+   [parcelas] 60+  n=336 taxa=0.23 (base 0.18) q=0.032
+
+-- [sem Pix agendado] inadimplencia 30d (atraso): base 0.68 (n=539); 6886 perfis testados; q<0,10: 1684
+   [parcelas x historico] 60+ | 1o contrato  n=302 taxa=0.84 (base 0.68) q=0.000
+   [parcelas] 60+  n=343 taxa=0.81 (base 0.68) q=0.000
+   [parcelas] <60  n=196 taxa=0.44 (base 0.68) q=0.000
+   [provedor x historico] MANUAL | 1o contrato  n=219 taxa=0.86 (base 0.68) q=0.000
+   [provedor x parcelas x historico] MANUAL | 60+ | 1o contrato  n=214 taxa=0.86 (base 0.68) q=0.000
+   [parcelas x historico] <60 | 1o contrato  n=153 taxa=0.42 (base 0.68) q=0.000
+   [parcelas x cep] <60 | com CEP  n=148 taxa=0.42 (base 0.68) q=0.000
+   [valor x historico] 1001a1500 | 1o contrato  n=232 taxa=0.84 (base 0.68) q=0.000
+   [valor x parcelas x historico] 1001a1500 | 60+ | 1o contrato  n=224 taxa=0.85 (base 0.68) q=0.000
+   [provedor x valor x historico] MANUAL | 1001a1500 | 1o contrato  n=206 taxa=0.85 (base 0.68) q=0.000
+
+-- [sem Pix agendado] cluster 'paga e para': base 0.19 (n=466); 5788 perfis testados; q<0,10: 18
+   [parcelas x historico] 60+ | 1o contrato  n=285 taxa=0.26 (base 0.19) q=0.029
+   [parcelas x historico] <60 | 1o contrato  n=126 taxa=0.07 (base 0.19) q=0.029
+   [parcelas] 60+  n=320 taxa=0.24 (base 0.19) q=0.029
+   [parcelas] <60  n=146 taxa=0.08 (base 0.19) q=0.029
+   [parcelas x historico x dias_lead] <60 | 1o contrato | ?  n=79 taxa=0.04 (base 0.19) q=0.029
+   [parcelas x dias_lead] <60 | ?  n=87 taxa=0.05 (base 0.19) q=0.029
+   [provedor x parcelas x historico] MANUAL | 60+ | 1o contrato  n=214 taxa=0.28 (base 0.19) q=0.029
+   [parcelas x historico x linha_wpp] <60 | 1o contrato | outras  n=47 taxa=0.00 (base 0.19) q=0.033
+   [parcelas x cep] <60 | com CEP  n=113 taxa=0.07 (base 0.19) q=0.040
+   [parcelas x linha_wpp] <60 | outras  n=56 taxa=0.02 (base 0.19) q=0.051
+
+-- [sem Pix e desde jun/26] calote D+1..45 (ye_0): base 0.20 (n=240); 2763 perfis testados; q<0,10: 393
+   [parcelas x cep] <60 | com CEP  n=110 taxa=0.07 (base 0.20) q=0.005
+   [parcelas x historico] 60+ | 1o contrato  n=78 taxa=0.38 (base 0.20) q=0.005
+   [parcelas] 60+  n=98 taxa=0.35 (base 0.20) q=0.005
+   [parcelas] <60  n=142 taxa=0.11 (base 0.20) q=0.005
+   [provedor x cep] PLUGGY | com CEP  n=98 taxa=0.07 (base 0.20) q=0.005
+   [parcelas x historico x cep] <60 | 1o contrato | com CEP  n=97 taxa=0.07 (base 0.20) q=0.005
+   [parcelas x dias_lead] <60 | ?  n=85 taxa=0.06 (base 0.20) q=0.005
+   [parcelas x historico x dias_lead] <60 | 1o contrato | ?  n=77 taxa=0.05 (base 0.20) q=0.005
+   [parcelas x dias_lead x tipo_pessoa] <60 | ? | CNPJ  n=52 taxa=0.02 (base 0.20) q=0.005
+   [parcelas x historico] <60 | 1o contrato  n=122 taxa=0.10 (base 0.20) q=0.005
+
+-- [sem Pix e desde jun/26] calote ate D+30: base 0.14 (n=278); 3340 perfis testados; q<0,10: 0
+
+-- [sem Pix e desde jun/26] inadimplencia 30d (atraso): base 0.54 (n=307); 3863 perfis testados; q<0,10: 237
+   [parcelas x historico] 60+ | 1o contrato  n=89 taxa=0.80 (base 0.54) q=0.000
+   [parcelas] <60  n=192 taxa=0.43 (base 0.54) q=0.000
+   [parcelas] 60+  n=115 taxa=0.74 (base 0.54) q=0.000
+   [parcelas x ramo] 60+ | alimentacao fora  n=48 taxa=0.85 (base 0.54) q=0.001
+   [parcelas x sexo] <60 | MASCULINO  n=67 taxa=0.28 (base 0.54) q=0.001
+   [parcelas x cep x sexo] <60 | com CEP | MASCULINO  n=67 taxa=0.28 (base 0.54) q=0.001
+   [parcelas x linha_wpp x sexo] <60 | outras | MASCULINO  n=38 taxa=0.18 (base 0.54) q=0.001
+   [parcelas x historico] <60 | 1o contrato  n=149 taxa=0.41 (base 0.54) q=0.002
+   [parcelas x historico x linha_wpp] 60+ | 1o contrato | outras  n=40 taxa=0.88 (base 0.54) q=0.002
+   [parcelas x cep] <60 | com CEP  n=145 taxa=0.41 (base 0.54) q=0.003
+
+-- [sem Pix e desde jun/26] cluster 'paga e para': base 0.16 (n=239); 2750 perfis testados; q<0,10: 96
+   [idade x parcelas] idade? | 60+  n=53 taxa=0.34 (base 0.16) q=0.022
+   [parcelas x sexo] 60+ | ?  n=53 taxa=0.34 (base 0.16) q=0.022
+   [parcelas x segmento] 60+ | sem segmento  n=53 taxa=0.34 (base 0.16) q=0.022
+   [parcelas x porte_municipio] 60+ | ?  n=53 taxa=0.34 (base 0.16) q=0.022
+   [parcelas x pib_municipio] 60+ | pib?  n=53 taxa=0.34 (base 0.16) q=0.022
+   [parcelas x cep] 60+ | sem CEP  n=53 taxa=0.34 (base 0.16) q=0.022
+   [idade x parcelas x pib_municipio] idade? | 60+ | pib?  n=53 taxa=0.34 (base 0.16) q=0.022
+   [idade x parcelas x cep] idade? | 60+ | sem CEP  n=53 taxa=0.34 (base 0.16) q=0.022
+   [idade x parcelas x segmento] idade? | 60+ | sem segmento  n=53 taxa=0.34 (base 0.16) q=0.022
+   [idade x parcelas x sexo] idade? | 60+ | ?  n=53 taxa=0.34 (base 0.16) q=0.022
+
+################ 3. IDENTIDADE COMPARTILHADA ################
+cmp_tel: clientes com compartilhamento = 24 de 798
+cmp_email: clientes com compartilhamento = 10 de 798
+cmp_end: clientes com compartilhamento = 268 de 798
+cmp_resp: clientes com compartilhamento = 12 de 798
+cmp_qualquer: clientes com compartilhamento = 279 de 798
+   calote D+1..45 (ye_0)        cmp_tel                  n_com=13 calote_com=0.46 sem=0.35 p=0.5591
+   calote D+1..45 (ye_0)        cmp_end                  n_com=243 calote_com=0.43 sem=0.30 p=0.0014
+   calote D+1..45 (ye_0)        cmp_qualquer             n_com=246 calote_com=0.43 sem=0.30 p=0.0015
+   calote D+1..45 (ye_0)        cmp_tel_wpp_diferente    n_com=97 calote_com=0.30 sem=0.36 p=0.2438
+   calote D+1..45 (ye_0)        cmp_n_contatos_chatwoot  n_com=554 calote_com=0.35 sem=nan p=1.0000
+   calote ate D+30              cmp_tel                  n_com=15 calote_com=0.47 sem=0.24 p=0.0608
+   calote ate D+30              cmp_end                  n_com=256 calote_com=0.30 sem=0.20 p=0.0044
+   calote ate D+30              cmp_qualquer             n_com=261 calote_com=0.31 sem=0.20 p=0.0017
+   calote ate D+30              cmp_tel_wpp_diferente    n_com=103 calote_com=0.17 sem=0.25 p=0.1001
+   calote ate D+30              cmp_n_contatos_chatwoot  n_com=610 calote_com=0.24 sem=nan p=1.0000
+   inadimplencia 30d (atraso)   cmp_tel                  n_com=17 calote_com=0.94 sem=0.69 p=0.0299
+   inadimplencia 30d (atraso)   cmp_end                  n_com=301 calote_com=0.74 sem=0.66 p=0.0117
+   inadimplencia 30d (atraso)   cmp_qualquer             n_com=307 calote_com=0.74 sem=0.65 p=0.0120
+   inadimplencia 30d (atraso)   cmp_tel_wpp_diferente    n_com=120 calote_com=0.75 sem=0.68 p=0.1304
+   inadimplencia 30d (atraso)   cmp_n_contatos_chatwoot  n_com=717 calote_com=0.69 sem=nan p=1.0000
+   cluster 'paga e para'        cmp_tel                  n_com=12 calote_com=0.42 sem=0.25 p=0.1975
+   cluster 'paga e para'        cmp_end                  n_com=239 calote_com=0.32 sem=0.21 p=0.0061
+   cluster 'paga e para'        cmp_qualquer             n_com=242 calote_com=0.32 sem=0.21 p=0.0046
+   cluster 'paga e para'        cmp_tel_wpp_diferente    n_com=94 calote_com=0.18 sem=0.27 p=0.0694
+   cluster 'paga e para'        cmp_n_contatos_chatwoot  n_com=545 calote_com=0.26 sem=nan p=1.0000
+
+################ 4. INDICE DE INCONSISTENCIAS ################
+distribuicao do indice: {0.0: 172, 1.0: 225, 2.0: 134, 3.0: 218, 4.0: 122, 5.0: 23, 6.0: 2}
+   calote D+1..45 (ye_0)        AUC=0.548 p=0.0503 n=569 | calote por nivel: [[132.0, 0.36], [138.0, 0.27], [49.0, 0.24], [152.0, 0.42], [98.0, 0.43]]
+        so sem Pix: AUC=0.549 p=0.0839 n=474
+        so Pix: AUC=0.501 p=0.9933 n=95
+   calote ate D+30              AUC=0.540 p=0.1281 n=625 | calote por nivel: [[147.0, 0.25], [155.0, 0.18], [59.0, 0.15], [159.0, 0.29], [105.0, 0.3]]
+        so sem Pix: AUC=0.522 p=0.4914 n=510
+        so Pix: AUC=0.572 p=0.1764 n=115
+   inadimplencia 30d (atraso)   AUC=0.519 p=0.3906 n=733 | calote por nivel: [[153.0, 0.76], [182.0, 0.6], [83.0, 0.6], [183.0, 0.71], [132.0, 0.77]]
+        so sem Pix: AUC=0.513 p=0.6074 n=539
+        so Pix: AUC=0.513 p=0.7801 n=194
+   cluster 'paga e para'        AUC=0.548 p=0.0787 n=560 | calote por nivel: [[131.0, 0.25], [134.0, 0.2], [49.0, 0.16], [148.0, 0.3], [98.0, 0.32]]
+        so sem Pix: AUC=0.543 p=0.1951 n=466
+        so Pix: AUC=0.530 p=0.6164 n=94
+
+################ 5. FALHAS DE COBRANCA POR CONTRATO ################
+   calote D+1..45         ev_efi_payment_fa_3d                 AUC=0.556 p=0.0000 n=569 | media falhas Pix=0.2 sem Pix=0.0
+   calote D+1..45         ev_efi_payment_fa_7d                 AUC=0.572 p=0.0000 n=569 | media falhas Pix=2.6 sem Pix=0.4
+   calote D+1..45         ev_pluggy_webhook_3d                 AUC=0.435 p=0.0016 n=569 | media falhas Pix=23.7 sem Pix=16.0
+   calote D+1..45         ev_pluggy_webhook_7d                 AUC=0.433 p=0.0011 n=569 | media falhas Pix=25.1 sem Pix=17.5
+   calote 30d             ev_efi_payment_fa_3d                 AUC=0.558 p=0.0000 n=625 | media falhas Pix=0.2 sem Pix=0.0
+   calote 30d             ev_efi_payment_fa_7d                 AUC=0.571 p=0.0000 n=625 | media falhas Pix=2.6 sem Pix=0.5
+   calote 30d             ev_pluggy_webhook_3d                 AUC=0.452 p=0.0327 n=625 | media falhas Pix=23.4 sem Pix=17.2
+   calote 30d             ev_pluggy_webhook_7d                 AUC=0.451 p=0.0284 n=625 | media falhas Pix=24.8 sem Pix=18.7
+   cluster paga e para    ev_efi_payment_fa_3d                 AUC=0.554 p=0.0000 n=560 | media falhas Pix=0.2 sem Pix=0.0
+   cluster paga e para    ev_efi_payment_fa_7d                 AUC=0.571 p=0.0000 n=560 | media falhas Pix=2.6 sem Pix=0.4
+   cluster paga e para    ev_pluggy_webhook_7d                 AUC=0.461 p=0.0908 n=560 | media falhas Pix=25.3 sem Pix=17.7
+   cluster paga e para    ev_efi_pix_charge_3d                 AUC=0.503 p=0.0900 n=560 | media falhas Pix=0.0 sem Pix=0.0
+
+################ 6. VALOR/FATURAMENTO E SAZONALIDADE ################
+   calote D+1..45       razao_valor_faturamento        [todos] AUC=0.559 p=0.1037 n=278
+   calote D+1..45       razao_valor_faturamento        [sem Pix] AUC=0.618 p=0.0083 n=219
+   calote D+1..45       razao_parcela_mes_faturamento  [todos] AUC=0.553 p=0.1412 n=278
+   calote D+1..45       razao_parcela_mes_faturamento  [sem Pix] AUC=0.605 p=0.0192 n=219
+   calote D+1..45       dom                            [todos] AUC=0.539 p=0.1229 n=569
+   calote D+1..45       semana_mes                     [todos] AUC=0.536 p=0.1404 n=569
+   calote 30d           razao_valor_faturamento        [todos] AUC=0.600 p=0.0099 n=318
+   calote 30d           razao_valor_faturamento        [sem Pix] AUC=0.642 p=0.0058 n=246
+   calote 30d           razao_parcela_mes_faturamento  [todos] AUC=0.585 p=0.0287 n=318
+   calote 30d           razao_parcela_mes_faturamento  [sem Pix] AUC=0.625 p=0.0155 n=246
+   calote 30d           perto_feriado                  [sem Pix] AUC=0.530 p=0.1220 n=510
+   inadimplencia 30d    razao_valor_faturamento        [sem Pix] AUC=0.584 p=0.0220 n=267
+   inadimplencia 30d    razao_parcela_mes_faturamento  [sem Pix] AUC=0.558 p=0.1149 n=267
+   inadimplencia 30d    dom                            [sem Pix] AUC=0.548 p=0.0692 n=539
+   inadimplencia 30d    semana_mes                     [sem Pix] AUC=0.548 p=0.0640 n=539
+   inadimplencia 30d    perto_feriado                  [todos] AUC=0.526 p=0.0236 n=733
+   inadimplencia 30d    perto_feriado                  [sem Pix] AUC=0.541 p=0.0055 n=539
+calote 30d sem Pix por dia da semana de inicio: [[89.0, 0.16], [100.0, 0.18], [112.0, 0.27], [98.0, 0.12], [111.0, 0.16]]
+calote 30d sem Pix por mes de inicio: {1: {'count': 13, 'mean': 0.08}, 2: {'count': 30, 'mean': 0.17}, 3: {'count': 48, 'mean': 0.31}, 4: {'count': 82, 'mean': 0.21}, 5: {'count': 56, 'mean': 0.23}, 6: {'count': 60, 'mean': 0.23}, 7: {'count': 108, 'mean': 0.1}, 8: {'count': 93, 'mean': 0.1}, 9: {'count': 17, 'mean': 0.24}, 10: {'count': 1, 'mean': 1.0}, 11: {'count': 1, 'mean': 1.0}, 12: {'count': 1, 'mean': 1.0}}
+LIMITE: ~10 meses de dados, Pix agendado mudou de 3% para 94% entre maio e outubro e a safra muda a cada mes: sazonalidade NAO e separavel de safra/coorte. Os resultados acima sao exploratorios.
+
+################ 7. CLUSTER DO CONTRATO ANTERIOR ################
+   calote D+1..45         anterior_paga_e_para: [[60.0, 0.22], [11.0, 0.82]] (n=71) p=0.0002
+   calote 30d             anterior_paga_e_para: [[82.0, 0.2], [14.0, 0.64]] (n=96) p=0.0013
+   cluster paga e para    anterior_paga_e_para: [[59.0, 0.2], [11.0, 0.73]] (n=70) p=0.0012
+
+################ 8. COMITE DE MODELOS E MODELO POR CLASSE ################
+ye_0       | P enxuto atual                                    | l1=0.521 rf=0.634 gb=0.621 comite (media dos ranks)=0.615 n=259
+ye_0       | P + termos do contrato                            | l1=0.504 rf=0.616 gb=0.603 comite (media dos ranks)=0.599 n=259
+ye_0       | P + termos + inconsistencias + compartilhamento   | l1=0.504 rf=0.642 gb=0.640 comite (media dos ranks)=0.631 n=259
+ye_0       | P + termos + pib/porte do municipio               | l1=0.504 rf=0.612 gb=0.595 comite (media dos ranks)=0.591 n=259
+ye_0       | P + termos + dias_lead + pagou_bem                | l1=0.504 rf=0.631 gb=0.611 comite (media dos ranks)=0.609 n=259
+ye_0       | modelo so da classe CNPJ | l1=0.547 rf=0.559 gb=0.585 comite (media dos ranks)=0.607 n=159
+y_calote_30| P enxuto atual                                    | l1=0.617 rf=0.601 gb=0.570 comite (media dos ranks)=0.620 n=389
+y_calote_30| P + termos do contrato                            | l1=0.617 rf=0.582 gb=0.577 comite (media dos ranks)=0.613 n=389
+y_calote_30| P + termos + inconsistencias + compartilhamento   | l1=0.617 rf=0.632 gb=0.637 comite (media dos ranks)=0.653 n=389
+y_calote_30| P + termos + pib/porte do municipio               | l1=0.612 rf=0.595 gb=0.600 comite (media dos ranks)=0.624 n=389
+y_calote_30| P + termos + dias_lead + pagou_bem                | l1=0.617 rf=0.601 gb=0.561 comite (media dos ranks)=0.617 n=389
+y_calote_30| modelo so da classe CPF  | l1=0.500 rf=0.805 gb=0.736 comite (media dos ranks)=0.791 n=59
+y_calote_30| modelo so da classe CNPJ | l1=0.567 rf=0.591 gb=0.591 comite (media dos ranks)=0.609 n=191
+y_30       | P enxuto atual                                    | l1=0.459 rf=0.479 gb=0.462 comite (media dos ranks)=0.460 n=487
+y_30       | P + termos do contrato                            | l1=0.468 rf=0.522 gb=0.483 comite (media dos ranks)=0.489 n=487
+y_30       | P + termos + inconsistencias + compartilhamento   | l1=0.470 rf=0.525 gb=0.508 comite (media dos ranks)=0.499 n=487
+y_30       | P + termos + pib/porte do municipio               | l1=0.470 rf=0.534 gb=0.488 comite (media dos ranks)=0.495 n=487
+y_30       | P + termos + dias_lead + pagou_bem                | l1=0.464 rf=0.515 gb=0.469 comite (media dos ranks)=0.479 n=487
+y_30       | modelo so da classe CPF  | l1=0.469 rf=0.445 gb=0.542 comite (media dos ranks)=0.446 n=106
+y_30       | modelo so da classe CNPJ | l1=0.536 rf=0.498 gb=0.475 comite (media dos ranks)=0.486 n=254
+
+FIM DA BATERIA LOCAL

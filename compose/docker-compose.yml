@@ -1,6 +1,11 @@
 networks:
+  # "internal" e so um nome, nao usa a flag internal:true do Docker: essa flag bloqueia
+  # SAIDA pra internet (nao so entrada), e servicos aqui (Airflow sobretudo) precisam de
+  # acesso real a APIs externas (ERP, Chatwoot, bureaus de credito). Isolamento de entrada
+  # ja e garantido por nao publicar porta de host pra quem nao precisa, nao pela rede em si.
+  # Bug encontrado e corrigido em 2026-08-26 ao testar o pipeline de ingestao pela primeira vez.
   internal:
-    internal: true
+    driver: bridge
   public:
     driver: bridge
 
@@ -11,6 +16,7 @@ volumes:
   airflow_logs:
   uptime_kuma_data:
   traefik_letsencrypt:
+  credhub_pg_data:
 
 services:
 
@@ -40,6 +46,19 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ../configs/postgres/init-multi-db.sh:/docker-entrypoint-initdb.d/init-multi-db.sh:ro
+
+  # Postgres local com o dump do CRM CredHub (carga fria de 2026-10-01). Provisorio: quando o banco oficial
+  # for liberado, so reapontar a conexao Airflow credhub_postgres e este servico pode ser removido.
+  credhub-postgres:
+    image: postgres:16
+    restart: unless-stopped
+    networks: [internal]
+    environment:
+      POSTGRES_USER: credhub
+      POSTGRES_PASSWORD: ${CREDHUB_PG_PASSWORD}
+      POSTGRES_DB: share
+    volumes:
+      - credhub_pg_data:/var/lib/postgresql/data
 
   minio:
     image: minio/minio:${MINIO_VERSION}
@@ -101,6 +120,7 @@ services:
       - "8081:8080"   # IP direto por enquanto
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:${POSTGRES_ADMIN_PASSWORD}@postgres/airflow
       AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
       AIRFLOW_CONN_MINIO_S3: "aws://${MINIO_ROOT_USER}:${MINIO_ROOT_PASSWORD}@?endpoint_url=http%3A%2F%2Fminio%3A9000"
@@ -129,6 +149,7 @@ services:
     volumes:
       - ../configs/airflow/dags:/opt/airflow/dags
       - airflow_logs:/opt/airflow/logs
+      - ../secrets/chatwoot_ed25519:/opt/airflow/secrets/chatwoot_ed25519:ro
     command: scheduler
 
   metabase:
@@ -163,14 +184,18 @@ services:
   risk-api:
     build: ../apps/risk-api
     restart: unless-stopped
-    depends_on: [clickhouse]
+    depends_on: [clickhouse, minio]
     networks: [internal, public]
     ports:
       - "8000:8000"   # IP direto por enquanto
     environment:
       RISK_API_SECRET_KEY: ${RISK_API_SECRET_KEY}
+      RISK_API_KEYS: ${RISK_API_KEYS}
       CLICKHOUSE_HOST: clickhouse
       CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD}
+      MINIO_ENDPOINT: http://minio:9000
+      AWS_ACCESS_KEY_ID: ${MINIO_ROOT_USER}
+      AWS_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD}
 
   uptime-kuma:
     image: louislam/uptime-kuma:${UPTIME_KUMA_VERSION}

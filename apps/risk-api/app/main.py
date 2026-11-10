@@ -2,9 +2,11 @@ from fastapi import FastAPI
 
 from app.clickhouse_client import get_features
 from app.model.dummy_model import DummyModel
+from app.v1 import router as router_v1
 from app.schemas import ScoreRequest, ScoreResponse
 
-app = FastAPI(title="Capital Certo Risk API")
+app = FastAPI(title="Capital Certo Risk API", version="1.0")
+app.include_router(router_v1)
 
 model = DummyModel()
 

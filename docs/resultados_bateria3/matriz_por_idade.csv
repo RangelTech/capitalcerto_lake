@@ -1,0 +1,757 @@
+idade,alvo,conjunto,algoritmo,auc,n
+1,calote,1 so comportamento,l1,0.5260057992026097,271
+1,calote,1 so comportamento,l2,0.5315029600096653,271
+1,calote,1 so comportamento,rf,0.5260057992026097,271
+1,calote,1 so comportamento,extratrees,0.5260057992026097,271
+1,calote,1 so comportamento,hgb,0.5291470339494986,271
+1,calote,1 so comportamento,lgbm,0.5210523136402078,271
+1,calote,1 so comportamento,mlp,0.4843844388063308,271
+1,calote,1 so comportamento,svm,0.5210523136402078,271
+1,calote,1 so comportamento,comite,0.5291470339494986,271
+1,calote,2 comportamento + cadastro enxuto,l1,0.4432161411139302,271
+1,calote,2 comportamento + cadastro enxuto,l2,0.32067778180500184,271
+1,calote,2 comportamento + cadastro enxuto,rf,0.6543131569409206,271
+1,calote,2 comportamento + cadastro enxuto,extratrees,0.6847287664612782,271
+1,calote,2 comportamento + cadastro enxuto,hgb,0.6299383834722726,271
+1,calote,2 comportamento + cadastro enxuto,lgbm,0.5493234263622085,271
+1,calote,2 comportamento + cadastro enxuto,mlp,0.34230397487012204,271
+1,calote,2 comportamento + cadastro enxuto,svm,0.5493234263622085,271
+1,calote,2 comportamento + cadastro enxuto,comite,0.5323788812371633,271
+1,calote,3 + endereco dividido e inconsistencias,l1,0.4432161411139302,271
+1,calote,3 + endereco dividido e inconsistencias,l2,0.318593693367162,271
+1,calote,3 + endereco dividido e inconsistencias,rf,0.6528935604687689,271
+1,calote,3 + endereco dividido e inconsistencias,extratrees,0.6917965446417784,271
+1,calote,3 + endereco dividido e inconsistencias,hgb,0.6351335024767427,271
+1,calote,3 + endereco dividido e inconsistencias,lgbm,0.5574483508517579,271
+1,calote,3 + endereco dividido e inconsistencias,mlp,0.3596109701582699,271
+1,calote,3 + endereco dividido e inconsistencias,svm,0.5574483508517579,271
+1,calote,3 + endereco dividido e inconsistencias,comite,0.5445209617010993,271
+1,calote,4 + contrato anterior (paga e para),l1,0.4432161411139302,271
+1,calote,4 + contrato anterior (paga e para),l2,0.32067778180500184,271
+1,calote,4 + contrato anterior (paga e para),rf,0.6543131569409206,271
+1,calote,4 + contrato anterior (paga e para),extratrees,0.6847287664612782,271
+1,calote,4 + contrato anterior (paga e para),hgb,0.6299383834722726,271
+1,calote,4 + contrato anterior (paga e para),lgbm,0.5493234263622085,271
+1,calote,4 + contrato anterior (paga e para),mlp,0.34230397487012204,271
+1,calote,4 + contrato anterior (paga e para),svm,0.5493234263622085,271
+1,calote,4 + contrato anterior (paga e para),comite,0.5323788812371633,271
+1,calote,5 + tom da conversa,l1,0.45916394829044344,271
+1,calote,5 + tom da conversa,l2,0.3393741693850429,271
+1,calote,5 + tom da conversa,rf,0.6604446055334058,271
+1,calote,5 + tom da conversa,extratrees,0.6830071281865411,271
+1,calote,5 + tom da conversa,hgb,0.6284583786396037,271
+1,calote,5 + tom da conversa,lgbm,0.5823365953848012,271
+1,calote,5 + tom da conversa,mlp,0.4016551890781684,271
+1,calote,5 + tom da conversa,svm,0.5823365953848012,271
+1,calote,5 + tom da conversa,comite,0.5632173492811404,271
+1,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l1,0.43445692883895126,271
+1,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l2,0.3634166968708469,271
+1,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",rf,0.6622568563489187,271
+1,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",extratrees,0.6888969433369578,271
+1,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",hgb,0.6414461761507793,271
+1,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",lgbm,0.5195119004470219,271
+1,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",mlp,0.42968466835810076,271
+1,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",svm,0.5195119004470219,271
+1,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",comite,0.5507128186541017,271
+1,inadimplencia,1 so comportamento,l1,0.43505509641873275,361
+1,inadimplencia,1 so comportamento,l2,0.43505509641873275,361
+1,inadimplencia,1 so comportamento,rf,0.43505509641873275,361
+1,inadimplencia,1 so comportamento,extratrees,0.43505509641873275,361
+1,inadimplencia,1 so comportamento,hgb,0.43505509641873275,361
+1,inadimplencia,1 so comportamento,lgbm,0.45750688705234155,361
+1,inadimplencia,1 so comportamento,mlp,0.4928891184573003,361
+1,inadimplencia,1 so comportamento,svm,0.45750688705234155,361
+1,inadimplencia,1 so comportamento,comite,0.43572658402203857,361
+1,inadimplencia,2 comportamento + cadastro enxuto,l1,0.47586088154269973,361
+1,inadimplencia,2 comportamento + cadastro enxuto,l2,0.5977444903581267,361
+1,inadimplencia,2 comportamento + cadastro enxuto,rf,0.4509469696969698,361
+1,inadimplencia,2 comportamento + cadastro enxuto,extratrees,0.4628099173553719,361
+1,inadimplencia,2 comportamento + cadastro enxuto,hgb,0.4393595041322314,361
+1,inadimplencia,2 comportamento + cadastro enxuto,lgbm,0.381112258953168,361
+1,inadimplencia,2 comportamento + cadastro enxuto,mlp,0.5918904958677687,361
+1,inadimplencia,2 comportamento + cadastro enxuto,svm,0.381112258953168,361
+1,inadimplencia,2 comportamento + cadastro enxuto,comite,0.453099173553719,361
+1,inadimplencia,3 + endereco dividido e inconsistencias,l1,0.46980027548209374,361
+1,inadimplencia,3 + endereco dividido e inconsistencias,l2,0.602995867768595,361
+1,inadimplencia,3 + endereco dividido e inconsistencias,rf,0.4478994490358127,361
+1,inadimplencia,3 + endereco dividido e inconsistencias,extratrees,0.4516184573002755,361
+1,inadimplencia,3 + endereco dividido e inconsistencias,hgb,0.44247589531680437,361
+1,inadimplencia,3 + endereco dividido e inconsistencias,lgbm,0.39641873278236917,361
+1,inadimplencia,3 + endereco dividido e inconsistencias,mlp,0.6447314049586776,361
+1,inadimplencia,3 + endereco dividido e inconsistencias,svm,0.39641873278236917,361
+1,inadimplencia,3 + endereco dividido e inconsistencias,comite,0.4663911845730027,361
+1,inadimplencia,4 + contrato anterior (paga e para),l1,0.47586088154269973,361
+1,inadimplencia,4 + contrato anterior (paga e para),l2,0.5977444903581267,361
+1,inadimplencia,4 + contrato anterior (paga e para),rf,0.4509469696969698,361
+1,inadimplencia,4 + contrato anterior (paga e para),extratrees,0.4628099173553719,361
+1,inadimplencia,4 + contrato anterior (paga e para),hgb,0.4393595041322314,361
+1,inadimplencia,4 + contrato anterior (paga e para),lgbm,0.381112258953168,361
+1,inadimplencia,4 + contrato anterior (paga e para),mlp,0.5918904958677687,361
+1,inadimplencia,4 + contrato anterior (paga e para),svm,0.381112258953168,361
+1,inadimplencia,4 + contrato anterior (paga e para),comite,0.453099173553719,361
+1,inadimplencia,5 + tom da conversa,l1,0.5228994490358128,361
+1,inadimplencia,5 + tom da conversa,l2,0.6280991735537189,361
+1,inadimplencia,5 + tom da conversa,rf,0.45495867768595044,361
+1,inadimplencia,5 + tom da conversa,extratrees,0.43806818181818186,361
+1,inadimplencia,5 + tom da conversa,hgb,0.4353822314049587,361
+1,inadimplencia,5 + tom da conversa,lgbm,0.39387052341597795,361
+1,inadimplencia,5 + tom da conversa,mlp,0.5744834710743802,361
+1,inadimplencia,5 + tom da conversa,svm,0.39387052341597795,361
+1,inadimplencia,5 + tom da conversa,comite,0.4678030303030303,361
+1,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l1,0.599793388429752,361
+1,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l2,0.6461088154269972,361
+1,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",rf,0.46015840220385673,361
+1,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",extratrees,0.48133608815427,361
+1,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",hgb,0.4551480716253444,361
+1,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",lgbm,0.42059228650137737,361
+1,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",mlp,0.606267217630854,361
+1,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",svm,0.42059228650137737,361
+1,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",comite,0.5142734159779615,361
+2,calote,1 so comportamento,l1,0.6438927147517217,271
+2,calote,1 so comportamento,l2,0.6454331279449076,271
+2,calote,1 so comportamento,rf,0.6354355442793282,271
+2,calote,1 so comportamento,extratrees,0.6348918690346744,271
+2,calote,1 so comportamento,hgb,0.6476682372840401,271
+2,calote,1 so comportamento,lgbm,0.4925697716563973,271
+2,calote,1 so comportamento,mlp,0.6130240425274858,271
+2,calote,1 so comportamento,svm,0.4925697716563973,271
+2,calote,1 so comportamento,comite,0.6462184366316298,271
+2,calote,2 comportamento + cadastro enxuto,l1,0.45590189682252025,271
+2,calote,2 comportamento + cadastro enxuto,l2,0.31862389754742054,271
+2,calote,2 comportamento + cadastro enxuto,rf,0.6928838951310862,271
+2,calote,2 comportamento + cadastro enxuto,extratrees,0.6799263018001692,271
+2,calote,2 comportamento + cadastro enxuto,hgb,0.6775401715597438,271
+2,calote,2 comportamento + cadastro enxuto,lgbm,0.48933792436873264,271
+2,calote,2 comportamento + cadastro enxuto,mlp,0.38664371148967014,271
+2,calote,2 comportamento + cadastro enxuto,svm,0.48933792436873264,271
+2,calote,2 comportamento + cadastro enxuto,comite,0.5357919536063791,271
+2,calote,3 + endereco dividido e inconsistencias,l1,0.45590189682252025,271
+2,calote,3 + endereco dividido e inconsistencias,l2,0.3210100277878458,271
+2,calote,3 + endereco dividido e inconsistencias,rf,0.6969614594659901,271
+2,calote,3 + endereco dividido e inconsistencias,extratrees,0.6688413676452821,271
+2,calote,3 + endereco dividido e inconsistencias,hgb,0.6848193790020538,271
+2,calote,3 + endereco dividido e inconsistencias,lgbm,0.4880995529781322,271
+2,calote,3 + endereco dividido e inconsistencias,mlp,0.3523015585357013,271
+2,calote,3 + endereco dividido e inconsistencias,svm,0.4880995529781322,271
+2,calote,3 + endereco dividido e inconsistencias,comite,0.5208408843783979,271
+2,calote,4 + contrato anterior (paga e para),l1,0.45590189682252025,271
+2,calote,4 + contrato anterior (paga e para),l2,0.31862389754742054,271
+2,calote,4 + contrato anterior (paga e para),rf,0.6928838951310862,271
+2,calote,4 + contrato anterior (paga e para),extratrees,0.6799263018001692,271
+2,calote,4 + contrato anterior (paga e para),hgb,0.6775401715597438,271
+2,calote,4 + contrato anterior (paga e para),lgbm,0.48933792436873264,271
+2,calote,4 + contrato anterior (paga e para),mlp,0.38664371148967014,271
+2,calote,4 + contrato anterior (paga e para),svm,0.48933792436873264,271
+2,calote,4 + contrato anterior (paga e para),comite,0.5357919536063791,271
+2,calote,5 + tom da conversa,l1,0.45868068140630663,271
+2,calote,5 + tom da conversa,l2,0.3321251661229914,271
+2,calote,5 + tom da conversa,rf,0.67886915549112,271
+2,calote,5 + tom da conversa,extratrees,0.6732209737827716,271
+2,calote,5 + tom da conversa,hgb,0.6251963271716805,271
+2,calote,5 + tom da conversa,lgbm,0.44732390962909263,271
+2,calote,5 + tom da conversa,mlp,0.391264951069228,271
+2,calote,5 + tom da conversa,svm,0.44732390962909263,271
+2,calote,5 + tom da conversa,comite,0.5070375740002416,271
+2,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l1,0.43874592243566507,271
+2,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l2,0.3645644557206717,271
+2,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",rf,0.697897789054005,271
+2,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",extratrees,0.668448713301921,271
+2,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",hgb,0.6345294188715718,271
+2,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",lgbm,0.5242841609278726,271
+2,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",mlp,0.42503322459828446,271
+2,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",svm,0.5242841609278726,271
+2,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",comite,0.5459707623535097,271
+2,inadimplencia,1 so comportamento,l1,0.6024031811894882,361
+2,inadimplencia,1 so comportamento,l2,0.6406811894882434,361
+2,inadimplencia,1 so comportamento,rf,0.6397475795297372,361
+2,inadimplencia,1 so comportamento,extratrees,0.6397475795297372,361
+2,inadimplencia,1 so comportamento,hgb,0.6414419087136929,361
+2,inadimplencia,1 so comportamento,lgbm,0.42850968188105115,361
+2,inadimplencia,1 so comportamento,mlp,0.6395401106500691,361
+2,inadimplencia,1 so comportamento,svm,0.42850968188105115,361
+2,inadimplencia,1 so comportamento,comite,0.6270573997233748,361
+2,inadimplencia,2 comportamento + cadastro enxuto,l1,0.5965421853388658,361
+2,inadimplencia,2 comportamento + cadastro enxuto,l2,0.6501556016597511,361
+2,inadimplencia,2 comportamento + cadastro enxuto,rf,0.6027143845089903,361
+2,inadimplencia,2 comportamento + cadastro enxuto,extratrees,0.5984266943291839,361
+2,inadimplencia,2 comportamento + cadastro enxuto,hgb,0.5629840940525588,361
+2,inadimplencia,2 comportamento + cadastro enxuto,lgbm,0.47505186721991705,361
+2,inadimplencia,2 comportamento + cadastro enxuto,mlp,0.6302385892116182,361
+2,inadimplencia,2 comportamento + cadastro enxuto,svm,0.47505186721991705,361
+2,inadimplencia,2 comportamento + cadastro enxuto,comite,0.6091632088520055,361
+2,inadimplencia,3 + endereco dividido e inconsistencias,l1,0.5967323651452282,361
+2,inadimplencia,3 + endereco dividido e inconsistencias,l2,0.6538727524204703,361
+2,inadimplencia,3 + endereco dividido e inconsistencias,rf,0.6091632088520055,361
+2,inadimplencia,3 + endereco dividido e inconsistencias,extratrees,0.5944502074688797,361
+2,inadimplencia,3 + endereco dividido e inconsistencias,hgb,0.5633125864453665,361
+2,inadimplencia,3 + endereco dividido e inconsistencias,lgbm,0.48592669432918395,361
+2,inadimplencia,3 + endereco dividido e inconsistencias,mlp,0.6574343015214384,361
+2,inadimplencia,3 + endereco dividido e inconsistencias,svm,0.48592669432918395,361
+2,inadimplencia,3 + endereco dividido e inconsistencias,comite,0.6116182572614108,361
+2,inadimplencia,4 + contrato anterior (paga e para),l1,0.5965421853388658,361
+2,inadimplencia,4 + contrato anterior (paga e para),l2,0.6501556016597511,361
+2,inadimplencia,4 + contrato anterior (paga e para),rf,0.6027143845089903,361
+2,inadimplencia,4 + contrato anterior (paga e para),extratrees,0.5984266943291839,361
+2,inadimplencia,4 + contrato anterior (paga e para),hgb,0.5629840940525588,361
+2,inadimplencia,4 + contrato anterior (paga e para),lgbm,0.47505186721991705,361
+2,inadimplencia,4 + contrato anterior (paga e para),mlp,0.6302385892116182,361
+2,inadimplencia,4 + contrato anterior (paga e para),svm,0.47505186721991705,361
+2,inadimplencia,4 + contrato anterior (paga e para),comite,0.6091632088520055,361
+2,inadimplencia,5 + tom da conversa,l1,0.5856154910096819,361
+2,inadimplencia,5 + tom da conversa,l2,0.671957123098202,361
+2,inadimplencia,5 + tom da conversa,rf,0.6162517289073306,361
+2,inadimplencia,5 + tom da conversa,extratrees,0.6061549100968188,361
+2,inadimplencia,5 + tom da conversa,hgb,0.5675138312586445,361
+2,inadimplencia,5 + tom da conversa,lgbm,0.498478561549101,361
+2,inadimplencia,5 + tom da conversa,mlp,0.6268326417704011,361
+2,inadimplencia,5 + tom da conversa,svm,0.498478561549101,361
+2,inadimplencia,5 + tom da conversa,comite,0.613502766251729,361
+2,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l1,0.5927385892116183,361
+2,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l2,0.6737897648686031,361
+2,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",rf,0.616390041493776,361
+2,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",extratrees,0.6177731673582296,361
+2,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",hgb,0.5741528354080221,361
+2,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",lgbm,0.4939142461964039,361
+2,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",mlp,0.67783540802213,361
+2,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",svm,0.4939142461964039,361
+2,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",comite,0.6278181189488243,361
+3,calote,1 so comportamento,l1,0.665367886915549,271
+3,calote,1 so comportamento,l2,0.650749063670412,271
+3,calote,1 so comportamento,rf,0.6473057871209376,271
+3,calote,1 so comportamento,extratrees,0.6550984656276428,271
+3,calote,1 so comportamento,hgb,0.6438021022109459,271
+3,calote,1 so comportamento,lgbm,0.4758064516129032,271
+3,calote,1 so comportamento,mlp,0.6493596713785188,271
+3,calote,1 so comportamento,svm,0.4758064516129032,271
+3,calote,1 so comportamento,comite,0.6641597197052073,271
+3,calote,2 comportamento + cadastro enxuto,l1,0.5514075148000483,271
+3,calote,2 comportamento + cadastro enxuto,l2,0.3479219523982119,271
+3,calote,2 comportamento + cadastro enxuto,rf,0.6850610124441223,271
+3,calote,2 comportamento + cadastro enxuto,extratrees,0.6781442551649149,271
+3,calote,2 comportamento + cadastro enxuto,hgb,0.6707140268213121,271
+3,calote,2 comportamento + cadastro enxuto,lgbm,0.4466292134831461,271
+3,calote,2 comportamento + cadastro enxuto,mlp,0.3803612419958922,271
+3,calote,2 comportamento + cadastro enxuto,svm,0.4466292134831461,271
+3,calote,2 comportamento + cadastro enxuto,comite,0.5405340099069711,271
+3,calote,3 + endereco dividido e inconsistencias,l1,0.5514679231605654,271
+3,calote,3 + endereco dividido e inconsistencias,l2,0.3438745922435665,271
+3,calote,3 + endereco dividido e inconsistencias,rf,0.688685514075148,271
+3,calote,3 + endereco dividido e inconsistencias,extratrees,0.6584813338166003,271
+3,calote,3 + endereco dividido e inconsistencias,hgb,0.6803491603237888,271
+3,calote,3 + endereco dividido e inconsistencias,lgbm,0.45991905279690715,271
+3,calote,3 + endereco dividido e inconsistencias,mlp,0.4236136281261326,271
+3,calote,3 + endereco dividido e inconsistencias,svm,0.45991905279690715,271
+3,calote,3 + endereco dividido e inconsistencias,comite,0.551226289718497,271
+3,calote,4 + contrato anterior (paga e para),l1,0.5514075148000482,271
+3,calote,4 + contrato anterior (paga e para),l2,0.3479219523982119,271
+3,calote,4 + contrato anterior (paga e para),rf,0.6850610124441223,271
+3,calote,4 + contrato anterior (paga e para),extratrees,0.6781442551649149,271
+3,calote,4 + contrato anterior (paga e para),hgb,0.6707140268213121,271
+3,calote,4 + contrato anterior (paga e para),lgbm,0.4466292134831461,271
+3,calote,4 + contrato anterior (paga e para),mlp,0.3803612419958922,271
+3,calote,4 + contrato anterior (paga e para),svm,0.4466292134831461,271
+3,calote,4 + contrato anterior (paga e para),comite,0.5405340099069711,271
+3,calote,5 + tom da conversa,l1,0.5481454633321252,271
+3,calote,5 + tom da conversa,l2,0.35399299263018,271
+3,calote,5 + tom da conversa,rf,0.6993475897064154,271
+3,calote,5 + tom da conversa,extratrees,0.6702609641174339,271
+3,calote,5 + tom da conversa,hgb,0.6509000845717047,271
+3,calote,5 + tom da conversa,lgbm,0.4492569771656398,271
+3,calote,5 + tom da conversa,mlp,0.4290201763924127,271
+3,calote,5 + tom da conversa,svm,0.4492569771656398,271
+3,calote,5 + tom da conversa,comite,0.5489911803793646,271
+3,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l1,0.510088196206355,271
+3,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l2,0.39398332729249735,271
+3,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",rf,0.7136643711489671,271
+3,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",extratrees,0.6750030204180257,271
+3,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",hgb,0.6785067053280173,271
+3,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",lgbm,0.5158873988159961,271
+3,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",mlp,0.38033103781563365,271
+3,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",svm,0.5158873988159961,271
+3,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",comite,0.5793765857194635,271
+3,inadimplencia,1 so comportamento,l1,0.6927731673582296,361
+3,inadimplencia,1 so comportamento,l2,0.6971991701244813,361
+3,inadimplencia,1 so comportamento,rf,0.6913727524204702,361
+3,inadimplencia,1 so comportamento,extratrees,0.6914073305670816,361
+3,inadimplencia,1 so comportamento,hgb,0.6816562932226833,361
+3,inadimplencia,1 so comportamento,lgbm,0.46685684647302905,361
+3,inadimplencia,1 so comportamento,mlp,0.7033713692946058,361
+3,inadimplencia,1 so comportamento,svm,0.46685684647302905,361
+3,inadimplencia,1 so comportamento,comite,0.6693637621023514,361
+3,inadimplencia,2 comportamento + cadastro enxuto,l1,0.6794087136929461,361
+3,inadimplencia,2 comportamento + cadastro enxuto,l2,0.7010373443983402,361
+3,inadimplencia,2 comportamento + cadastro enxuto,rf,0.6682918395573997,361
+3,inadimplencia,2 comportamento + cadastro enxuto,extratrees,0.669069847856155,361
+3,inadimplencia,2 comportamento + cadastro enxuto,hgb,0.5532676348547718,361
+3,inadimplencia,2 comportamento + cadastro enxuto,lgbm,0.4754149377593361,361
+3,inadimplencia,2 comportamento + cadastro enxuto,mlp,0.6827455048409405,361
+3,inadimplencia,2 comportamento + cadastro enxuto,svm,0.4754149377593361,361
+3,inadimplencia,2 comportamento + cadastro enxuto,comite,0.6774550484094053,361
+3,inadimplencia,3 + endereco dividido e inconsistencias,l1,0.6783713692946058,361
+3,inadimplencia,3 + endereco dividido e inconsistencias,l2,0.7042185338865837,361
+3,inadimplencia,3 + endereco dividido e inconsistencias,rf,0.6603734439834024,361
+3,inadimplencia,3 + endereco dividido e inconsistencias,extratrees,0.6571058091286307,361
+3,inadimplencia,3 + endereco dividido e inconsistencias,hgb,0.5526279391424619,361
+3,inadimplencia,3 + endereco dividido e inconsistencias,lgbm,0.469536652835408,361
+3,inadimplencia,3 + endereco dividido e inconsistencias,mlp,0.6838520055325035,361
+3,inadimplencia,3 + endereco dividido e inconsistencias,svm,0.469536652835408,361
+3,inadimplencia,3 + endereco dividido e inconsistencias,comite,0.6716113416320886,361
+3,inadimplencia,4 + contrato anterior (paga e para),l1,0.6794087136929461,361
+3,inadimplencia,4 + contrato anterior (paga e para),l2,0.7010373443983402,361
+3,inadimplencia,4 + contrato anterior (paga e para),rf,0.6682918395573997,361
+3,inadimplencia,4 + contrato anterior (paga e para),extratrees,0.669069847856155,361
+3,inadimplencia,4 + contrato anterior (paga e para),hgb,0.5532676348547718,361
+3,inadimplencia,4 + contrato anterior (paga e para),lgbm,0.4754149377593361,361
+3,inadimplencia,4 + contrato anterior (paga e para),mlp,0.6827455048409405,361
+3,inadimplencia,4 + contrato anterior (paga e para),svm,0.4754149377593361,361
+3,inadimplencia,4 + contrato anterior (paga e para),comite,0.6774550484094053,361
+3,inadimplencia,5 + tom da conversa,l1,0.6882434301521438,361
+3,inadimplencia,5 + tom da conversa,l2,0.7159059474412172,361
+3,inadimplencia,5 + tom da conversa,rf,0.6777662517289074,361
+3,inadimplencia,5 + tom da conversa,extratrees,0.6683609958506225,361
+3,inadimplencia,5 + tom da conversa,hgb,0.5849412171507608,361
+3,inadimplencia,5 + tom da conversa,lgbm,0.438969571230982,361
+3,inadimplencia,5 + tom da conversa,mlp,0.662551867219917,361
+3,inadimplencia,5 + tom da conversa,svm,0.438969571230982,361
+3,inadimplencia,5 + tom da conversa,comite,0.6480982019363762,361
+3,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l1,0.7062932226832641,361
+3,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l2,0.724792531120332,361
+3,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",rf,0.6593706777316737,361
+3,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",extratrees,0.6694674965421854,361
+3,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",hgb,0.5945193637621023,361
+3,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",lgbm,0.454149377593361,361
+3,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",mlp,0.6713692946058092,361
+3,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",svm,0.454149377593361,361
+3,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",comite,0.6671853388658369,361
+5,calote,1 so comportamento,l1,0.7451785714285714,271
+5,calote,1 so comportamento,l2,0.7505654761904761,271
+5,calote,1 so comportamento,rf,0.7122023809523809,271
+5,calote,1 so comportamento,extratrees,0.7327976190476191,271
+5,calote,1 so comportamento,hgb,0.6607440476190477,271
+5,calote,1 so comportamento,lgbm,0.619047619047619,271
+5,calote,1 so comportamento,mlp,0.7292261904761904,271
+5,calote,1 so comportamento,svm,0.619047619047619,271
+5,calote,1 so comportamento,comite,0.7172916666666668,271
+5,calote,2 comportamento + cadastro enxuto,l1,0.7685416666666668,271
+5,calote,2 comportamento + cadastro enxuto,l2,0.5039583333333333,271
+5,calote,2 comportamento + cadastro enxuto,rf,0.7488392857142858,271
+5,calote,2 comportamento + cadastro enxuto,extratrees,0.7445535714285716,271
+5,calote,2 comportamento + cadastro enxuto,hgb,0.6991964285714285,271
+5,calote,2 comportamento + cadastro enxuto,lgbm,0.619077380952381,271
+5,calote,2 comportamento + cadastro enxuto,mlp,0.46705357142857146,271
+5,calote,2 comportamento + cadastro enxuto,svm,0.619077380952381,271
+5,calote,2 comportamento + cadastro enxuto,comite,0.6958928571428571,271
+5,calote,3 + endereco dividido e inconsistencias,l1,0.7684226190476191,271
+5,calote,3 + endereco dividido e inconsistencias,l2,0.4990178571428571,271
+5,calote,3 + endereco dividido e inconsistencias,rf,0.7393154761904762,271
+5,calote,3 + endereco dividido e inconsistencias,extratrees,0.7457440476190477,271
+5,calote,3 + endereco dividido e inconsistencias,hgb,0.6994642857142856,271
+5,calote,3 + endereco dividido e inconsistencias,lgbm,0.6050892857142858,271
+5,calote,3 + endereco dividido e inconsistencias,mlp,0.5084821428571429,271
+5,calote,3 + endereco dividido e inconsistencias,svm,0.6050892857142858,271
+5,calote,3 + endereco dividido e inconsistencias,comite,0.6956249999999999,271
+5,calote,4 + contrato anterior (paga e para),l1,0.768422619047619,271
+5,calote,4 + contrato anterior (paga e para),l2,0.5039583333333333,271
+5,calote,4 + contrato anterior (paga e para),rf,0.7488392857142858,271
+5,calote,4 + contrato anterior (paga e para),extratrees,0.7445535714285716,271
+5,calote,4 + contrato anterior (paga e para),hgb,0.6991964285714285,271
+5,calote,4 + contrato anterior (paga e para),lgbm,0.619077380952381,271
+5,calote,4 + contrato anterior (paga e para),mlp,0.46705357142857146,271
+5,calote,4 + contrato anterior (paga e para),svm,0.619077380952381,271
+5,calote,4 + contrato anterior (paga e para),comite,0.6958928571428571,271
+5,calote,5 + tom da conversa,l1,0.7663690476190477,271
+5,calote,5 + tom da conversa,l2,0.5136309523809524,271
+5,calote,5 + tom da conversa,rf,0.7527380952380952,271
+5,calote,5 + tom da conversa,extratrees,0.7529761904761905,271
+5,calote,5 + tom da conversa,hgb,0.6974404761904763,271
+5,calote,5 + tom da conversa,lgbm,0.49339285714285713,271
+5,calote,5 + tom da conversa,mlp,0.4908333333333334,271
+5,calote,5 + tom da conversa,svm,0.49339285714285713,271
+5,calote,5 + tom da conversa,comite,0.687202380952381,271
+5,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l1,0.7132142857142858,271
+5,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l2,0.5256547619047619,271
+5,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",rf,0.7657142857142857,271
+5,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",extratrees,0.7498809523809524,271
+5,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",hgb,0.7104761904761905,271
+5,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",lgbm,0.5791666666666668,271
+5,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",mlp,0.5263690476190476,271
+5,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",svm,0.5791666666666668,271
+5,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",comite,0.6872321428571428,271
+5,inadimplencia,1 so comportamento,l1,0.7870448921880523,361
+5,inadimplencia,1 so comportamento,l2,0.7941145281018027,361
+5,inadimplencia,1 so comportamento,rf,0.8029162248144222,361
+5,inadimplencia,1 so comportamento,extratrees,0.7958112407211029,361
+5,inadimplencia,1 so comportamento,hgb,0.8121420996818665,361
+5,inadimplencia,1 so comportamento,lgbm,0.7822728879462708,361
+5,inadimplencia,1 so comportamento,mlp,0.7960940261576529,361
+5,inadimplencia,1 so comportamento,svm,0.7822728879462708,361
+5,inadimplencia,1 so comportamento,comite,0.8004772004241782,361
+5,inadimplencia,2 comportamento + cadastro enxuto,l1,0.7707140332272888,361
+5,inadimplencia,2 comportamento + cadastro enxuto,l2,0.7830151997172146,361
+5,inadimplencia,2 comportamento + cadastro enxuto,rf,0.7850653941322023,361
+5,inadimplencia,2 comportamento + cadastro enxuto,extratrees,0.768045245669848,361
+5,inadimplencia,2 comportamento + cadastro enxuto,hgb,0.7438670908448215,361
+5,inadimplencia,2 comportamento + cadastro enxuto,lgbm,0.5146518204312478,361
+5,inadimplencia,2 comportamento + cadastro enxuto,mlp,0.7791268999646519,361
+5,inadimplencia,2 comportamento + cadastro enxuto,svm,0.5146518204312478,361
+5,inadimplencia,2 comportamento + cadastro enxuto,comite,0.7528808766348534,361
+5,inadimplencia,3 + endereco dividido e inconsistencias,l1,0.7709261223047013,361
+5,inadimplencia,3 + endereco dividido e inconsistencias,l2,0.7875397667020149,361
+5,inadimplencia,3 + endereco dividido e inconsistencias,rf,0.7777836691410394,361
+5,inadimplencia,3 + endereco dividido e inconsistencias,extratrees,0.7767939201131141,361
+5,inadimplencia,3 + endereco dividido e inconsistencias,hgb,0.7439024390243902,361
+5,inadimplencia,3 + endereco dividido e inconsistencias,lgbm,0.5274125132555674,361
+5,inadimplencia,3 + endereco dividido e inconsistencias,mlp,0.7894485683987276,361
+5,inadimplencia,3 + endereco dividido e inconsistencias,svm,0.5274125132555674,361
+5,inadimplencia,3 + endereco dividido e inconsistencias,comite,0.7578296217744787,361
+5,inadimplencia,4 + contrato anterior (paga e para),l1,0.7707140332272888,361
+5,inadimplencia,4 + contrato anterior (paga e para),l2,0.7830151997172146,361
+5,inadimplencia,4 + contrato anterior (paga e para),rf,0.7850653941322023,361
+5,inadimplencia,4 + contrato anterior (paga e para),extratrees,0.768045245669848,361
+5,inadimplencia,4 + contrato anterior (paga e para),hgb,0.7438670908448215,361
+5,inadimplencia,4 + contrato anterior (paga e para),lgbm,0.5146518204312478,361
+5,inadimplencia,4 + contrato anterior (paga e para),mlp,0.7791268999646519,361
+5,inadimplencia,4 + contrato anterior (paga e para),svm,0.5146518204312478,361
+5,inadimplencia,4 + contrato anterior (paga e para),comite,0.7528808766348534,361
+5,inadimplencia,5 + tom da conversa,l1,0.7773771650759985,361
+5,inadimplencia,5 + tom da conversa,l2,0.7927182750088372,361
+5,inadimplencia,5 + tom da conversa,rf,0.7875574407917992,361
+5,inadimplencia,5 + tom da conversa,extratrees,0.771615411806292,361
+5,inadimplencia,5 + tom da conversa,hgb,0.7573524213503005,361
+5,inadimplencia,5 + tom da conversa,lgbm,0.6044892188052315,361
+5,inadimplencia,5 + tom da conversa,mlp,0.7927182750088371,361
+5,inadimplencia,5 + tom da conversa,svm,0.6044892188052315,361
+5,inadimplencia,5 + tom da conversa,comite,0.7738069989395546,361
+5,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l1,0.7805054789678332,361
+5,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l2,0.7935312831389183,361
+5,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",rf,0.7866030399434429,361
+5,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",extratrees,0.760763520678685,361
+5,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",hgb,0.7675150229763168,361
+5,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",lgbm,0.628243195475433,361
+5,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",mlp,0.7805231530576175,361
+5,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",svm,0.628243195475433,361
+5,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",comite,0.7867090844821493,361
+7,calote,1 so comportamento,l1,0.7786904761904763,271
+7,calote,1 so comportamento,l2,0.7946130952380952,271
+7,calote,1 so comportamento,rf,0.7798511904761904,271
+7,calote,1 so comportamento,extratrees,0.791577380952381,271
+7,calote,1 so comportamento,hgb,0.7260119047619048,271
+7,calote,1 so comportamento,lgbm,0.4747321428571429,271
+7,calote,1 so comportamento,mlp,0.7808035714285715,271
+7,calote,1 so comportamento,svm,0.4747321428571429,271
+7,calote,1 so comportamento,comite,0.7712202380952381,271
+7,calote,2 comportamento + cadastro enxuto,l1,0.7881845238095239,271
+7,calote,2 comportamento + cadastro enxuto,l2,0.5188095238095238,271
+7,calote,2 comportamento + cadastro enxuto,rf,0.7867559523809523,271
+7,calote,2 comportamento + cadastro enxuto,extratrees,0.7886607142857143,271
+7,calote,2 comportamento + cadastro enxuto,hgb,0.7575595238095237,271
+7,calote,2 comportamento + cadastro enxuto,lgbm,0.5205357142857143,271
+7,calote,2 comportamento + cadastro enxuto,mlp,0.519345238095238,271
+7,calote,2 comportamento + cadastro enxuto,svm,0.5205357142857143,271
+7,calote,2 comportamento + cadastro enxuto,comite,0.7313392857142857,271
+7,calote,3 + endereco dividido e inconsistencias,l1,0.7881845238095239,271
+7,calote,3 + endereco dividido e inconsistencias,l2,0.5098809523809524,271
+7,calote,3 + endereco dividido e inconsistencias,rf,0.7999107142857143,271
+7,calote,3 + endereco dividido e inconsistencias,extratrees,0.7902083333333334,271
+7,calote,3 + endereco dividido e inconsistencias,hgb,0.7588095238095238,271
+7,calote,3 + endereco dividido e inconsistencias,lgbm,0.539702380952381,271
+7,calote,3 + endereco dividido e inconsistencias,mlp,0.4988690476190476,271
+7,calote,3 + endereco dividido e inconsistencias,svm,0.539702380952381,271
+7,calote,3 + endereco dividido e inconsistencias,comite,0.7357142857142858,271
+7,calote,4 + contrato anterior (paga e para),l1,0.7881845238095239,271
+7,calote,4 + contrato anterior (paga e para),l2,0.5188095238095238,271
+7,calote,4 + contrato anterior (paga e para),rf,0.7867559523809523,271
+7,calote,4 + contrato anterior (paga e para),extratrees,0.7886607142857143,271
+7,calote,4 + contrato anterior (paga e para),hgb,0.7575595238095237,271
+7,calote,4 + contrato anterior (paga e para),lgbm,0.5205357142857143,271
+7,calote,4 + contrato anterior (paga e para),mlp,0.519345238095238,271
+7,calote,4 + contrato anterior (paga e para),svm,0.5205357142857143,271
+7,calote,4 + contrato anterior (paga e para),comite,0.7313392857142857,271
+7,calote,5 + tom da conversa,l1,0.7863095238095238,271
+7,calote,5 + tom da conversa,l2,0.5206547619047619,271
+7,calote,5 + tom da conversa,rf,0.7945238095238095,271
+7,calote,5 + tom da conversa,extratrees,0.8028571428571429,271
+7,calote,5 + tom da conversa,hgb,0.7361607142857143,271
+7,calote,5 + tom da conversa,lgbm,0.4799404761904762,271
+7,calote,5 + tom da conversa,mlp,0.5058333333333334,271
+7,calote,5 + tom da conversa,svm,0.4799404761904762,271
+7,calote,5 + tom da conversa,comite,0.7245238095238096,271
+7,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l1,0.7339880952380953,271
+7,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l2,0.521547619047619,271
+7,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",rf,0.8060119047619049,271
+7,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",extratrees,0.7938095238095239,271
+7,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",hgb,0.755297619047619,271
+7,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",lgbm,0.58,271
+7,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",mlp,0.5175595238095239,271
+7,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",svm,0.58,271
+7,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",comite,0.724375,271
+7,inadimplencia,1 so comportamento,l1,0.8412599822537711,360
+7,inadimplencia,1 so comportamento,l2,0.8429281277728483,360
+7,inadimplencia,1 so comportamento,rf,0.8351020408163264,360
+7,inadimplencia,1 so comportamento,extratrees,0.8401952085181897,360
+7,inadimplencia,1 so comportamento,hgb,0.8010292812777285,360
+7,inadimplencia,1 so comportamento,lgbm,0.7951197870452528,360
+7,inadimplencia,1 so comportamento,mlp,0.8450576752440107,360
+7,inadimplencia,1 so comportamento,svm,0.7951197870452528,360
+7,inadimplencia,1 so comportamento,comite,0.8335048802129547,360
+7,inadimplencia,2 comportamento + cadastro enxuto,l1,0.8310736468500444,360
+7,inadimplencia,2 comportamento + cadastro enxuto,l2,0.8331322094055013,360
+7,inadimplencia,2 comportamento + cadastro enxuto,rf,0.8285181898846495,360
+7,inadimplencia,2 comportamento + cadastro enxuto,extratrees,0.8223779946761314,360
+7,inadimplencia,2 comportamento + cadastro enxuto,hgb,0.7959006211180124,360
+7,inadimplencia,2 comportamento + cadastro enxuto,lgbm,0.6614196983141083,360
+7,inadimplencia,2 comportamento + cadastro enxuto,mlp,0.8355102040816327,360
+7,inadimplencia,2 comportamento + cadastro enxuto,svm,0.6614196983141083,360
+7,inadimplencia,2 comportamento + cadastro enxuto,comite,0.8212067435669921,360
+7,inadimplencia,3 + endereco dividido e inconsistencias,l1,0.8310736468500444,360
+7,inadimplencia,3 + endereco dividido e inconsistencias,l2,0.8351197870452529,360
+7,inadimplencia,3 + endereco dividido e inconsistencias,rf,0.8234427684117125,360
+7,inadimplencia,3 + endereco dividido e inconsistencias,extratrees,0.8318544809228039,360
+7,inadimplencia,3 + endereco dividido e inconsistencias,hgb,0.7945519077196096,360
+7,inadimplencia,3 + endereco dividido e inconsistencias,lgbm,0.6863708961845607,360
+7,inadimplencia,3 + endereco dividido e inconsistencias,mlp,0.8360070984915706,360
+7,inadimplencia,3 + endereco dividido e inconsistencias,svm,0.6863708961845607,360
+7,inadimplencia,3 + endereco dividido e inconsistencias,comite,0.8260692102928128,360
+7,inadimplencia,4 + contrato anterior (paga e para),l1,0.8310736468500444,360
+7,inadimplencia,4 + contrato anterior (paga e para),l2,0.8331322094055013,360
+7,inadimplencia,4 + contrato anterior (paga e para),rf,0.8285181898846495,360
+7,inadimplencia,4 + contrato anterior (paga e para),extratrees,0.8223779946761314,360
+7,inadimplencia,4 + contrato anterior (paga e para),hgb,0.7959006211180124,360
+7,inadimplencia,4 + contrato anterior (paga e para),lgbm,0.6614196983141083,360
+7,inadimplencia,4 + contrato anterior (paga e para),mlp,0.8355102040816327,360
+7,inadimplencia,4 + contrato anterior (paga e para),svm,0.6614196983141083,360
+7,inadimplencia,4 + contrato anterior (paga e para),comite,0.8212067435669921,360
+7,inadimplencia,5 + tom da conversa,l1,0.8275421472937001,360
+7,inadimplencia,5 + tom da conversa,l2,0.8331854480922803,360
+7,inadimplencia,5 + tom da conversa,rf,0.8347826086956522,360
+7,inadimplencia,5 + tom da conversa,extratrees,0.8294587400177462,360
+7,inadimplencia,5 + tom da conversa,hgb,0.8036379769299024,360
+7,inadimplencia,5 + tom da conversa,lgbm,0.6887666370896184,360
+7,inadimplencia,5 + tom da conversa,mlp,0.823318544809228,360
+7,inadimplencia,5 + tom da conversa,svm,0.6887666370896184,360
+7,inadimplencia,5 + tom da conversa,comite,0.8279148181011535,360
+7,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l1,0.8309494232475598,360
+7,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l2,0.8298136645962733,360
+7,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",rf,0.8247027506654835,360
+7,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",extratrees,0.8276486246672582,360
+7,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",hgb,0.8012244897959183,360
+7,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",lgbm,0.688589174800355,360
+7,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",mlp,0.8040106477373558,360
+7,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",svm,0.688589174800355,360
+7,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",comite,0.8318189884649512,360
+10,calote,1 so comportamento,l1,0.8274973338073232,271
+10,calote,1 so comportamento,l2,0.8283268159734566,271
+10,calote,1 so comportamento,rf,0.8304597701149425,271
+10,calote,1 so comportamento,extratrees,0.8247422680412372,271
+10,calote,1 so comportamento,hgb,0.8233795473397323,271
+10,calote,1 so comportamento,lgbm,0.7555990046214007,271
+10,calote,1 so comportamento,mlp,0.8085081170754829,271
+10,calote,1 so comportamento,svm,0.7555990046214007,271
+10,calote,1 so comportamento,comite,0.8278232018011613,271
+10,calote,2 comportamento + cadastro enxuto,l1,0.7971619860173006,271
+10,calote,2 comportamento + cadastro enxuto,l2,0.5546865742386539,271
+10,calote,2 comportamento + cadastro enxuto,rf,0.8346071809456097,271
+10,calote,2 comportamento + cadastro enxuto,extratrees,0.8338961962317811,271
+10,calote,2 comportamento + cadastro enxuto,hgb,0.8185507761583126,271
+10,calote,2 comportamento + cadastro enxuto,lgbm,0.6798791325986491,271
+10,calote,2 comportamento + cadastro enxuto,mlp,0.5161156535134495,271
+10,calote,2 comportamento + cadastro enxuto,svm,0.6798791325986491,271
+10,calote,2 comportamento + cadastro enxuto,comite,0.7783801398269936,271
+10,calote,3 + endereco dividido e inconsistencias,l1,0.7971027372911482,271
+10,calote,3 + endereco dividido e inconsistencias,l2,0.5495319350633961,271
+10,calote,3 + endereco dividido e inconsistencias,rf,0.8340146936840858,271
+10,calote,3 + endereco dividido e inconsistencias,extratrees,0.8267271003673421,271
+10,calote,3 + endereco dividido e inconsistencias,hgb,0.813722004976893,271
+10,calote,3 + endereco dividido e inconsistencias,lgbm,0.6618082711221709,271
+10,calote,3 + endereco dividido e inconsistencias,mlp,0.5923095153454201,271
+10,calote,3 + endereco dividido e inconsistencias,svm,0.6618082711221709,271
+10,calote,3 + endereco dividido e inconsistencias,comite,0.7794762412608128,271
+10,calote,4 + contrato anterior (paga e para),l1,0.7971619860173006,271
+10,calote,4 + contrato anterior (paga e para),l2,0.5546865742386539,271
+10,calote,4 + contrato anterior (paga e para),rf,0.8346071809456097,271
+10,calote,4 + contrato anterior (paga e para),extratrees,0.8338961962317811,271
+10,calote,4 + contrato anterior (paga e para),hgb,0.8185507761583126,271
+10,calote,4 + contrato anterior (paga e para),lgbm,0.6798791325986491,271
+10,calote,4 + contrato anterior (paga e para),mlp,0.5161156535134495,271
+10,calote,4 + contrato anterior (paga e para),svm,0.6798791325986491,271
+10,calote,4 + contrato anterior (paga e para),comite,0.7783801398269936,271
+10,calote,5 + tom da conversa,l1,0.7984950823557294,271
+10,calote,5 + tom da conversa,l2,0.5559307974878539,271
+10,calote,5 + tom da conversa,rf,0.8320298613579808,271
+10,calote,5 + tom da conversa,extratrees,0.8327408460718095,271
+10,calote,5 + tom da conversa,hgb,0.7883931745467473,271
+10,calote,5 + tom da conversa,lgbm,0.727100367342102,271
+10,calote,5 + tom da conversa,mlp,0.5619149188292452,271
+10,calote,5 + tom da conversa,svm,0.727100367342102,271
+10,calote,5 + tom da conversa,comite,0.8014278943002725,271
+10,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l1,0.7500888730892284,271
+10,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l2,0.5495911837895485,271
+10,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",rf,0.8447683374807442,271
+10,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",extratrees,0.8317928664533712,271
+10,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",hgb,0.7989098234387961,271
+10,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",lgbm,0.6286882332029862,271
+10,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",mlp,0.5019552079630287,271
+10,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",svm,0.6286882332029862,271
+10,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",comite,0.7523107003199432,271
+10,inadimplencia,1 so comportamento,l1,0.8881377551020408,357
+10,inadimplencia,1 so comportamento,l2,0.8883928571428572,357
+10,inadimplencia,1 so comportamento,rf,0.8846392128279883,357
+10,inadimplencia,1 so comportamento,extratrees,0.8783709912536443,357
+10,inadimplencia,1 so comportamento,hgb,0.8711916909620991,357
+10,inadimplencia,1 so comportamento,lgbm,0.858545918367347,357
+10,inadimplencia,1 so comportamento,mlp,0.8675473760932945,357
+10,inadimplencia,1 so comportamento,svm,0.858545918367347,357
+10,inadimplencia,1 so comportamento,comite,0.8782616618075803,357
+10,inadimplencia,2 comportamento + cadastro enxuto,l1,0.8736880466472303,357
+10,inadimplencia,2 comportamento + cadastro enxuto,l2,0.8798469387755102,357
+10,inadimplencia,2 comportamento + cadastro enxuto,rf,0.875728862973761,357
+10,inadimplencia,2 comportamento + cadastro enxuto,extratrees,0.8693330903790089,357
+10,inadimplencia,2 comportamento + cadastro enxuto,hgb,0.8673651603498541,357
+10,inadimplencia,2 comportamento + cadastro enxuto,lgbm,0.7638483965014576,357
+10,inadimplencia,2 comportamento + cadastro enxuto,mlp,0.852368804664723,357
+10,inadimplencia,2 comportamento + cadastro enxuto,svm,0.7638483965014576,357
+10,inadimplencia,2 comportamento + cadastro enxuto,comite,0.8752186588921284,357
+10,inadimplencia,3 + endereco dividido e inconsistencias,l1,0.8737244897959183,357
+10,inadimplencia,3 + endereco dividido e inconsistencias,l2,0.8801749271137026,357
+10,inadimplencia,3 + endereco dividido e inconsistencias,rf,0.8737062682215744,357
+10,inadimplencia,3 + endereco dividido e inconsistencias,extratrees,0.8744351311953352,357
+10,inadimplencia,3 + endereco dividido e inconsistencias,hgb,0.8671100583090378,357
+10,inadimplencia,3 + endereco dividido e inconsistencias,lgbm,0.7634475218658892,357
+10,inadimplencia,3 + endereco dividido e inconsistencias,mlp,0.8456268221574345,357
+10,inadimplencia,3 + endereco dividido e inconsistencias,svm,0.7634475218658892,357
+10,inadimplencia,3 + endereco dividido e inconsistencias,comite,0.8774963556851312,357
+10,inadimplencia,4 + contrato anterior (paga e para),l1,0.8736880466472303,357
+10,inadimplencia,4 + contrato anterior (paga e para),l2,0.8798469387755102,357
+10,inadimplencia,4 + contrato anterior (paga e para),rf,0.875728862973761,357
+10,inadimplencia,4 + contrato anterior (paga e para),extratrees,0.8693330903790089,357
+10,inadimplencia,4 + contrato anterior (paga e para),hgb,0.8673651603498541,357
+10,inadimplencia,4 + contrato anterior (paga e para),lgbm,0.7638483965014576,357
+10,inadimplencia,4 + contrato anterior (paga e para),mlp,0.852368804664723,357
+10,inadimplencia,4 + contrato anterior (paga e para),svm,0.7638483965014576,357
+10,inadimplencia,4 + contrato anterior (paga e para),comite,0.8752186588921284,357
+10,inadimplencia,5 + tom da conversa,l1,0.8799016034985423,357
+10,inadimplencia,5 + tom da conversa,l2,0.8854591836734694,357
+10,inadimplencia,5 + tom da conversa,rf,0.8738702623906706,357
+10,inadimplencia,5 + tom da conversa,extratrees,0.869460641399417,357
+10,inadimplencia,5 + tom da conversa,hgb,0.869515306122449,357
+10,inadimplencia,5 + tom da conversa,lgbm,0.8085276967930031,357
+10,inadimplencia,5 + tom da conversa,mlp,0.8693513119533528,357
+10,inadimplencia,5 + tom da conversa,svm,0.8085276967930031,357
+10,inadimplencia,5 + tom da conversa,comite,0.8880466472303207,357
+10,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l1,0.8782981049562683,357
+10,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l2,0.8852769679300291,357
+10,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",rf,0.8731778425655977,357
+10,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",extratrees,0.8655430029154518,357
+10,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",hgb,0.8677478134110787,357
+10,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",lgbm,0.7881195335276967,357
+10,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",mlp,0.8357871720116617,357
+10,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",svm,0.7881195335276967,357
+10,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",comite,0.8855138483965015,357
+14,calote,1 so comportamento,l1,0.8542231868330621,268
+14,calote,1 so comportamento,l2,0.8560318321577138,268
+14,calote,1 so comportamento,rf,0.8401760414782661,268
+14,calote,1 so comportamento,extratrees,0.8489178272140834,268
+14,calote,1 so comportamento,hgb,0.8064146620847651,268
+14,calote,1 so comportamento,lgbm,0.823958521733888,268
+14,calote,1 so comportamento,mlp,0.8231747754265388,268
+14,calote,1 so comportamento,svm,0.823958521733888,268
+14,calote,1 so comportamento,comite,0.8472297582444083,268
+14,calote,2 comportamento + cadastro enxuto,l1,0.7226743835533852,268
+14,calote,2 comportamento + cadastro enxuto,l2,0.5293000542593598,268
+14,calote,2 comportamento + cadastro enxuto,rf,0.8408693555193827,268
+14,calote,2 comportamento + cadastro enxuto,extratrees,0.8522638210646892,268
+14,calote,2 comportamento + cadastro enxuto,hgb,0.8197986374871888,268
+14,calote,2 comportamento + cadastro enxuto,lgbm,0.6323626936757701,268
+14,calote,2 comportamento + cadastro enxuto,mlp,0.5241152709953577,268
+14,calote,2 comportamento + cadastro enxuto,svm,0.6323626936757701,268
+14,calote,2 comportamento + cadastro enxuto,comite,0.7561946102369325,268
+14,calote,3 + endereco dividido e inconsistencias,l1,0.7226743835533852,268
+14,calote,3 + endereco dividido e inconsistencias,l2,0.521703743895822,268
+14,calote,3 + endereco dividido e inconsistencias,rf,0.8403870500994756,268
+14,calote,3 + endereco dividido e inconsistencias,extratrees,0.8531681437270151,268
+14,calote,3 + endereco dividido e inconsistencias,hgb,0.8215771387230965,268
+14,calote,3 + endereco dividido e inconsistencias,lgbm,0.6140049436305541,268
+14,calote,3 + endereco dividido e inconsistencias,mlp,0.5821124977391935,268
+14,calote,3 + endereco dividido e inconsistencias,svm,0.6140049436305541,268
+14,calote,3 + endereco dividido e inconsistencias,comite,0.757792246940375,268
+14,calote,4 + contrato anterior (paga e para),l1,0.7226743835533852,268
+14,calote,4 + contrato anterior (paga e para),l2,0.5293000542593598,268
+14,calote,4 + contrato anterior (paga e para),rf,0.8408693555193827,268
+14,calote,4 + contrato anterior (paga e para),extratrees,0.8522638210646892,268
+14,calote,4 + contrato anterior (paga e para),hgb,0.8197986374871888,268
+14,calote,4 + contrato anterior (paga e para),lgbm,0.6323626936757701,268
+14,calote,4 + contrato anterior (paga e para),mlp,0.5241152709953577,268
+14,calote,4 + contrato anterior (paga e para),svm,0.6323626936757701,268
+14,calote,4 + contrato anterior (paga e para),comite,0.7561946102369325,268
+14,calote,5 + tom da conversa,l1,0.74877916440586,268
+14,calote,5 + tom da conversa,l2,0.5383131367938748,268
+14,calote,5 + tom da conversa,rf,0.8400554651232893,268
+14,calote,5 + tom da conversa,extratrees,0.857117019352505,268
+14,calote,5 + tom da conversa,hgb,0.813739675649605,268
+14,calote,5 + tom da conversa,lgbm,0.7022969795623079,268
+14,calote,5 + tom da conversa,mlp,0.5152830529933081,268
+14,calote,5 + tom da conversa,svm,0.7022969795623079,268
+14,calote,5 + tom da conversa,comite,0.782540543799361,268
+14,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l1,0.6926508711641648,268
+14,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l2,0.5368662205341532,268
+14,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",rf,0.8547054922529691,268
+14,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",extratrees,0.8528968469283174,268
+14,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",hgb,0.8301983481039368,268
+14,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",lgbm,0.662446494242479,268
+14,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",mlp,0.5513353831313679,268
+14,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",svm,0.662446494242479,268
+14,calote,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",comite,0.7763308615180563,268
+14,inadimplencia,1 so comportamento,l1,0.9080806929564623,353
+14,inadimplencia,1 so comportamento,l2,0.9113859129245498,353
+14,inadimplencia,1 so comportamento,rf,0.9045475267836791,353
+14,inadimplencia,1 so comportamento,extratrees,0.911993769470405,353
+14,inadimplencia,1 so comportamento,hgb,0.8926563331053872,353
+14,inadimplencia,1 so comportamento,lgbm,0.8392409391383634,353
+14,inadimplencia,1 so comportamento,mlp,0.8933401717194742,353
+14,inadimplencia,1 so comportamento,svm,0.8392409391383634,353
+14,inadimplencia,1 so comportamento,comite,0.9043195805789835,353
+14,inadimplencia,2 comportamento + cadastro enxuto,l1,0.892751310690677,353
+14,inadimplencia,2 comportamento + cadastro enxuto,l2,0.8973672213357649,353
+14,inadimplencia,2 comportamento + cadastro enxuto,rf,0.8955246561811413,353
+14,inadimplencia,2 comportamento + cadastro enxuto,extratrees,0.9016222171567511,353
+14,inadimplencia,2 comportamento + cadastro enxuto,hgb,0.8962084947952282,353
+14,inadimplencia,2 comportamento + cadastro enxuto,lgbm,0.7575222247549579,353
+14,inadimplencia,2 comportamento + cadastro enxuto,mlp,0.8588823037763088,353
+14,inadimplencia,2 comportamento + cadastro enxuto,svm,0.7575222247549579,353
+14,inadimplencia,2 comportamento + cadastro enxuto,comite,0.897215257199301,353
+14,inadimplencia,3 + endereco dividido e inconsistencias,l1,0.892751310690677,353
+14,inadimplencia,3 + endereco dividido e inconsistencias,l2,0.8973672213357647,353
+14,inadimplencia,3 + endereco dividido e inconsistencias,rf,0.897196261682243,353
+14,inadimplencia,3 + endereco dividido e inconsistencias,extratrees,0.900197553377403,353
+14,inadimplencia,3 + endereco dividido e inconsistencias,hgb,0.8959995441075906,353
+14,inadimplencia,3 + endereco dividido e inconsistencias,lgbm,0.764018691588785,353
+14,inadimplencia,3 + endereco dividido e inconsistencias,mlp,0.8894650862396474,353
+14,inadimplencia,3 + endereco dividido e inconsistencias,svm,0.764018691588785,353
+14,inadimplencia,3 + endereco dividido e inconsistencias,comite,0.8990198313198086,353
+14,inadimplencia,4 + contrato anterior (paga e para),l1,0.892751310690677,353
+14,inadimplencia,4 + contrato anterior (paga e para),l2,0.8973672213357649,353
+14,inadimplencia,4 + contrato anterior (paga e para),rf,0.8955246561811413,353
+14,inadimplencia,4 + contrato anterior (paga e para),extratrees,0.9016222171567511,353
+14,inadimplencia,4 + contrato anterior (paga e para),hgb,0.8962084947952282,353
+14,inadimplencia,4 + contrato anterior (paga e para),lgbm,0.7575222247549579,353
+14,inadimplencia,4 + contrato anterior (paga e para),mlp,0.8588823037763088,353
+14,inadimplencia,4 + contrato anterior (paga e para),svm,0.7575222247549579,353
+14,inadimplencia,4 + contrato anterior (paga e para),comite,0.897215257199301,353
+14,inadimplencia,5 + tom da conversa,l1,0.8932072031000684,353
+14,inadimplencia,5 + tom da conversa,l2,0.900843400957374,353
+14,inadimplencia,5 + tom da conversa,rf,0.8993997416609681,353
+14,inadimplencia,5 + tom da conversa,extratrees,0.9014512575032292,353
+14,inadimplencia,5 + tom da conversa,hgb,0.9008434009573741,353
+14,inadimplencia,5 + tom da conversa,lgbm,0.8007370260618495,353
+14,inadimplencia,5 + tom da conversa,mlp,0.8747435605197174,353
+14,inadimplencia,5 + tom da conversa,svm,0.8007370260618495,353
+14,inadimplencia,5 + tom da conversa,comite,0.9006534457867943,353
+14,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l1,0.8934161537877062,353
+14,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",l2,0.8939290327482715,353
+14,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",rf,0.8892181445178938,353
+14,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",extratrees,0.8976901451257503,353
+14,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",hgb,0.9034077957602007,353
+14,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",lgbm,0.7915431958057898,353
+14,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",mlp,0.8364106070967253,353
+14,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",svm,0.7915431958057898,353
+14,inadimplencia,"6 tudo (termos, valor/faturamento, dias lead, compart., anterior, tom)",comite,0.8964934275510978,353

@@ -1,0 +1,74 @@
+todos                    calote ate o dia 45  provedor                                                   melhor=l1        0.655 comite=0.654 l1=0.655 rf=0.655 n=271 taxa=0.34
+todos                    calote ate o dia 45  provedor + contrato curto                                  melhor=rf        0.655 comite=0.645 l1=0.653 rf=0.655 n=271 taxa=0.34
+todos                    calote ate o dia 45  provedor + contrato curto + valor                          melhor=extratrees0.635 comite=0.608 l1=0.615 rf=0.630 n=271 taxa=0.34
+todos                    calote ate o dia 45  enxuto (idade, historico, renovacao, CEP) + provedor       melhor=l1        0.652 comite=0.626 l1=0.652 rf=0.623 n=271 taxa=0.34
+todos                    calote ate o dia 45  enxuto + contrato curto + valor                            melhor=l1        0.618 comite=0.593 l1=0.618 rf=0.610 n=271 taxa=0.34
+todos                    calote ate o dia 45  + endereco dividido, contrato anterior, inconsistencias    melhor=l1        0.617 comite=0.589 l1=0.617 rf=0.609 n=271 taxa=0.34
+todos                    calote ate o dia 45  + tom da conversa                                          melhor=rf        0.654 comite=0.629 l1=0.624 rf=0.654 n=271 taxa=0.34
+todos                    calote ate o dia 45  + valor sobre faturamento e dias ate contratar             melhor=rf        0.645 comite=0.602 l1=0.594 rf=0.645 n=271 taxa=0.34
+todos                    calote em 30 dias    provedor                                                   melhor=extratrees0.651 comite=0.627 l1=0.629 rf=0.627 n=320 taxa=0.24
+todos                    calote em 30 dias    provedor + contrato curto                                  melhor=rf        0.668 comite=0.660 l1=0.638 rf=0.668 n=320 taxa=0.24
+todos                    calote em 30 dias    provedor + contrato curto + valor                          melhor=comite    0.669 comite=0.669 l1=0.640 rf=0.633 n=320 taxa=0.24
+todos                    calote em 30 dias    enxuto (idade, historico, renovacao, CEP) + provedor       melhor=hgb       0.619 comite=0.610 l1=0.614 rf=0.598 n=320 taxa=0.24
+todos                    calote em 30 dias    enxuto + contrato curto + valor                            melhor=hgb       0.623 comite=0.612 l1=0.610 rf=0.622 n=320 taxa=0.24
+todos                    calote em 30 dias    + endereco dividido, contrato anterior, inconsistencias    melhor=hgb       0.638 comite=0.602 l1=0.598 rf=0.602 n=320 taxa=0.24
+todos                    calote em 30 dias    + tom da conversa                                          melhor=rf        0.626 comite=0.609 l1=0.597 rf=0.626 n=320 taxa=0.24
+todos                    calote em 30 dias    + valor sobre faturamento e dias ate contratar             melhor=hgb       0.632 comite=0.605 l1=0.594 rf=0.613 n=320 taxa=0.24
+sem Pix agendado         calote ate o dia 45  provedor                                                   melhor=l2        0.670 comite=0.664 l1=0.652 rf=0.647 n=249 taxa=0.20
+sem Pix agendado         calote ate o dia 45  provedor + contrato curto                                  melhor=rf        0.652 comite=0.640 l1=0.629 rf=0.652 n=249 taxa=0.20
+sem Pix agendado         calote ate o dia 45  provedor + contrato curto + valor                          melhor=rf        0.624 comite=0.590 l1=0.534 rf=0.624 n=249 taxa=0.20
+sem Pix agendado         calote ate o dia 45  enxuto (idade, historico, renovacao, CEP) + provedor       melhor=l1        0.641 comite=0.620 l1=0.641 rf=0.600 n=249 taxa=0.20
+sem Pix agendado         calote ate o dia 45  enxuto + contrato curto + valor                            melhor=l1        0.591 comite=0.572 l1=0.591 rf=0.587 n=249 taxa=0.20
+sem Pix agendado         calote ate o dia 45  + endereco dividido, contrato anterior, inconsistencias    melhor=rf        0.590 comite=0.565 l1=0.568 rf=0.590 n=249 taxa=0.20
+sem Pix agendado         calote ate o dia 45  + tom da conversa                                          melhor=extratrees0.647 comite=0.638 l1=0.634 rf=0.640 n=249 taxa=0.20
+sem Pix agendado         calote ate o dia 45  + valor sobre faturamento e dias ate contratar             melhor=rf        0.667 comite=0.631 l1=0.613 rf=0.667 n=249 taxa=0.20
+sem Pix agendado         calote em 30 dias    provedor                                                   melhor=l2        0.672 comite=0.622 l1=0.600 rf=0.609 n=279 taxa=0.14
+sem Pix agendado         calote em 30 dias    provedor + contrato curto                                  melhor=comite    0.676 comite=0.676 l1=0.634 rf=0.633 n=279 taxa=0.14
+sem Pix agendado         calote em 30 dias    provedor + contrato curto + valor                          melhor=comite    0.659 comite=0.659 l1=0.614 rf=0.620 n=279 taxa=0.14
+sem Pix agendado         calote em 30 dias    enxuto (idade, historico, renovacao, CEP) + provedor       melhor=l2        0.559 comite=0.557 l1=0.556 rf=0.527 n=279 taxa=0.14
+sem Pix agendado         calote em 30 dias    enxuto + contrato curto + valor                            melhor=comite    0.562 comite=0.562 l1=0.559 rf=0.523 n=279 taxa=0.14
+sem Pix agendado         calote em 30 dias    + endereco dividido, contrato anterior, inconsistencias    melhor=hgb       0.566 comite=0.522 l1=0.539 rf=0.506 n=279 taxa=0.14
+sem Pix agendado         calote em 30 dias    + tom da conversa                                          melhor=l1        0.588 comite=0.574 l1=0.588 rf=0.553 n=279 taxa=0.14
+sem Pix agendado         calote em 30 dias    + valor sobre faturamento e dias ate contratar             melhor=hgb       0.609 comite=0.553 l1=0.548 rf=0.553 n=279 taxa=0.14
+sem Pix, canal MANUAL    calote ate o dia 45  provedor + contrato curto                                  melhor=l1        0.500 comite=0.444 l1=0.500 rf=0.500 n=17 taxa=0.47
+sem Pix, canal MANUAL    calote ate o dia 45  provedor + contrato curto + valor                          melhor=extratrees0.667 comite=0.618 l1=0.500 rf=0.632 n=17 taxa=0.47
+sem Pix, canal MANUAL    calote ate o dia 45  enxuto (idade, historico, renovacao, CEP) + provedor       melhor=l2        0.535 comite=0.438 l1=0.438 rf=0.361 n=17 taxa=0.47
+sem Pix, canal MANUAL    calote ate o dia 45  enxuto + contrato curto + valor                            melhor=l2        0.611 comite=0.576 l1=0.438 rf=0.486 n=17 taxa=0.47
+sem Pix, canal MANUAL    calote ate o dia 45  + endereco dividido, contrato anterior, inconsistencias    melhor=hgb       0.625 comite=0.583 l1=0.403 rf=0.549 n=17 taxa=0.47
+sem Pix, canal MANUAL    calote ate o dia 45  + tom da conversa                                          melhor=l2        0.639 comite=0.597 l1=0.625 rf=0.597 n=17 taxa=0.47
+sem Pix, canal MANUAL    calote ate o dia 45  + valor sobre faturamento e dias ate contratar             melhor=rf        0.729 comite=0.653 l1=0.653 rf=0.729 n=17 taxa=0.47
+sem Pix, canal MANUAL    calote em 30 dias    provedor + contrato curto                                  melhor=l1        0.500 comite=0.455 l1=0.500 rf=0.500 n=17 taxa=0.35
+sem Pix, canal MANUAL    calote em 30 dias    provedor + contrato curto + valor                          melhor=l1        0.500 comite=0.197 l1=0.500 rf=0.273 n=17 taxa=0.35
+sem Pix, canal MANUAL    calote em 30 dias    enxuto (idade, historico, renovacao, CEP) + provedor       melhor=l2        0.417 comite=0.295 l1=0.311 rf=0.295 n=17 taxa=0.35
+sem Pix, canal MANUAL    calote em 30 dias    enxuto + contrato curto + valor                            melhor=l2        0.500 comite=0.386 l1=0.311 rf=0.356 n=17 taxa=0.35
+sem Pix, canal MANUAL    calote em 30 dias    + endereco dividido, contrato anterior, inconsistencias    melhor=l2        0.455 comite=0.402 l1=0.318 rf=0.371 n=17 taxa=0.35
+sem Pix, canal MANUAL    calote em 30 dias    + tom da conversa                                          melhor=l2        0.576 comite=0.462 l1=0.394 rf=0.470 n=17 taxa=0.35
+sem Pix, canal MANUAL    calote em 30 dias    + valor sobre faturamento e dias ate contratar             melhor=l2        0.485 comite=0.409 l1=0.394 rf=0.402 n=17 taxa=0.35
+sem Pix, 60 parcelas     calote ate o dia 45  provedor                                                   melhor=comite    0.535 comite=0.535 l1=0.451 rf=0.528 n=102 taxa=0.34
+sem Pix, 60 parcelas     calote ate o dia 45  provedor + contrato curto                                  melhor=comite    0.535 comite=0.535 l1=0.451 rf=0.528 n=102 taxa=0.34
+sem Pix, 60 parcelas     calote ate o dia 45  provedor + contrato curto + valor                          melhor=hgb       0.534 comite=0.430 l1=0.448 rf=0.480 n=102 taxa=0.34
+sem Pix, 60 parcelas     calote ate o dia 45  enxuto (idade, historico, renovacao, CEP) + provedor       melhor=l2        0.546 comite=0.479 l1=0.502 rf=0.479 n=102 taxa=0.34
+sem Pix, 60 parcelas     calote ate o dia 45  enxuto + contrato curto + valor                            melhor=rf        0.465 comite=0.434 l1=0.444 rf=0.465 n=102 taxa=0.34
+sem Pix, 60 parcelas     calote ate o dia 45  + endereco dividido, contrato anterior, inconsistencias    melhor=hgb       0.479 comite=0.424 l1=0.424 rf=0.442 n=102 taxa=0.34
+sem Pix, 60 parcelas     calote ate o dia 45  + tom da conversa                                          melhor=hgb       0.569 comite=0.565 l1=0.523 rf=0.551 n=102 taxa=0.34
+sem Pix, 60 parcelas     calote ate o dia 45  + valor sobre faturamento e dias ate contratar             melhor=hgb       0.573 comite=0.542 l1=0.511 rf=0.549 n=102 taxa=0.34
+sem Pix, 60 parcelas     calote em 30 dias    provedor                                                   melhor=l2        0.533 comite=0.474 l1=0.516 rf=0.438 n=105 taxa=0.21
+sem Pix, 60 parcelas     calote em 30 dias    provedor + contrato curto                                  melhor=l2        0.533 comite=0.474 l1=0.516 rf=0.438 n=105 taxa=0.21
+sem Pix, 60 parcelas     calote em 30 dias    provedor + contrato curto + valor                          melhor=l1        0.484 comite=0.405 l1=0.484 rf=0.437 n=105 taxa=0.21
+sem Pix, 60 parcelas     calote em 30 dias    enxuto (idade, historico, renovacao, CEP) + provedor       melhor=l2        0.491 comite=0.396 l1=0.453 rf=0.360 n=105 taxa=0.21
+sem Pix, 60 parcelas     calote em 30 dias    enxuto + contrato curto + valor                            melhor=l1        0.458 comite=0.388 l1=0.458 rf=0.380 n=105 taxa=0.21
+sem Pix, 60 parcelas     calote em 30 dias    + endereco dividido, contrato anterior, inconsistencias    melhor=l2        0.451 comite=0.374 l1=0.388 rf=0.370 n=105 taxa=0.21
+sem Pix, 60 parcelas     calote em 30 dias    + tom da conversa                                          melhor=l2        0.543 comite=0.465 l1=0.521 rf=0.453 n=105 taxa=0.21
+sem Pix, 60 parcelas     calote em 30 dias    + valor sobre faturamento e dias ate contratar             melhor=l2        0.483 comite=0.418 l1=0.472 rf=0.411 n=105 taxa=0.21
+
+-- melhor por estrato e alvo:
+   sem Pix agendado         calote ate o dia 45  melhor 0.670 (l2, provedor); so provedor 0.670; n=249; taxa 0.20
+   sem Pix agendado         calote em 30 dias    melhor 0.676 (comite, provedor + contrato curto); so provedor 0.672; n=279; taxa 0.14
+   sem Pix, 60 parcelas     calote ate o dia 45  melhor 0.573 (hgb, + valor sobre faturamento e dias ate contratar); so provedor 0.535; n=102; taxa 0.34
+   sem Pix, 60 parcelas     calote em 30 dias    melhor 0.543 (l2, + tom da conversa); so provedor 0.533; n=105; taxa 0.21
+   sem Pix, canal MANUAL    calote ate o dia 45  melhor 0.729 (rf, + valor sobre faturamento e dias ate contratar); so provedor nan; n=17; taxa 0.47
+   sem Pix, canal MANUAL    calote em 30 dias    melhor 0.576 (l2, + tom da conversa); so provedor nan; n=17; taxa 0.35
+   todos                    calote ate o dia 45  melhor 0.655 (l1, provedor); so provedor 0.655; n=271; taxa 0.34
+   todos                    calote em 30 dias    melhor 0.669 (comite, provedor + contrato curto + valor); so provedor 0.651; n=320; taxa 0.24
+
+FIM DO DIA 0

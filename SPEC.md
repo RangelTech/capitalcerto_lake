@@ -280,6 +280,31 @@ Actions, nunca local, exceto para depuração pontual (e apagar o `.tfstate` loc
 Isso é o mesmo tradeoff aceito no `vps_rt_infra` hoje — não é uma lacuna nova deste projeto, é
 característica do padrão de repo que estamos seguindo.
 
+## 6.2 Ingestão empurrada (push): dump diário do Postgres do cliente
+
+O cliente vai mandar todo dia um dump do Postgres deles pra dentro do lake. Em vez de dar a
+chave root do MinIO, usamos **Service Account nativo do MinIO** (`mc admin user svcacct`, mesma
+ideia de SA da GCP: credencial derivada, presa a uma policy restrita, sem herdar poder do usuário
+pai).
+
+- Bucket dedicado `landing` (separado de `raw`/`trusted`/`analytics`, isola a origem externa do
+  resto do lake).
+- Service account `postgres-dump-daily`, policy restrita só a `s3:PutObject`, `s3:GetObject`,
+  `s3:ListBucket` no bucket `landing` e nada mais. Testado ao vivo em 2026-08-26: escreve em
+  `landing`, bloqueado em qualquer outro bucket.
+- Endpoint: `http://<VPS_HOST>:9000` (IP direto, sem domínio ainda). Cliente usa `mc`, `aws s3
+  cp` ou qualquer client S3-compatível apontando pra esse endpoint com a chave do service account.
+- Airflow depois lê `landing/` pra processar o dump (raw → trusted), mesmo padrão de qualquer
+  outra fonte.
+
+**Pendência real de segurança**: porta 9000 do MinIO está mapeada direto no host (IP:porta, sem
+Traefik na frente) e hoje não tem restrição de IP de origem no firewall (`ufw` só libera
+22/80/443, ver `cloud-init/bootstrap.sh`). Docker escreve regra própria no iptables que pode
+furar o `ufw` (pegadinha conhecida Docker×ufw), então a porta pode já estar alcançável de
+qualquer IP mesmo sem eu ter liberado explicitamente. Se o servidor de origem do dump tiver IP
+fixo, dá pra restringir a porta 9000 só a esse IP (via regra na chain `DOCKER-USER`, não `ufw`
+puro). Decisão pendente até o cliente confirmar o IP de origem.
+
 ## 7. Domínio (futuro)
 
 Sem domínio agora: Traefik expõe os serviços via IP:porta direto, sem TLS. Quando o cliente
