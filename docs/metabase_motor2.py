@@ -1,7 +1,7 @@
 """Dashboard 5 do Metabase, 3 abas novas depois de "Motor de credito":
   1. "Consulta por contrato"      filtros de telefone e nome -> ficha do contrato, chance de cada cluster, risco por etapa, fatores, parcelas, resumo
   2. "Contratos que pioraram"    lista de contratos ativos cujo risco subiu, ordenada por prioridade (1 = mais atencao)
-  3. "API e pesos"               como chamar a API de risco e como o score e calculado, em linguagem simples
+  (as abas "API e pesos" e "Mapa de testes" foram retiradas: o conteudo esta no Data IA Hub; o dashboard e atemporal, sem numeros nem datas fixos nos textos)
 Idempotente: guarda os ids em mb_motor2_state.json e substitui so as proprias abas. Uso: python metabase_motor2.py (precisa de mb_lib.py ao lado, que le o segredo do Metabase)."""
 import json
 import os
@@ -12,7 +12,8 @@ import mb_lib as m
 DB, COLL, DASH = 4, 6, 5
 STATE = "mb_motor2_state.json"
 state = json.load(open(STATE, encoding="utf-8")) if os.path.exists(STATE) else {}
-NOMES = ["Motor de crédito", "Consulta por contrato", "Contratos que pioraram", "Mapa de testes", "API e pesos"]
+NOMES = ["Motor de crédito", "Consulta por contrato", "Contratos que pioraram"]
+REMOVER = ["Mapa de testes", "API e pesos"]   # abas retiradas do dashboard (o conteudo vive no Data IA Hub: Variaveis e Como o motor funciona)
 AZUL, LARANJA, VERDE, VERMELHO = "#1F6FEB", "#F2994A", "#2E8B57", "#C0392B"
 
 # filtros do dashboard = "filtro de campo" do Metabase ligado as colunas telefone e nome de analytics.contrato_consulta: ao digitar, aparecem os valores que existem.
@@ -58,7 +59,7 @@ def main():
     dash = m.get(f"/api/dashboard/{DASH}")
     json.dump(dash, open("dash5_before_motor2.json", "w", encoding="utf-8"), ensure_ascii=False)
     minhas = set(state.get("_tabs", []))
-    tabs = [t for t in dash["tabs"] if t["id"] not in minhas and t["name"] not in NOMES]
+    tabs = [t for t in dash["tabs"] if t["id"] not in minhas and t["name"] not in NOMES and t["name"] not in REMOVER]
     keep = {t["id"] for t in tabs}
     cards = [c for c in dash["dashcards"] if c["dashboard_tab_id"] in keep]
     tmp, novas, ids_abas = -1, [], {}

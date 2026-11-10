@@ -1,12 +1,25 @@
 api:
   dashboard: true
-  insecure: true   # dashboard exposto por IP direto, sem dominio ainda (ver SPEC.md secao 7)
+  insecure: true   # dashboard exposto por IP direto
 
 entryPoints:
   web:
     address: ":80"
+    http:
+      redirections:
+        entryPoint:
+          to: websecure
+          scheme: https
   websecure:
     address: ":443"
+
+certificatesResolvers:
+  letsencrypt:
+    acme:
+      email: contato@rangeltech.net
+      storage: /letsencrypt/acme.json
+      httpChallenge:
+        entryPoint: web
 
 providers:
   docker:

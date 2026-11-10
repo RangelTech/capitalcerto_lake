@@ -32,10 +32,23 @@ with DAG(
 
         credit_variaveis.main()   # catalogo de variaveis com correlacoes (aba Motor de credito do Data IA Hub)
 
+    def _ganhos(**context):
+        import credit_ganho_variaveis
+
+        credit_ganho_variaveis.main()   # ganho de acerto de cada variavel do catalogo se for ligada (alerta da aba Motor de credito)
+
     def _pedidos(**context):
         import credit_pedidos
 
         credit_pedidos.main()     # testa as variaveis pedidas pelo chat do Hub (hub_sandbox.motor_parametros)
+
+    def _resumos_llm(**context):
+        import credit_var_resumo
+
+        try:
+            credit_var_resumo.main()   # explicacao de cada variavel e resumo do acerto por LLM (opcional: sem a conta de IA, pula)
+        except Exception as e:  # noqa
+            print("resumos por LLM pulados:", str(e)[:200])
 
     def _dicionario(**context):
         import nomes_claros
@@ -46,5 +59,7 @@ with DAG(
     t2 = PythonOperator(task_id="clusters_etapas_e_gold", python_callable=_pos, execution_timeout=pendulum.duration(minutes=40))
     t3 = PythonOperator(task_id="dicionario_nomes_claros", python_callable=_dicionario, execution_timeout=pendulum.duration(minutes=5))
     t4 = PythonOperator(task_id="catalogo_de_variaveis", python_callable=_variaveis, execution_timeout=pendulum.duration(minutes=15))
+    t4b = PythonOperator(task_id="ganho_de_cada_variavel", python_callable=_ganhos, execution_timeout=pendulum.duration(minutes=55))
     t5 = PythonOperator(task_id="testar_pedidos_do_chat", python_callable=_pedidos, execution_timeout=pendulum.duration(minutes=40))
-    t1 >> t2 >> t3 >> t4 >> t5
+    t6 = PythonOperator(task_id="explicar_variaveis_llm", python_callable=_resumos_llm, execution_timeout=pendulum.duration(minutes=35))
+    t1 >> t2 >> t3 >> t4 >> t4b >> t5 >> t6

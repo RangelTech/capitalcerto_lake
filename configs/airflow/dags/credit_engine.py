@@ -50,15 +50,23 @@ PENALIDADE_AMPLIADO = 0.01      # um candidato ampliado so ganha do simples se s
 DESLIGADAS = set()   # variaveis que o administrador desligou na aba Motor de credito do Data IA Hub (hub_sandbox.motor_parametros); carregadas a cada execucao
 
 
+EXTRAS = set()   # variaveis que o administrador LIGOU na aba e que o motor nao usa por padrao: entram em todos os candidatos do treino (o motor mostra o efeito no acerto)
+
+
 def carregar_desligadas(ch):
-    global DESLIGADAS
+    global DESLIGADAS, EXTRAS
     try:
         r = ch.query("SELECT variavel FROM hub_sandbox.motor_parametros FINAL WHERE ativa = 0 AND estado = 'desligado'").result_rows
         DESLIGADAS = {x[0] for x in r}
-    except Exception:  # noqa  (tabela ainda nao existe: nada desligado)
-        DESLIGADAS = set()
+        r2 = ch.query("SELECT variavel FROM hub_sandbox.motor_parametros FINAL WHERE ativa = 1 AND estado = 'ativo' "
+                       "AND variavel IN (SELECT variavel FROM analytics_ml.motor_variaveis WHERE usada_no_motor = 0)").result_rows   # so as que o motor NAO usa por padrao
+        EXTRAS = {x[0] for x in r2}
+    except Exception:  # noqa  (tabela ainda nao existe: nada desligado, nada extra)
+        DESLIGADAS, EXTRAS = set(), set()
     if DESLIGADAS:
         print("variaveis DESLIGADAS pelo administrador (fora do treino):", sorted(DESLIGADAS), flush=True)
+    if EXTRAS:
+        print("variaveis LIGADAS pelo administrador (entram no treino alem das padrao):", sorted(EXTRAS), flush=True)
     return DESLIGADAS
 
 
@@ -78,8 +86,23 @@ def _sem_desligadas(cfgs):
     return out
 
 
+def _com_extras(df, cfgs):
+    """Acrescenta a todos os candidatos as variaveis que o administrador ligou (numericas vao em nums, categoricas em cats)."""
+    if not EXTRAS:
+        return cfgs
+    out = {}
+    for chave, (cats, nums) in cfgs.items():
+        c2, n2 = list(cats), list(nums)
+        for v in sorted(EXTRAS):
+            if v not in df.columns or v in c2 or v in n2:
+                continue
+            (n2 if pd.api.types.is_numeric_dtype(df[v]) else c2).append(v)
+        out[chave] = (c2, n2)
+    return out
+
+
 def configs_da_etapa(df, k):
-    return _sem_desligadas(_configs_da_etapa(df, k))
+    return _com_extras(df, _sem_desligadas(_configs_da_etapa(df, k)))
 
 
 def _configs_da_etapa(df, k):

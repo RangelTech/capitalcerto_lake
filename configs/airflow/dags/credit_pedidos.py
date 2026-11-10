@@ -63,8 +63,8 @@ def main():
             linhas.append("Conclusão: " + ("vale ligar no motor (ganho real fora do tempo)." if ganho_real else "não vale ligar ainda; fica desligada. Pode ser ligada na aba Motor de crédito."))
             texto = " ".join(linhas)
             print(v, "->", texto[:200])
-        ch.command(f"INSERT INTO hub_sandbox.motor_parametros (variavel, ativa, estado, pedido_por, descricao, definicao, resultado, atualizado_por) VALUES ('{v.replace(chr(39), '')}', 0, "
-                   f"'{'pedido' if v not in df.columns else 'testado'}', 'chat', '{(r.descricao or '').replace(chr(39), ' ')}', '{(r.definicao or '').replace(chr(39), ' ')}', '{texto.replace(chr(39), ' ')}', 'teste noturno')")
+        ch.command(f"INSERT INTO hub_sandbox.motor_parametros (variavel, ativa, estado, pedido_por, descricao, definicao, resultado, atualizado_por) VALUES ('{v.replace(chr(39), '')}', {1 if v in base0 else 0}, "
+                   f"'{'pedido' if v not in df.columns else ('ativo' if v in base0 else 'testado')}', 'chat', '{(r.descricao or '').replace(chr(39), ' ')}', '{(r.definicao or '').replace(chr(39), ' ')}', '{texto.replace(chr(39), ' ')}', 'teste noturno')")
 
 
 if __name__ == "__main__":

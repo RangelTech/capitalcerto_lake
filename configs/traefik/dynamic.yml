@@ -1,7 +1,24 @@
-# Configuracao dinamica do Traefik. Vazia por enquanto porque cada servico e acessado
-# diretamente por IP:porta enquanto nao existe dominio (ver SPEC.md secao 7). Quando o
-# dominio entrar, os roteadores por subdominio (airflow.dominio, metabase.dominio etc.)
-# e o resolver ACME do Let's Encrypt entram aqui.
+# Subdominios publicos (so o Data IA Hub e o Metabase). Os servicos ficam publicados no host e o Traefik fala com eles pelo gateway da rede compose_public.
 http:
-  routers: {}
-  services: {}
+  routers:
+    iadatahub:
+      rule: "Host(`iadatahub.capitalcerto.rangeltech.net`)"
+      entryPoints: [websecure]
+      service: iadatahub
+      tls:
+        certResolver: letsencrypt
+    metabase:
+      rule: "Host(`metabase.capitalcerto.rangeltech.net`)"
+      entryPoints: [websecure]
+      service: metabase
+      tls:
+        certResolver: letsencrypt
+  services:
+    iadatahub:
+      loadBalancer:
+        servers:
+          - url: "http://172.19.0.1:8088"
+    metabase:
+      loadBalancer:
+        servers:
+          - url: "http://172.19.0.1:3000"
